@@ -94,7 +94,7 @@ router.get("/", (ctx) => {
   }
   const ws = ctx.upgrade();
   connections.push(ws);
-  console.log(ws);
+  // console.log(ws);
 
   ws.onmessage = async (event) => {
     const data = JSON.parse(event.data);
@@ -122,6 +122,18 @@ router.get("/", (ctx) => {
       console.log(`- answer sent by ${data.data.name}`);
       notifyAllUsers({ type: "answer", owner: data.data.name, answer: data.data.answer });
       return
+    }
+
+    if (data.type === "CREATE_ROOM") {
+      createRoom(data, ws);
+    } else if (data.type === "JOIN_ROOM") {
+      joinRoom(data, ws);
+    } else if (data.type === "START_GAME") {
+      startGame(data, ws);
+    } else if (data.type === "SUBMIT_ANSWER") {
+      submitAnswer(data, ws);
+    } else {
+      console.log("Unknown message type:", data.type);
     }
   };
 
