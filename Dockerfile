@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Exposer le port utilisé par le backend
-EXPOSE 3000
+# EXPOSE 3000
 
 # Commande pour exécuter le serveur
 CMD ["run", "--allow-net", "--allow-read", "--watch", "back_server.ts", "3000"]
