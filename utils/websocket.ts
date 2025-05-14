@@ -60,6 +60,8 @@ function joinRoom(data: any, ws: WebSocket) {
       ready: false
     });
     ws.data = { userId: data.userId, roomCode: data.roomCode };
+    ws.send(JSON.stringify({type: 'ROOM_JOINED', room: data.roomCode}));
+
     broadcastToRoom(data.roomCode, {
       type: 'PLAYER_JOINED',
       players: room.players
@@ -164,3 +166,4 @@ router.get("/", (ctx) => {
 });
 
 export default router;
+
