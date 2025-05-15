@@ -7,7 +7,7 @@
 // wss.on('connection', (ws: WebSocket) => {
 //   ws.on('message', (message: string) => {
 //     const data = JSON.parse(message);
-    
+
 //     switch (data.type) {
 //       case 'CREATE_ROOM':
 //         const roomCode = generateRoomCode();

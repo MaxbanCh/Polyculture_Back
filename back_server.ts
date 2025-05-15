@@ -8,7 +8,10 @@ import questionsRouter from "./Game/questions.ts";
 import profilRouter from "./Users/profil.ts";
 import wsRouter, { connections, rooms } from "./utils/websocket.ts";
 
-import client, { connectToDatabase, disconnectFromDatabase } from "./database/client.ts";
+import client, {
+  connectToDatabase,
+  disconnectFromDatabase,
+} from "./database/client.ts";
 
 const app = new Application();
 
@@ -18,18 +21,25 @@ app.use(
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Specify allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
     credentials: true, // Allow credentials like cookies
-  })
+  }),
 );
 
-
 app.use(async (ctx, next) => {
-  ctx.response.headers.set("Access-Control-Allow-Origin", "http://83.195.188.17");
-  ctx.response.headers.set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-  ctx.response.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  ctx.response.headers.set(
+    "Access-Control-Allow-Origin",
+    "http://83.195.188.17",
+  );
+  ctx.response.headers.set(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PUT, DELETE, OPTIONS",
+  );
+  ctx.response.headers.set(
+    "Access-Control-Allow-Headers",
+    "Content-Type, Authorization",
+  );
   ctx.response.headers.set("Access-Control-Allow-Credentials", "true");
   await next();
 });
-
 
 // WebSockets -----
 const is_authorized = async (auth_token: string) => {
@@ -54,7 +64,6 @@ const is_authorized = async (auth_token: string) => {
 
 // const connections: WebSocket[] = [];
 
-
 // Connection related variables
 const tokens: { [key: string]: string } = {};
 
@@ -71,7 +80,7 @@ function removeTokenByUser(user: string) {
 const secretKey = await crypto.subtle.generateKey(
   { name: "HMAC", hash: "SHA-512" },
   true,
-  ["sign", "verify"]
+  ["sign", "verify"],
 );
 
 router.get("/get_cookies", (ctx) => {
@@ -99,11 +108,10 @@ console.log(`Oak back server running on port ${options.port}`);
 
 /////////////////////////////////////////////////////////////////////
 
-
 async function get_hash(password: string): Promise<string> {
   const saltRounds = 10;
-  const salt = await bcrypt.genSalt(saltRounds);  // Generate the salt manually
-  return await bcrypt.hash(password, salt);  // Pass the salt to the hash function
+  const salt = await bcrypt.genSalt(saltRounds); // Generate the salt manually
+  return await bcrypt.hash(password, salt); // Pass the salt to the hash function
 }
 ///////////////////////////////////////////////////////
 
@@ -111,7 +119,6 @@ app.use(async (ctx, next) => {
   await next();
   console.log(ctx.request.url.pathname);
 });
-
 
 app.use(router.routes());
 app.use(router.allowedMethods());
@@ -124,7 +131,5 @@ app.use(profilRouter.allowedMethods());
 
 app.use(wsRouter.routes());
 app.use(wsRouter.allowedMethods());
-
-
 
 await app.listen(options);

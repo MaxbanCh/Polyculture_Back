@@ -1,4 +1,3 @@
-import { Router } from "https://deno.land/x/oak@v12.6.1/mod.ts";
 import router from "./router.ts";
 
 export interface WebSocketWithData extends WebSocket {
@@ -6,7 +5,7 @@ export interface WebSocketWithData extends WebSocket {
     userId: string;
     username: string;
     roomCode?: string;
-  }
+  };
 }
 
 export const connections: WebSocketWithData[] = [];
@@ -34,21 +33,19 @@ function notifyAllUsers(json: any) {
   });
 }
 
-
-
 function createRoom(data: any, ws: WebSocket) {
   const roomCode = generateRoomCode();
   const newRoom: Room = {
     code: roomCode,
     host: data.userId,
-    players: [{id: data.userId, username: data.username, ready: false}],
+    players: [{ id: data.userId, username: data.username, ready: false }],
     selectedThemes: [],
-    status: 'waiting',
-    scores: {}
+    status: "waiting",
+    scores: {},
   };
   rooms.set(roomCode, newRoom);
   ws.data = { userId: data.userId, roomCode };
-  ws.send(JSON.stringify({type: 'ROOM_CREATED', room: newRoom}));
+  ws.send(JSON.stringify({ type: "ROOM_CREATED", room: newRoom }));
 }
 
 function joinRoom(data: any, ws: WebSocket) {
@@ -57,37 +54,37 @@ function joinRoom(data: any, ws: WebSocket) {
     room.players.push({
       id: data.userId,
       username: data.username,
-      ready: false
+      ready: false,
     });
     ws.data = { userId: data.userId, roomCode: data.roomCode };
-    ws.send(JSON.stringify({type: 'ROOM_JOINED', room: room}));
+    ws.send(JSON.stringify({ type: "ROOM_JOINED", room: room }));
 
     broadcastToRoom(data.roomCode, {
-      type: 'PLAYER_JOINED',
-      players: room.players
+      type: "PLAYER_JOINED",
+      players: room.players,
     });
   } else {
-    ws.send(JSON.stringify({type: 'ROOM_NOT_FOUND'}));
+    ws.send(JSON.stringify({ type: "ROOM_NOT_FOUND" }));
   }
 }
 
 function startGame(data: any, ws: WebSocket) {
   const room = rooms.get(data.roomCode);
   if (room) {
-    room.status = 'playing';
-    ws.send(JSON.stringify({type: 'GAME_STARTED', room}));
-    broadcastToRoom(data.roomCode, {type: 'GAME_STARTED', room});
+    room.status = "playing";
+    ws.send(JSON.stringify({ type: "GAME_STARTED", room }));
+    broadcastToRoom(data.roomCode, { type: "GAME_STARTED", room });
   } else {
-    ws.send(JSON.stringify({type: 'ROOM_NOT_FOUND'}));
+    ws.send(JSON.stringify({ type: "ROOM_NOT_FOUND" }));
   }
 }
 
 function submitAnswer(data: any, ws: WebSocket) {
   const gameInProgress = rooms.get(data.roomCode);
-        if (gameInProgress && gameInProgress.status === 'playing') {
-          // Gérer la réponse et mettre à jour les scores
-          // Envoyer les résultats à tous les joueurs
-        }
+  if (gameInProgress && gameInProgress.status === "playing") {
+    // Gérer la réponse et mettre à jour les scores
+    // Envoyer les résultats à tous les joueurs
+  }
 }
 
 router.get("/", (ctx) => {
@@ -98,10 +95,10 @@ router.get("/", (ctx) => {
   connections.push(ws);
   // console.log(ws);
 
-  ws.onmessage = async (event) => {
+  ws.onmessage = (event) => {
     const data = JSON.parse(event.data);
     console.log(data);
-    console.log(data.type)
+    console.log(data.type);
 
     if (data.type == "buzz") {
       // if (user.last_action_date + 1000 > Date.now()) {
@@ -111,19 +108,27 @@ router.get("/", (ctx) => {
       console.log(`- buzzer pressed by ${data.data.name}`);
       // user.last_action_date = Date.now();
       notifyAllUsers({ type: "buzz", owner: data.data.name });
-      return
+      return;
     }
 
     if (data.type == "question") {
       console.log(`- question asked by ${data.data.name}`);
-      notifyAllUsers({ type: "question", owner: data.data.name, question: data.data.question });
-      return
+      notifyAllUsers({
+        type: "question",
+        owner: data.data.name,
+        question: data.data.question,
+      });
+      return;
     }
 
     if (data.type == "answer") {
       console.log(`- answer sent by ${data.data.name}`);
-      notifyAllUsers({ type: "answer", owner: data.data.name, answer: data.data.answer });
-      return
+      notifyAllUsers({
+        type: "answer",
+        owner: data.data.name,
+        answer: data.data.answer,
+      });
+      return;
     }
 
     if (data.type === "CREATE_ROOM") {
@@ -145,7 +150,7 @@ router.get("/", (ctx) => {
       if (ws.data?.roomCode) {
         const room = rooms.get(ws.data.roomCode);
         if (room) {
-          room.players = room.players.filter(p => p.id !== ws.data.userId);
+          room.players = room.players.filter((p) => p.id !== ws.data.userId);
           if (room.players.length === 0) {
             rooms.delete(ws.data.roomCode);
           } else {
@@ -153,9 +158,9 @@ router.get("/", (ctx) => {
               room.host = room.players[0].id;
             }
             broadcastToRoom(ws.data.roomCode, {
-              type: 'PLAYER_LEFT',
+              type: "PLAYER_LEFT",
               players: room.players,
-              newHost: room.host
+              newHost: room.host,
             });
           }
         }
@@ -166,5 +171,3 @@ router.get("/", (ctx) => {
 });
 
 export default router;
-
-

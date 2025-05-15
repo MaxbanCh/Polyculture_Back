@@ -23,7 +23,7 @@ export async function connectToDatabase() {
       isConnected = true;
       console.log("Connected to the database!");
       return;
-    } catch (err) {
+    } catch (_err) {
       console.error("Database connection failed. Retrying in 5 seconds...");
       retries--;
       await new Promise((res) => setTimeout(res, 5000));
@@ -51,7 +51,7 @@ export async function executeQuery(query, params) {
   if (!isConnected) await connectToDatabase();
   try {
     return await client.queryObject(query, params);
-  } catch (error) {
+  } catch (_error) {
     // Gestion appropriée des erreurs
   }
 }

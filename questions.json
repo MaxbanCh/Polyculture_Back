@@ -1,2948 +1,2948 @@
 [
-    {
-        "question": "Dans le mythologie grecque, comment se nomme le dieu associé au vin ?",
-        "answer": "Dionysos",
-        "theme": "Culture Classique",
-        "subtheme": "Mythologie"
-    },
-    {
-        "question": "Combien y'a-t-il de pays membre de l'Union Européenne ?",
-        "answer": "27",
-        "theme": "Geographie",
-        "subtheme": "Geopolotique"
-    },
-    {
-        "question": "Dans quel continent trouve t-on l'Australie, ou encore la Nouvelle-Zelande",
-        "answer": "Oceanie",
-        "theme": "Geographie",
-        "subtheme": "Pays"
-    },
-    {
-        "question": "Donner la signification de l'acronyme ISS.",
-        "answer": "International Space Station",
-        "theme": "Sciences",
-        "subtheme": "Espace"
-    },
-    {
-        "question": "Qui était le chanteur du groupe Queen ? [We Will Rock You, Don't Stop Me Now...]",
-        "answer": "Freddie Mercury",
-        "theme": "Musique",
-        "subtheme": "Rock"
-    },
-    {
-        "question": "Combien y'a-t-il de député à l'Assemblée nationale ?",
-        "answer": "577",
-        "theme": "Histoire",
-        "subtheme": "Politique Francaise"
-    },
-    {
-        "question": "Qui a peint la Joconde ?",
-        "answer": "Léonard de Vinci",
-        "theme": "Arts Classiques",
-        "subtheme": "Peinture"
-    },
-    {
-        "question": "Combien y'a-t-il de planètes dans le système solaire ?",
-        "answer": "8",
-        "theme": "Sciences",
-        "subtheme": "Espace"
-    },
-    {
-        "question": "Comment se nommait le supercontinent qui en se séparant a donné les continents ?",
-        "answer": "Pangée",
-        "theme": "Histoire",
-        "subtheme": " "
-    },
-    {
-        "question": "Quels sont les pays membres du Conseil de Sécurité de I'ONU ?",
-        "answer": "France, USA, Chine, Russie, Royaume-Uni",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle année est décédé Michael Jackson ?",
-        "answer": "2009",
-        "theme": "Musique",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment appelle-t-on un être qui a une vision nocturne ?",
-        "answer": "Nyctalope",
-        "theme": "Nature",
-        "subtheme": " "
-    },
-    {
-        "question": "Donner le mot signifiant avant-avant dernier ?",
-        "answer": "Antépénultième",
-        "theme": "Culture Generale",
-        "subtheme": "Vocabulaire"
-    },
-    {
-        "question": "Donner le titre d'un film de Hayao Miyazaki ?",
-        "answer": "Mon voisin Totoro, Le voyage de Chihiro, Princesse Mononoké, etc...",
-        "theme": "Cinema, Series et TV",
-        "subtheme": "Film Japonais"
-    },
-    {
-        "question": "Pour quel film la musique Eye Of The Tiger a-t-elle été composée ?",
-        "answer": "Rocky 3",
-        "theme": "Cinema, Series et TV",
-        "subtheme": "Musique de film"
-    },
-    {
-        "question": "En solfège, quelle est la quinte du Do ?",
-        "answer": "Sol",
-        "theme": "Musique",
-        "subtheme": " "
-    },
-    {
-        "question": "Donnez la signification de l'acronyme AFP ?",
-        "answer": "Agence France Presse",
-        "theme": "Culture Generale",
-        "subtheme": "Presse"
-    },
-    {
-        "question": "A quelle température l'eau entre en ébullition ? [À pression atmosphérique normale]",
-        "answer": "100°C",
-        "theme": "Sciences",
-        "subtheme": "Physique"
-    },
-    {
-        "question": "Quelle est la capitale des USA ?",
-        "answer": "Washington D.C.",
-        "theme": "Geographie",
-        "subtheme": "Capitale"
-    },
-    {
-        "question": "Quelle est le titre du film sorti en 2018, où Lady Gaga et Bradley Cooper jouent et interprètent la musique Shallow ?",
-        "answer": "A Star Is Born",
-        "theme": "Cinema et Series",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans la mythologie Grecque, où se situe le Tartare ?",
-        "answer": "Enfer",
-        "theme": "Culture Classique",
-        "subtheme": "Mythologie"
-    },
-    {
-        "question": "Durant la 5ème République, combien y'a-t-il eu de président élus ? [Si un président a fait plusieurs mandats on ne le compte qu'une fois]",
-        "answer": "8",
-        "theme": "Histoire",
-        "subtheme": "Politique Francaise"
-    },
-    {
-        "question": "Quel est le nom de la société qui détient Facebook, Instagram ou encore Oculus ?",
-        "answer": "Meta",
-        "theme": "",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la machine utilisée par les Allemands durant la 2nde Guerre Mondiale qui permettait de crypter leurs messages ?",
-        "answer": "Enigma",
-        "theme": "Histoire",
-        "subtheme": "2nde Guerre Mondiale"
-    },
-    {
-        "question": "Qui, en cas de décès ou de retrait de fonction du Président de la République, prend la relève de celui-ci le temps d'organiser de nouvelles élections ?",
-        "answer": "Président du Sénat",
-        "theme": "Histoire",
-        "subtheme": "Politique Francaise"
-    },
-    {
-        "question": "Environ combien de temps la lumière du soleil met-elle avant d'atteindre la Terre ?",
-        "answer": "8 minutes",
-        "theme": "Sciences",
-        "subtheme": " "
-    },
-    {
-        "question": "Que signifie l'acronyme LGBT ?",
-        "answer": "Lesbienne, Gay, Bisexuel, Transgenre",
-        "theme": "Culture Generale",
-        "subtheme": ""
-    },
-    {
-        "question": "Comment se nomme la ministre de la Santé, rescapée du camp d'Auschwitz, a notamment mis en place le droit à l'avortement en France ?",
-        "answer": "Simone Veil",
-        "theme": "Histoire",
-        "subtheme": "Figure Francaise"
-    },
-    {
-        "question": "Quel était l'ancien nom de Tik Tok ?",
-        "answer": "Musical.ly",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est l'auteur de la citation \"On ne naît pas femme on le devient\" ?",
-        "answer": "Simone de Beauvoir",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom de la société qui détient Google, Youtube, etc...?",
-        "answer": "Alphabet",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Donner le nom commun utilisé pour désigner le Chlorure de Sodium.",
-        "answer": "Sel",
-        "theme": "Sciences",
-        "subtheme": "Chimie"
-    },
-    {
-        "question": "Comment se nomme notre galaxie ?",
-        "answer": "Voie Lactée",
-        "theme": "Sciences",
-        "subtheme": "Espace"
-    },
-    {
-        "question": "Quel est le numéro d'appel d'urgences Européen ?",
-        "answer": "112",
-        "theme": "Culture Generale",
-        "subtheme": " "
-    },
-    {
-        "question": "En France, quel organisme s'occupe de l'attribution des canaux des chaînes de télévision ?",
-        "answer": "ARCOM",
-        "theme": "Culture Generale",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la licence/franchise la plus rentable de tous les temps ?",
-        "answer": "Pokémon",
-        "theme": "Culture Generale",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle année de déroule le début de l'anime Sword Art Online ?",
-        "answer": "2022",
-        "theme": "Cinema, Series et TV",
-        "subtheme": "Anime"
-    },
-    {
-        "question": "Quel est le nom de scène du compositeur de musique électro Tim Bergling décédé en 2018 ?",
-        "answer": "Avicii",
-        "theme": "Musique",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la fréquence de radio utilisée pour les informations sur l'autoroute ?",
-        "answer": "107.7",
-        "theme": "Culture Generale",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer 3 capitales de pays asiatiques ?",
-        "answer": "Séoul, Tokyo, Pékin, New Delhi, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme l'acteur de Dr Strange ?",
-        "answer": "Benedict Cumberbatch",
-        "theme": "Cinema, Series et TV",
-        "subtheme": "Acteur"
-    },
-    {
-        "question": "Quand a été signée l'armistice de la 2nde Guerre Mondiale ?",
-        "answer": "8 mai 1945",
-        "theme": "Histoire",
-        "subtheme": "2nde Guerre Mondiale"
-    },
-    {
-        "question": "Qui est l'interprète de la musique \"Comme Toi\" ?",
-        "answer": "Jean-Jacques Goldman",
-        "theme": "Musique",
-        "subtheme": "Pop Francaise"
-    },
-    {
-        "question": "A quelle société appartient actuellement le Groupe TF1 ?",
-        "answer": "Bouygues",
-        "theme": "Cinema, Series et TV",
-        "subtheme": "TV"
-    },
-    {
-        "question": "Citer 3 groupes de Kpop.",
-        "answer": "BTS, Blackpink, Twice, IVE, NewJeans, etc...",
-        "theme": "Musique",
-        "subtheme": "K-Pop"
-    },
-    {
-        "question": "Dans quel département se situe la ville de Toulouse ?",
-        "answer": "Haute-Garonne",
-        "theme": "Geographie",
-        "subtheme": "Departement Francais"
-    },
-    {
-        "question": "Comment se nomme le bâtiment où se déroule les séances de l'Assemblée nationale ?",
-        "answer": "Palais Bourbon",
-        "theme": "Histoire",
-        "subtheme": "Politique Francaise"
-    },
-    {
-        "question": "Qui est l'auteur du livre \"Le Petit Prince\" ?",
-        "answer": "Antoine de Saint-Exupéry",
-        "theme": "Culture Classique",
-        "subtheme": "Litterature"
-    },
-    {
-        "question": "Quel est le nom de l'actuel premier ministre ?",
-        "answer": "Dépendant de la situation",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est le fondateur d'Apple ?",
-        "answer": "Steve Jobs",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Que signifie l'acronyme GAFAM ?",
-        "answer": "Google, Apple, Facebook, Amazon, Microsoft",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle année la monnaie Euro est-elle mise en circulation ?",
-        "answer": "2002",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Donner 2 musiques interprétée par Britney Spears",
-        "answer": "Toxic, Baby One More Time, Womanizer, Circus, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui était Jean-Baptiste De Baudre ?",
-        "answer": "Un ingénieur hydraulique",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel était l'ancien nom de la ville de Paris ?",
-        "answer": "Lutèce",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer deux musiques de Michel Sardou.",
-        "answer": "Les lacs du Connemara, La maladie d'amour, En chantant, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En japonais que veut dire Konnichiwa ?",
-        "answer": "Bonjour",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quel château peut-on visiter la Galerie des Glaces ?",
-        "answer": "Château de Versailles",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom du Premier Ministre Canadien ?",
-        "answer": "Justin Trudeau",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quel jeu narratif peut-on incarner Max Caulfield, une lycéenne photographe ayant des pouvoirs lui permettant de remonter dans le temps ?",
-        "answer": "Life is Strange",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer un présentateur de Question Pour Un Champion.",
-        "answer": "Samuel Etienne, Julien Lepers",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer 3 musiques de France Gall.",
-        "answer": "Ella, elle l'a, Résiste, Poupée de cire, poupée de son, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la principauté située entre le Sud Est de la France et l'Italie ?",
-        "answer": "Monaco",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer deux catégories de produits dont il est interdit de faire la publicité en France. \\\\",
-        "answer": "Tabac, Alcool, Drogue, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quelle famille d'instruments fait partie le piano ?",
-        "answer": "Cordes",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le premier groupe d'opposition à l'Assemblée nationale ?",
-        "answer": "Groupe Rassemblement National",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom de l'indice bousier en France ?",
-        "answer": "CAC 40",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer 3 entreprises d'Elon Musk.",
-        "answer": "SpaceX, Tesla, Neuralink, Boring Company, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quels sont les différents groupes sanguins possibles ?",
-        "answer": "A, B, AB, O",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer le nom d'institut de sondage.",
-        "answer": "IPSOS, Ifop, BVA, Harris Interactive, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qu'est-ce que la théologie ?",
-        "answer": "Étude des religions",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quelle nationalité était le pianiste Chopin ?",
-        "answer": "Polonais",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel pays possède le plus de fuseau horaires différents ?",
-        "answer": "France",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le son sorti durant le XXème siècle le plus écouté sur Spotify ?",
-        "answer": "Bohemian Rhapsody de Queen",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Depuis 2022 en France, quelle est la durée minimum légale entre la sortie d'un film au cinéma et sa publication sur Netflix ?",
-        "answer": "15 mois",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "À quel groupe appartient la société de production 20th Century Fox, Lucas Film, ou encore Marvel ?",
-        "answer": "Disney",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est l'auteur de l'article \"J'accuse... !\" publié dans l'Aurore le 13 Janvier 1898 ?",
-        "answer": "Émile Zola",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom de la prise avec laquelle on peut recharger un Iphone ? ",
-        "answer": "Lightning avant 2023, USB-C après 2023",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quels sont les 3 pays qui composent le Benelux ?",
-        "answer": "Belgique, Pays-Bas, Luxembourg",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quels produits fabriquent la marque Steinways and Sons ?",
-        "answer": "Pianos",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer une chaine appartenant à la filiales TV de la CMA CGM Médias.",
-        "answer": "BFM TV, RMC Découverte, RMC Story, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quelle date correspond le 21 avril 1944 en France ?",
-        "answer": "Obtention du droit de vote des femmes",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel moment pourrait être considéré comme l'opposé du crépuscule ?",
-        "answer": "Aube",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Sur un échiquier, quelle pièce se situe en A6 en début de partie ?",
-        "answer": "Rien du tout",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme le ministre de l'Éducation nationale actuel ?",
-        "answer": "Dépendant de la situtation",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le son le plus écouté de tous les temps sur Spotify ?",
-        "answer": "",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la capitale de l'Égypte ?",
-        "answer": "Le Caire",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment s'appelait la femme du Roi Louis XVI ?",
-        "answer": "Marie-Antoinette",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quelle handicap le syndrome d'asperger est-il rattaché ?",
-        "answer": "Autisme",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Où a eu lieu l'explosion de l'usine AZF en 2001 ?",
-        "answer": "Toulouse",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Que signifie l'acronyme STMG ?",
-        "answer": "Sciences et Technologies du Management et de la Gestion",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel pays Céline Dion a-t-elle représentée durant sa participation à l'Eurovision ?",
-        "answer": "Suisse",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom du premier ministre sortant au Royaume-Uni ?",
-        "answer": "Dépendant de la situtation",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le site touristique le plus visité en France en 2021 ?",
-        "answer": "Le Louvre",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qu'est-ce qu'un fonctionnaire",
-        "answer": "Explication simple",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Sous quel nom est plus connue en France l'opération Overlord ayant eu lieu le 6 juin 1944 ?",
-        "answer": "Débarquement de Normandie",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Combien y'a-t-il d'arrondissement à Paris ?",
-        "answer": "20",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Sur quelle console puis-je jouer au premier jeu Professeur Layton ?",
-        "answer": "Nintendo DS",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans le cerveau, que permettent de relier les Synapses ?",
-        "answer": "Les neurones",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nommait l'émission scientifique présentée par Jamy et Fred ?",
-        "answer": "C'est pas sorcier",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Donner la signification de l'acronyme STI2D. \\\\",
-        "answer": "Sciences et Technologies de l'Industrie et du Développement Durable",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Vrai ou Faux, le golf a déjà été une discipline présente aux Jeux Olympiques ?",
-        "answer": "Vrai",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la console la plus vendue de tous les temps ?",
-        "answer": "Playstation 2",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Vrai ou faux, y'a-t-il autant d'étoiles sur le drapeau de l'union européenne que de pays membres ?",
-        "answer": "Faux",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la vidéo avec le plus de vues",
-        "answer": "11 milliards",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la capitale de la Suisse ?",
-        "answer": "Berne",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Sur la route est-on autorisé à dépasser par la droite un véhicule ?",
-        "answer": "Non",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer une filiale / marque appartenant au groupe Pepsi.",
-        "answer": "KFC, 7up, Tropicana, Lipton, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quel navigateur attribue-t-on la découverte de l'Amérique en 1492 ?",
-        "answer": "Christophe Colomb",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle multinationale détient le milliardaire Jeff Bezos ?",
-        "answer": "Amazon",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer 3 départements d'outre-mer français.\\\\",
-        "answer": "Guadeloupe, Martinique, Guyane, Réunion, Mayotte, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans la mythologie grecque, qui est Hermès ? \\\\",
-        "answer": "Messager des Dieux, dieu du commerce, des voleurs, des voyageurs, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En terme de classement, quelle est la première école d'ingénieur en France ?",
-        "answer": "Polytechnique",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel fleuve passe au sein de Paris ?",
-        "answer": "La Seine",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quelle ville se situe des vestiges d'arènes gallo romaines ou encore la maison carrée ?",
-        "answer": "Nîmes",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Combien y'a-t-il eu de président élu en Russie depuis la chute de I'URSS ?",
-        "answer": "3",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel avion utilisé pour les vols commerciaux entre 1980 et 2000, pouvait voler jusqu'à deux fois la vitesse du son ?",
-        "answer": "Concorde",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En chant, comment se nomme le plus haut registre vocal ?",
-        "answer": "Soprano",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quel film provient la citation : \"La vie c'est comme une boite de chocolat, on ne sait jamais sur quoi on va tomber\" ?",
-        "answer": "Forrest Gump",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "La série \"Ne montre jamais ça a personne\" retrace l'histoire de quel rappeur français ?",
-        "answer": "Orelsan",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est l'équivalent du prix Nobel en mathématiques ?",
-        "answer": "Médaille Fields",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Expliquer simplement comment on calcule le bénéfice d'une entreprise.",
-        "answer": "Recette - Dépense",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle année a été sacré Charlemagne ?",
-        "answer": "800",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle cité antique est historiquement considérée comme l'une des premières démocraties ?",
-        "answer": "Athènes",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui a peint le plafond de la chapelle Sixtine ?",
-        "answer": "Michel-Ange",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans le dictionnaire, qui oublie entre l'ami et l'amoureux ?",
-        "answer": "L'ennemi",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel groupe possède TF1 ?",
-        "answer": "Bouygues",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel homme d'affaire est propriétaire du journal Le Monde ?",
-        "answer": "Xavier Niel",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A qui doit on l'algorithme permettant de déterminer quels nombres sont premier ?",
-        "answer": "Ératosthène",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel scientifique Britannique, ayant aidé durant la seconde GM à décrypter la machine Enigma, est considéré comme l'inventeur de l'informatique ?",
-        "answer": "Alan Turing",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom de la première console de salon de Nintendo ?",
-        "answer": "Famicom au Japon, NES en Europe",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quel musée trouve-t-on la victoire de Samothrace ?",
-        "answer": "Louvre",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quel groupe appartiennent les boissons Fanta ?",
-        "answer": "Coca-Cola",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer deux livres de Hannah Arendt. \\\\",
-        "answer": "Du mensonge à la violence, La condition de l'homme moderne, La crise de la culture,  etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui était le premier président de la cinquième République ?",
-        "answer": "Charles de Gaulle",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Instagram appartient à quelle entreprise ?",
-        "answer": "Meta",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est la date de l'inscription de l'IVG dans la constitution française ?",
-        "answer": "1975",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Que signifie l'acronyme LGBTQ+ ?",
-        "answer": "Lesbienne, Gay, Bisexuel, Transgenre, Queer, plus...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quel film provient la citation : \"La vie c'est comme une boîte de chocolat, on ne sait jamais sur quoi on va tomber\" ?",
-        "answer": "Forrest Gump",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quel jeu vidéo incarne t on Madeline, une jeune femme tentant d'escalader une montagne dans un style pixel art, publié en 2018 ?",
-        "answer": "Celeste",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est l'actuelle ministre de l'Éducation ?",
-        "answer": "Dépendant de la situation ",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme un salarié qui a pour employeur l'état français ?",
-        "answer": "Fonctionnaire",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel langage de programmation est représenté par un chameau ?",
-        "answer": "OCaml",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nommait dans l'antiquité le regroupement des quatre sciences mathématiques [Arithmétiques, musique, Géométrie, Astronomie] ?",
-        "answer": "Quadrivium",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quel pays Rishi Sunak était-il premier ministre ?",
-        "answer": "Royaume-Uni",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Combien de pays dans l'UE ?",
-        "answer": "27",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qu'est ce qui est présent sur la publication Insta sans humain ayant le plus de like ?",
-        "answer": "Un œuf",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel mot ne commence pas par la même lettre selon s'il est au pluriel ou au singulier ?",
-        "answer": "oeil / yeux",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est la fonction réciproque de cos ?",
-        "answer": "Arcosinus",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Donner l'identité d'Euler.",
-        "answer": "$e^{i\\pi} + 1 = 0$",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le département 2B ?",
-        "answer": "Haute-Corse",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le pays possédant le plus de fuseau horaire ?",
-        "answer": "France",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Sur quelle chaîne de TV suis-je si je regarde question pour un champion ?",
-        "answer": "France 3",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel steamer organise le Zevent ?",
-        "answer": "ZeratoR",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le journal possédant le plus d'abonné en France ?",
-        "answer": "Le Monde",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Date de création du code civil ?",
-        "answer": "1804",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est l'auteur de one piece ?",
-        "answer": "Eiichiro Oda",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est l'artiste française la plus streamée sur Spotify en 2023 ?",
-        "answer": "Aya Nakamura",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le pourcentage de TVA appliqué aux produits non alimentaires ?",
-        "answer": "20\\%",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est le réalisateur du film Killer of the Flower Moon ?",
-        "answer": "Martin Scorsese",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel peintre français, inventeur du daguerréotype peut être considéré comme l'inventeur de la photographie ?",
-        "answer": "Louis Daguerre",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dernier chef de L'URSS tombée en 1991 ?",
-        "answer": "Gorbatchev",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le groupe de K-pop qui interprète les titres Fake love ou encore Butter ?",
-        "answer": "BTS",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Que vend l'entreprise Steinway and sons ?",
-        "answer": "Piano",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le surnom de la ville de Toulouse ?",
-        "answer": "Ville rose",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel surnom ont en commun la tour Eiffel et Margaret Thatcher ?",
-        "answer": "La dame de fer",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel nombre obtient-on si on ajoute tous les chiffres de la roulette [0 à 36] ?",
-        "answer": "666",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Nombre de parrainage nécessaire pour les présidentielles ?",
-        "answer": "500",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est considérée comme la première programmeuse de l'histoire, sur la machine analytique de Charles Babbage ?",
-        "answer": "Ada Lovelace",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le jeu vidéo le plus vendu de tous les temps ?",
-        "answer": "Minecraft",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel animal est présent sur le blason de la ville de Nîmes ?",
-        "answer": "Crocodile",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel ministre des Affaires étrangères est connu pour son discours au conseil de sécurité de l'ONU en 2003",
-        "answer": "opposition USA - IRAK",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est l'actrice qui joue Barbie dans le film éponyme ?",
-        "answer": "Margot Robbie",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quel jeu Mario fait il sa première apparition sous le nom de Jumpman ?",
-        "answer": "Donkey Kong",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel nom est donné à la crise économique de 1929 ?",
-        "answer": "Crise de 29",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel nom est donné aux plus grandes entreprises coréennes ?",
-        "answer": "Chaebol",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Combien de mois possèdent 28 jours ?",
-        "answer": "12 / Tous",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quelle couleur le vermillon est-il une variante ?",
-        "answer": "Rouge",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Combien de questions sont posées à l'examen du code de la route ?",
-        "answer": "40",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel journaliste, aujourd'hui sur BFMTV, a présenté aux côtés de Jacqueline Baudrier le premier débat présidentiel télévisé sur l'ORTF opposant VGE et Mitterrand en 1974 ?",
-        "answer": "Alain Duhamel",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quel syndicat Sophie Binet est-elle la secrétaire général, succédant à Phillipe Martinez ?",
-        "answer": "CGT",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le premier verbe du dictionnaire ?",
-        "answer": "Abaisser",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel artiste suis-je en train d'écouter si j'écoute la musique : Balance ton quoi ?",
-        "answer": "Angèle",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quel département est situé Bordeaux ?",
-        "answer": "Gironde",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel élément chimique à pour symbole chimique Cl ?",
-        "answer": "Chlore",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle pathologie désigne un trouble du rythme cardiaque ?",
-        "answer": "Arythmie",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel jeu, oppose deux équipes de 5, est édité par Riot Games, au format FPS, avec des personnages tels que Sage ou encore Raze ?",
-        "answer": "Valorant",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est le président de l'Ukraine ?",
-        "answer": "Volodymyr Zelensky",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom du fruit, qui est aussi le nom d'un petit oiseau présent en Nouvelle Zélande, de couleur verte ?",
-        "answer": "Kiwi",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel concours dois-je passer pour avoir une chance d'être admissible à Telecom sud paris ?",
-        "answer": "Concours Mines Télécom",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la signification pour une entreprise, de l'acronyme S.A.S ?",
-        "answer": "Société par Actions Simplifiée",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle unité est utilisée pour mesurer un niveau sonore ?",
-        "answer": "Décibel",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelles villes reliaient les premières lignes de chemins de fer, longue de 20,4 km, uniquement accessibles aux voyageurs dès le 24 aout 1837 ?",
-        "answer": "Paris - Saint germain en Laye",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Que signifie l'acronyme SNCF ?",
-        "answer": "Société Nationale des Chemins de Fer",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel acteur français est connu notamment pour avoir réalisé Kaamelott ou encore l'exoconference ?",
-        "answer": "Alexandre Astier",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel acteur incarne Hubert Bonisseur, personnage principal dans les films OSS 117 ?",
-        "answer": "Jean Dujardin",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle capitale européenne de trouve le plus au nord ?",
-        "answer": "Helsinki",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Combien de points peut-on perdre au maximum en une seule fois sur son permis de conduire ?",
-        "answer": "8",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle technologie est utilisée par les écouteurs sans fil afin de se connecter au téléphone/appareil hôte ?",
-        "answer": "Bluetooth",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quelle île grecque est originaire la Vénus de Milo ?",
-        "answer": "Milos",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quand est-ce qu'auront lieu les élections européennes ?",
-        "answer": "2029",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quels sont les ingrédients du quatre quarts ?",
-        "answer": "Beurre, sucre, farine, œuf",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quel philosophe de l'antiquité doit on l'allégorie de la caverne ?",
-        "answer": "Platon",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel acronyme désigne les services de renseignements russes, succédant au KGB de l'URSS ?",
-        "answer": "FSB",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la langue officielle de l'escrime ?",
-        "answer": "Français",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom de l'hymne européen ?",
-        "answer": "Ode à la joie",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel procédé artistique consiste à représenter une œuvre dans un type d'œuvre similaire ?",
-        "answer": "Mise en abyme",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Par métonymie, par quel quartier parisien désigne t on le ministère des finances et de l'économie ?",
-        "answer": "Bercy",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Que récompense le concours Lépine ?",
-        "answer": "Invention",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel artiste/pays a remporté l'eurovision 2024 ?",
-        "answer": "Suisse",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le gentilé des personnes vivant à St Etienne ?",
-        "answer": "Stéphanois.e",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le langage utilisé par les non-voyants à l'écrit, ayant pour nom celui de son inventeur ?",
-        "answer": "Braille",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Par quel terme désigne-t-on un rassemblement de hiboux ?",
-        "answer": "Un Parlement",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomment les guides qui accompagnent les alpinistes de l'Everest ?",
-        "answer": "Sherpa",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Que signifie Choukran en arabe ?",
-        "answer": "Merci",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle instance créée en 1806 a pour but de trancher les différents entre les patrons et les ouvriers ?",
-        "answer": "Prud'hommes",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel ange déchu envoyé aux enfers porte un nom signifiant porteur de lumière en latin ?",
-        "answer": "Lucifer",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Sans compter Monaco, avec quel pays la France possède-t-il sa plus petite frontière terrestre ?",
-        "answer": "Pays-Bas / 10 km, Antilles",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est l'auteur de l'odyssée ?",
-        "answer": "Homère",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme la première vidéo YouTube ?",
-        "answer": "Me at the zoo",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans le titre du poème, à quel moment Victor Hugo part il à l'heure où blanchi la campagne ?",
-        "answer": "Demain dès l'aube",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans le jeu Half-Life, quelle est l'arme iconique utilisée par le héros Gordon Freeman au début du jeu ?",
-        "answer": "Le pied de biche",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qu'est que la industrielleneingabe, adressée le 19 novembre 1932 ? \\\\",
-        "answer": "Une tribune de plusieurs industriels allemands qui demandent que Hitler soit nommé chancelier",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle année la chute du mur de Berlin ?",
-        "answer": "1989",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Que signifie la locution latine \"Errare humanum est\" ?",
-        "answer": "L'erreur est humaine",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quelle multinationale appartient Twitch ?",
-        "answer": "Amazon",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Pour quelle association le Zevent 2020 récoltait des fonds ?",
-        "answer": "Amnesty International",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quels sont les noms des neveux de Tom Nook ?",
-        "answer": "Meli et Mélo",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quel jeu de carte est associé la carte du lotus noir ?",
-        "answer": "Magic The Gathering",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la région de la 6G de Pokémon ?",
-        "answer": "Kalos",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est le chef des armées en France ?",
-        "answer": "Le président de la république",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle entreprise chinoise possède Riot Games, et en partie Supercell et Epic Games ?",
-        "answer": "Tencent",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer le nom d'une distribution Linux ?",
-        "answer": "Ubuntu, Debian, Fedora, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Combien de jours dure une saison dans Stardew Valley ?",
-        "answer": "28",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la signification de l'acronyme OBS ?",
-        "answer": "Open Broadcaster Software",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle entreprise possède les applications Premiere Pro ou encore Photoshop ?",
-        "answer": "Adobe",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle entreprise possède XBOX ?",
-        "answer": "Microsoft",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle entreprise possède Bereal ?",
-        "answer": "",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Vrai ou Faux, est ce qu'il y a autant d'états que d'étoiles sur le drapeau des USA ?",
-        "answer": "Faux",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quels ingrédients a-t-on besoin pour faire un gâteau dans Minecraft ?",
-        "answer": "Œuf, lait, sucre, blé",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel personnage de jeu vidéo est associé au streamer Etoiles ?",
-        "answer": "Pac-Man",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Donner une manière de calculer un produit scalaire ?",
-        "answer": "Somme des produits des composantes",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelles sont les éléments chimiques majoritaires qui composent le soleil ?",
-        "answer": "Hydrogène, Hélium",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qu'est-ce que la plateforme Netflix proposait à sa création avant d'être une plateforme de streaming ?",
-        "answer": "Location de DVD",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qu'est-ce que l'entreprise Nintendo proposait à sa création avant d'être une entreprise de jeu vidéo ?",
-        "answer": "Cartes à jouer",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme la secrétaire nationale du parti EELV",
-        "answer": "Les Verts",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Au tour de France, quelle est la signification du maillot jaune ?",
-        "answer": "Meilleur Coureur",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Au tour de France, quelle est la signification du maillot rouge / à pois ? \\\\",
-        "answer": "Meilleur Sprinteur / Grimpeur",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quelle équipe esport joue / jouait Faker à LOL ?",
-        "answer": "T1 / SKT",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle était la série de vidéo que publiait Antoine Daniel sur Youtube ?",
-        "answer": "What the cut",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel texte a été rédigé par Olympe de Gouges en 1791 ? \\\\",
-        "answer": "Déclaration des droits de la femme et de la citoyenne",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Sans compter les mii, combien y'a-t-il de personnages dans le jeu SSBU ?",
-        "answer": "89",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Que signifie Aniyo en Coréen ?",
-        "answer": "Non",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la filiale de livraison de colis de la poste en France ?",
-        "answer": "Colissimo",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Que signifie l'acronyme de la marque de PC HP ?",
-        "answer": "Hewlett Packard",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme la zone de libre circulation européenne ?",
-        "answer": "Espace Schengen",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le groupe majoritaire au parlement européen ?",
-        "answer": "PPE",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel tortionnaire Nazi jugé en 1985 était surnommé le boucher de Lyon ?",
-        "answer": "Klaus Barbie",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle maladie était surnommé auparavant le \"Cancer Gay\" jusqu'en 1982 ?",
-        "answer": "SIDA",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quoi sert le test de Turing ?",
-        "answer": "Déterminer si une machine est capable de penser",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quelle entreprise est associée l'invention du mot ordinateur en 1955 ?",
-        "answer": "IBM",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quel philosophe et mathématicien du 18ème siècle est associé la citation : \"La musique est un exercice caché d'arithmétique\" ?",
-        "answer": "Leibniz",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En musique, comment appelle-t-on l'ensemble des notes présentes sur une octave ?",
-        "answer": "Gamme",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quel pays est originaire l'entreprise Spotify ?",
-        "answer": "Suède",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle fondation possède l'application Firefox ?",
-        "answer": "Mozilla",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En France quelles personnes nomment les préfets ?",
-        "answer": "Le président de la république",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En politique que signifie une cohabitation ?",
-        "answer": "Président et premier ministre de bords opposés",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Sur quel fuseau horaire se situe la France / Belgique ?",
-        "answer": "UTC+1",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme le drapeau du Royaume-Uni ?",
-        "answer": "Union Jack",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui était l'oncle Sam dans le lore américain ?",
-        "answer": "Personnification des USA",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est l'auteur des Fleurs du mal ?",
-        "answer": "Charles Baudelaire",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est l'auteur de dernier jour d'un condamné ?",
-        "answer": "Victor Hugo",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui a peint La liberté guidant le peuple ?",
-        "answer": "Eugène Delacroix",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quelle mouvement artistique Vincent Van Gogh fait-il parti ?",
-        "answer": "Néo impressionnisme ou pointillisme, postimpressionniste",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Sous quel pseudonyme Eric Arthur Blair, écrivain d'entre autre La ferme des animaux, est-il connu ?",
-        "answer": "George Orwell",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Sous quel nom est aussi connu le Jardin d'Eden ?",
-        "answer": "Paradis",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel animal le petit prince rêve d'avoir en dessin ?",
-        "answer": "Mouton",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel réseau social paru en 2004, était initialement destiné aux étudiants d'Harvard ?",
-        "answer": "Facebook",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel végétale considéré comme une plante médicinale appréciée dans les boissons ou en dessert, et peut être à l'eau ou encore verte ?",
-        "answer": "Menthe",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quel philosophe/scientifique français est associé un mot désignant un comportement rationnel ?",
-        "answer": "René Descartes",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est l'artiste française ayant remporté l'eurovision en 1965 [avec la chanson poupée de cire poupée de son ?]",
-        "answer": "France Gall",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel département français a pour préfecture Fort-de-France ?",
-        "answer": "Martinique",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle marque de chaussure en plastique créée au Québec en 2002 possède une esthétique très critiquée ?",
-        "answer": "Crocs",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel festival international de cinéma, dont sa première édition a eu lieu en 1946 et dont la récompense est une palme d'or ?",
-        "answer": "Festival de Cannes",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle chanteuse britannique a notamment sorti des albums ayant pour nom son âge lors de la publication de ces derniers ?",
-        "answer": "Adele",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle ancienne colonie française ayant obtenu son indépendance en 1956, contrôle une majorité du Sahara occidental ?",
-        "answer": "Maroc",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel sculpteur français est notamment connu pour le Penseur ?",
-        "answer": "Auguste Rodin",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel sportif français né 1955 dans la Loire, surnommé le professeur, est l'un des plus grands pilotes de formule 1 ?",
-        "answer": "Alain Prost",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans le cerveau, quel est le rôle de l'hippocampe ?",
-        "answer": "Mémoire",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelles sont les trois couleurs primaires en informatique notamment utilisé dans les pixels ?",
-        "answer": "Rouge, Vert, Bleu",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quel sens doit-on tourner une vis pour la dévisser ?",
-        "answer": "Sens antihoraire",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom du groupe de Kpop créé par Riot Games pour les Worlds de League of Legends de 2018 ayant interprété le titre Pop/Star ?",
-        "answer": "K/DA",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom de l'actuel premier ministre français ?",
-        "answer": "Dépendant de la situation",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Hors projet de loi de finances, combien de fois l'article 49 alinéa 3 de la constitution peut-il être utilisé par session parlementaire ?",
-        "answer": "1",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer un artiste/groupe ayant joué au concert du Zevent 2024 ? \\\\",
-        "answer": "PV Nova, Little Big Whale, Caravan Palace, Deluxe, etc...",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quels sont les collectibles, représenté par un fruit, les plus courant à ramasser dans le jeu Céleste ?",
-        "answer": "Fraise",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel monument construit en 1889, porte aussi le surnom de dame de fer ?",
-        "answer": "Tour Eiffel",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme le fils de Nathalie Saint-Cricq et Patrick Duhamel, actuellement journaliste/présentateur sur BFM TV ?",
-        "answer": "Benjamin Duhamel",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme le groupe de rock britannique qui a notamment connu son premier succès grâce au titre Bohemian Rhapsody en 1975 ?",
-        "answer": "Queen",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle institution française créée à la fin du XVIIIème siècle, dont ses membres sont élus au suffrage universel direct, siège au palais bourbon et possède le pouvoir législatif ?",
-        "answer": "Assemblée Nationale",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel monument classé construit sur les ordres de Shah Jahan, situé en Inde, est l'un des plus représentatif de l'art mongol ?",
-        "answer": "Taj Mahal",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle actrice originaire d'Allemagne, elle a notamment connu le succès dans le cinéma français, est associée à jamais à l'impératrice Sissi d'Autriche ?",
-        "answer": "Romy Schneider",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle ville française, chef-lieu du Lot-Et-Garonne, est notamment connue pour ses pruneaux ?",
-        "answer": "Agen",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel journal français fondé en 1904 par Jean Jaurès, est rattaché historiquement au Parti communiste Français jusqu'en 1994, et organise aussi chaque année un festival ?",
-        "answer": "L'Humanité",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est l'un des seuls pays, notamment membre du Common Wealth, avec la couleur violette présente sur son drapeau ? [La couleur est située sur le perroquet au milieu du dernier]",
-        "answer": "Dominique",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle marque sportive tient notamment son nom de la déesse grecque de la victoire, et a comme logo une virgule ?",
-        "answer": "Nike",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel groupe européen fondé en 1972 formé par deux couples, a remporté l'Eurovision en 1974 pour la Suède, et a notamment interprété les titres voulez-vous ou encore Dancing Queen ?",
-        "answer": "ABBA",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle ville dont le logo est un crocodile, est notamment associée à la culture gallo-romaine, et est aussi le chef-lieu du Gard ?",
-        "answer": "Nîmes",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quel évènement correspond le 21 avril 753 av. JC, associé à deux jumeaux dont l'un a laissé son nom",
-        "answer": "à la ville",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle pâtisserie française créée par Louis Durant en 1909, elle est composée notamment de pâte à choux, de crème mousseline et d'amande, elle est de forme circulaire afin de rendre hommage à la course cycliste reliant les deux villes présentes dans le nom de cette pâtisserie ?",
-        "answer": "Paris-Brest",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel bâtiment classé français fondé en 1253 à Paris pour enseigner la théologie, j'ai été occupé durant mai 1968, et je suis l'une des universités parisiennes les plus célèbres ?",
-        "answer": "Sorbonne",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel acteur français, je suis notamment connu pour avoir fait parti de la bande des nuls sur Canal+, ou encore mon rôle de César dans Astérix et Obélix : Mission Cléopâtre, ou bien pour être le présentateur du Burger Quiz ?",
-        "answer": "Alain Chabat",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans la mythologie, quel était le point faible d'Achille ?",
-        "answer": "Talon",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le seul pays arborant sur son drapeau une arme automatique ?",
-        "answer": "Mozambique",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quel univers de jeu s'inspire la série Arcane ?",
-        "answer": "League of Legends",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel artiste autrichien a peint au début du XXème siècle Le Baiser ?",
-        "answer": "Gustav Klimt",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle était le nom officiel de la France durant le régime de Vichy ?",
-        "answer": "État Français",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel jeu narratif développé par Quantic Dream se déroule dans une ville des États-Unis dans les années 2038, incarne-t-on trois androïdes qui vont vivre la révolution de ces derniers ?",
-        "answer": "Detroit : Become Human",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la capitale de l'Angola ?",
-        "answer": "Luanda",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle ville du Vaucluse est notamment célèbre pour le palais des papes, son festival ou encore son pont ?",
-        "answer": "Avignon",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est la seule personne à avoir reçu les prix Nobel de physique et de chimie ?",
-        "answer": "Marie Curie",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme l'épreuve de cyclisme consistant à monter le mont Ventoux trois fois par les trois différents versants ?",
-        "answer": "Cinglés du Ventoux",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "À quel élément chimique est associé le symbole Au ?",
-        "answer": "Or",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle somme a récolté le Zevent 2024 ? [100 000€ près]",
-        "answer": "10 000 000€",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom de famille des deux meilleurs joueurs français de tennis de table ? \\\\",
-        "answer": "Lebrun : Alexis et Félix",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est le premier ministre ayant eu le mandat le plus court de la 5eme république ?",
-        "answer": "Depend de la situation : Barnier",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom de l'émission présentée par Étoiles sur Twitch où il présente avec un invité un musée ou un lieu important ?",
-        "answer": "La nuit au musée",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel type de grand piano se distingue par la qualité et la puissance du son qu'il produit ?",
-        "answer": "Piano à queue",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En chant quel est le registre vocal le plus bas ?",
-        "answer": "Baryton",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme la tournée musicale la plus lucrative de l'histoire lancée par Taylor Swift ?",
-        "answer": "The Era's Tour",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel musée comporte plus de 400 000 œuvres et est aussi le plus visité au monde en 2023 ?",
-        "answer": "Louvre",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel streamer présente le talk-show Popcorn tout les mardis soir sur Twitch ?",
-        "answer": "Domingo / Pierre-Alexis Bizot",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle stèle, actuellement exposée au British Museum, j'ai été découverte en Égypte et je comporte trois versions d’un même texte en trois langues différentes ce qui a permis le déchiffrement des hiéroglyphes au XIXème siècle ?",
-        "answer": "Pierre de Rosette",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Que signifie l'acronyme DJ ?",
-        "answer": "Disc Jockey",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle personne peut être considérée comme la première programmeuse de l’histoire de l’informatique grâce à l’utilisation de la machine analytique ?",
-        "answer": "Ada Lovelace",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel mot peut signifier un ensemble chic de vêtements ou encore une position assise ?",
-        "answer": "Tailleur",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quel département français, François Hollande est il le député, mais aussi Jacques Chirac est il originaire ?",
-        "answer": "Corrèze",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel roi de France, ayant vécu entre le treizième et le quatorzième siècle, était surnommé le Hutin ?",
-        "answer": "Louis X",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel événement, ayant eu lieu le 28 juin 1914 en Autriche-Hongrie, est considéré comme l’élément déclencheur de la première guerre mondiale ?",
-        "answer": "Assassinat de l'archiduc François-Ferdinand",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui était la colistière de Joe Biden durant son mandat, et est actuellement connue pour être la candidate du parti démocrate pour les élections de 2024 ?",
-        "answer": "Kamala Harris",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Citer l’une des deux disciplines exclusives au paralympiques ?",
-        "answer": "La Boccia / le Goalboal",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel mathématicien du XVIIème siècle est notamment connu pour la démonstration de l’un de ses théorèmes, restée un mystère durant plusieurs années « à cause d’une marge trop étroite pour la contenir » ?",
-        "answer": "Fermat",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est l’auteur du conte la reine des neiges ?",
-        "answer": "Hans Christian Andersen",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle année l’amphithéâtre Dumontet de l’université de Montpellier a-t-il été inauguré en l’honneur de ce dernier ?",
-        "answer": "17 mai 1985",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel studio d’animation français, en partenariat avec Riot games, a animé la série, basé sur l’univers de League of Legends, Arcane ?",
-        "answer": "Fortiche Production",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel chant, classé monument historique, composé en 1941 par Anne Marly, à laquelle des paroles ont été rajoutées deux ans plus tard par Joseph Kessel, était notamment utilisé par la BBC pour indiquer l’émission de la France Libre, il était aussi surnommé la Marseillaise de la Résistance, et était l’hymne de la résistance française ?",
-        "answer": "Le chant des partisans",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel artiste français est notamment connu pour ses chansons Mirza ou encore le Telefon ?",
-        "answer": "Nino Ferrer",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel produit de boulangerie de 200 à 300g, est notamment réglementé par certaines proportions d’ingrédients qui ne peuvent dépasser une certaine quantité, par un décret du 13 septembre 1993 ?",
-        "answer": "La baguette tradition",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Que signifie l’acronyme ARTE ?",
-        "answer": "Association Relative à la Télévision Européenne",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel ingénieur français, né le 2 avril 1841, peut être considéré comme l’inventeur de l’avion avec son invention l’Eole en 1890, qui le premier appareil plus lourd que l’air à décoller ?",
-        "answer": "Clément Ader",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Au bowling, quel est le nombre de point maximum qu’il est possible d’atteindre sur une partie ?",
-        "answer": "300",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle capitale européenne abrite le Palais de Hofburg ?",
-        "answer": "Vienne",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel pont, traverse la pointe ouest de l'Île de la Cité ; c'est le plus ancien des ponts de Paris, construit entre 1578 et 1607 ?",
-        "answer": "Pont Neuf",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quels nombres sont égaux à la somme de leurs diviseurs propres ?",
-        "answer": "Nombre Parfaits",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quelle profession associe-t-on le serment de Galien ?",
-        "answer": "Pharmacien",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle ville est la préfecture du département du Cher ?",
-        "answer": "Bourges",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En France, quelle est la durée du mandat de Maire ?",
-        "answer": "6 ans",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En France, qui élit le maire ?",
-        "answer": "Conseil Municipal",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Où est décédé Van Gogh ?",
-        "answer": "Auvers-sur-Oise",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel ingénieur né en 1827 est considéré comme l’inventeur du terme ascenseur, avec l’invention du premier élévateur hydraulique en 1864 ?",
-        "answer": "Félix Léon Edoux",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel terme correspond au fait d’ingérer des quantités croissantes de poison afin d’y développer supposément une forme de résistance ?",
-        "answer": "Mithridatisation",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans le Plan Comptable Général, quel est le numéro de compte associé à la Banque ?",
-        "answer": "512",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Discipline, faisant partie dans 4 grands domaines d’études durant l’antiquité, dont sa récompense est la médaille Fields, parmi les personnes qui y ont contribués on peut notamment citer Cédric Villani, Gauss, ou encore Fermat, on y manipule notamment des nombres et des connaissances au travers d’opérations et de raisonnements logiques, je suis ?",
-        "answer": "Mathématiques",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quel pays peut-on trouver une armée de terre cuite ?",
-        "answer": "Chine",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom de la première femme à avoir reçu un prix Nobel ?",
-        "answer": "Marie Curie",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la monnaie officielle d'Israël ?",
-        "answer": "Shekel",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel personnage de la mythologie grecque a capturé Pégase ?",
-        "answer": "Bellérophon",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le dieu grecque de la médecine ?",
-        "answer": "Asclépios",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel élément chimique de numéro atomique 101, ayant pour symbole Md, a été nommé en l'honneur du père du tableau périodique ?",
-        "answer": "Mendélévium",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment appelle-t-on un centième de Roubles ?",
-        "answer": "Kopeck",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme le symbole des pharmacies, qui comporte une un verre de vin, enlace par un serpent ?",
-        "answer": "Caducée d'Hygie / Coupe d'Hygie",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est l’outil, formé d'une masse fixée à un fil, servant à donner la verticale ?",
-        "answer": "Fil à Plomb",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quoi correspond chacun des petits os qui constituent le squelette des doigts ?",
-        "answer": "Phalanges",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel nom porte le flux de particules éjectés de la haute atmosphère du Soleil ?",
-        "answer": "Vents Solaires",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est l’homme politique et général membre du deuxième triumvirat avec Marc Antoine et Octave. Il devient maître de l'Afrique après la bataille de Philippes ?",
-        "answer": "Lépide",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la valeur de x dans l’équation : x² = 9 ?",
-        "answer": "3 ou -3",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le prénom du Douanier Rousseau ?",
-        "answer": "Henri",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui a peint le Radeau de la Méduse ?",
-        "answer": "Théodore Géricault",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui a peint la série de deux tableaux Les tournesols en 1887 et 1889 ?",
-        "answer": "Vincent Van Gogh",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel réalisateur a réalisé les films Empire of Light, Elephant Man, ou encore Mulholland Drive ?",
-        "answer": "David Lynch",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel film, se déroulant dans les États-Unis, durant les années 1930. C'est la Grande Dépression, suite au krach boursier de 1929. Un couple d'amants criminels sillonne le pays en braquant des banques. Bientôt, l'Amérique ne parle plus que de ces hors-la-loi inexpérimentés.",
-        "answer": "Bonnie and Clyde",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle planète naine, c'est le plus gros objet de la ceinture d'astéroïdes entre Mars et Jupiter. Lancée en 2007, la sonde spatiale Dawn de la NASA est entrée en orbite autour de cette planète.",
-        "answer": "Cérès",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quels aviateurs français disparus lors de leur tentative de traversée de l'Atlantique le 8 mai 1927, à bord de l'Oiseau blanc, deux semaines avant la réussite de Lindbergh ?",
-        "answer": "Charles Nungesser et François Coli",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme le conduit reliant le rein à la vessie ?",
-        "answer": "Uretère",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le tableau, commandé le 6 juin 1562 par le bénédictin Paul à Venise auprès du peintre Paul Véronèse, est terminé en 1563, actuellement exposé au musée du Louvre, représente notamment plus d'une centaine de personnages ?",
-        "answer": "Les Noces de Cana",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui a peint entre 1805 et 1807 Le Sacre de Napoléon ?",
-        "answer": "Jacques-Louis David",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel bâtiment, dont la construction a commencé en août 1861, et a été inauguré le 5 janvier 1875, situé dans le 9ème arrondissement de Paris, est un élément majeur du patrimoine artistique, dont celui qui a dirigé la construction a laissé son nom au bâtiment ? [Indice : Charles Garnier]",
-        "answer": "Le Palais Garnier",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quel film réalisé par Emile Ardolino, sorti en 1987, provient la citation suivante : \"On ne laisse pas bébé dans un coin\" ?",
-        "answer": "Dirty Dancing",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment appelle-t-on une découverte faite par hasard, qui peut s'avérer utile ?",
-        "answer": "Sérendipité",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel médecin et chirurgien français a réalisé en 1968 la première transplantation cardiaque en Europe ?",
-        "answer": "Christian Cabrol",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est l'échelle qui sert à classer les tornades par ordre de gravité, en fonction des dégâts qu'elles occasionnent ?",
-        "answer": "Échelle de Fujita",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme la couche transparente qui s'applique sur l'ongle après la pose de la couleur ?",
-        "answer": "Top Coat",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle monnaie romaine d'argent valait 10 as ?",
-        "answer": "Denier",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel maire correspond à cette description ? Premier maire socialiste de Paris et premier maire d'une grande ville dont l'homosexualité est connue des électeurs. Il lance les événements \"Paris Plages\" en été et la \"Nuit blanche\" à l'automne et instaure la gratuité des musées municipaux.",
-        "answer": "Bertrand Delanoë",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel Premier ministre français a combattu dans la Légion étrangère lors de la Seconde Guerre mondiale ?",
-        "answer": "Pierre Messmer",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel monument parisien construit de 1875 à 1923 est le deuxième monument le plus visité de France ?",
-        "answer": "Sacrée-Cœur",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nommait l'armée de l'air allemande durant la Seconde Guerre mondiale ?",
-        "answer": "Luftwaffe",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme le chanteur du groupe U2 ?",
-        "answer": "Bono",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "De quel groupe Dan Reynolds est-il le chanteur ?",
-        "answer": "Imagine Dragons",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel compositeur russe du XXème siècle, naturalisé français puis américain, est notamment connu pour l'oiseau de feu, Petrouchka, ou encore le sacre du printemps ?",
-        "answer": "Igor Stravinsky",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans les Sims, combien de Simflouz rapporte la commande \"Motherlode\" ?",
-        "answer": "50 000",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans League of Legends, à partir de quel niveau le R (son ulti) est dévérouillable ?",
-        "answer": "Niveau 6",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle pièce de théâtre, écrite par Eugène Ionesco, dépeint une épidémie imaginaire qui effraie tous les habitants d'une ville et les métamorphose bientôt en un animal à cornes ?",
-        "answer": "Rhinocéros",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel roi de France, avait pour surnom le Bien aimé / Le fol ?",
-        "answer": "Charles VI",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quel corps correspond la devise : Sauver ou périr ?",
-        "answer": "Sapeurs pompier de Paris",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quel terme associe-t-on un verbe qui ne se conjugue qu'à la troisième personne : \"il pleut\".",
-        "answer": "Verbe Impersonnel",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la capitale politique du Sri Lanka ?",
-        "answer": "Sri Jayawardenapura Kotte",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans la langue française, quel est le seul nom de pays qui contient toutes les voyelles ?",
-        "answer": "Le Royaume-Uni",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel musicien électronique français, a remporte un succès international en 1976 avec son album Oxygene ?",
-        "answer": "Jean-Michel Jarre",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel réalisateur japonais, a commence sa carrière en tant que dessinateur de manga, est notamment connu pour Mon voisin Totoro ou encore Le Voyage de Ghibli ?",
-        "answer": "Hayao Miyazaki",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel compositeur Italien ne a Venise a la fin du XVIIeme siècle, a notamment compose Les Quatre saison ?",
-        "answer": "Antonio Vivaldi",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle marque de voiture créée en 1810, célèbre avant d'en construire pour ses moulins a poivre et café, appartenant au groupe PSA, ayant pour identité visuelle un lion ?",
-        "answer": "Peugeot",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel epice originaire du Moyen-Orient, surnomme Or Rouge, extrite de la fleur de Crocus Sativus et a longtemps ete consideree comme l'epice la plus chere du monde ?",
-        "answer": "Safran",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Au Trivial Pursuit, quelle est la couleur du theme Sciences et Nature ?",
-        "answer": "Vert",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Au Scrabble, combien de points sont associes aux lettres J et Q ?",
-        "answer": "8",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A la maniere d'un centenaire, quel nom est donne a une personne qui a 110 ans ?",
-        "answer": "Supercentenaire",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel cycliste slovène, né le 21 septembre 1998, ayant notemment remporté le Tour de France en 2020, 2021 et 2024, est actuellement considéré comme le meilleur cycliste mondial ?",
-        "answer": "Tadej Pogacar",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quels artistes francais de musique electro doit on les titres One more time, Get Lucky ou encore Veridis Quo ?",
-        "answer": "Daft Punk",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans la mythologie romaine, qui est la deesse de la paix et de l'harmonie, fille de Jupiter et Themis ? [Equivalent grecque : Homonoia]",
-        "answer": "Concorde",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Entres quels pays du massif des Alpes se situe le Lac Majeur ?",
-        "answer": "Italie et Suisse",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle annee Les Traites de Westphalie ont ete signes ?",
-        "answer": "1648",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui Roi de France fut l'epoux d'Elisabeth d'Autriche au XVIeme Siecle ?",
-        "answer": "Charles IX",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel physicien et mathématicien italien du XVIIeme siecle est notamment connu pour avoir invente le barometre ?",
-        "answer": "Torricelli",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En France, quel est l'âge minimum pour exercer la fonction de sénateur ?",
-        "answer": "24 ans",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans le calendrier romain, quel était originairement le septieme mois ?",
-        "answer": "Septembre",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel saint patron est associe au metier de vignerons ?",
-        "answer": "Saint Vincent",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A la plage que signifie le drapeau noir et blanc ?",
-        "answer": "Zone de pratique aqutique et nautique",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle annee Charles de Gaulle est-il decede ?",
-        "answer": "1970",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme la coalition avec laquelle il devient chef du gouvernement français en juin 1936 ?",
-        "answer": "Front Populaire",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle monument a été construit sur ordre de Napoléon Ier suite à la victoire d'Austerlitz ? [ce monument donne sur l'avenue des Champs-Élysées]",
-        "answer": "Arc de Triomphe",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Selon les auteurs antiques, quelle est la cause de la mort de Cleopatre ? \\\\",
-        "answer": "Suicide par Morsure de serpent",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel jeu Nintendo a le plus de copies vendues ?",
-        "answer": "Wii Sport - 85 Millions de copies",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle année a eu lieu la bataille de Cressy ?",
-        "answer": "1346",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En musique, quel tempo est plus rapide que presto ?",
-        "answer": "Prestissimo",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Sous quel nom est plus connu le chanteur Peter Hernandez, ayant notamment interprété avec Rose de Blackpink le titre APT en 2024, ou encore 24K magic ?",
-        "answer": "Bruno Mars",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel fusee, ayant décollé le 4 juin 1996, est tristement connue pour avoir explosé seulement 36 secondes après son décollage ?",
-        "answer": "Ariane 5",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel mathématicien brittanique, né en 1937 et mort en 2020, est notamment connu pour le Jeu de la vie ?",
-        "answer": "John Conway",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est le premier president des Etats-Unis ?",
-        "answer": "George Washington",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quel pays se trouve la ville de Oulan-Bator ?",
-        "answer": "Mongolie",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel romancier, né en 1783 à Grenoble et mort en 1842 a Paris, de son vrai nom Henri Beyle, est notamment connu pour La Chartreuse de Parme ou encore Le Rouge et le Noir ?",
-        "answer": "Stendhal",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle année les accords de Munich ont-ils été signés ?",
-        "answer": "1938",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans Leaugue of Legends, combien de puissance donne l'item Tome d'Amplification ?",
-        "answer": "20",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans The Legends of Zelda, quel est le nom du cheval de Link ?",
-        "answer": "Epona",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le prenom de la fille que Francois Mitterrand a longtemps cachée ?",
-        "answer": "Mazarine",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel groupe de Kpop proviennent Soyeon et Miyeon qui, au cote de Madison Beer et Jaira Burns, ont interprete le titre Pop/Stars au sein du groupe K/DA pour les Worlds 2018 ?",
-        "answer": "(G)I-dle",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quel arrondissement de Paris se trouve la Tour Eiffel ?",
-        "answer": "7eme",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quel monument parisien est associé ses architectes Liberal Bruent et Jules Hardouin-Mansart ?",
-        "answer": "Hôtel des Invalides",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel oiseau fut l'objet d'une guerre visant à reduire sa population dans les années 1930 en Australie ?",
-        "answer": "Émeu",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le gentile des habitant.e.s de Garardmer ?",
-        "answer": "Gérômois",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel coureur automobile, est notamment connu pour avoir été 3 fois champion du monde de F1 en 1988, 1990 et 1991, ainsi que pour son passage chez McLaren aux côtés de Alain Prost, est décédé en 1994 lors du grand prix de Saint-Marin ?",
-        "answer": "Ayrton Senna",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment appelle-t-on un cheval de bataille, qui est notemment tenu par la main droite lorsqu'il est non-monte par son cavalier ?",
-        "answer": "Destrier",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le seul département francais, ou aucun train ne s'arrête pour prendre des passagers ?",
-        "answer": "Ardêche",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel terme scientifique designe l'étude des pollens ?",
-        "answer": "Palynologie",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme la famille de toute les productions epidermiques apparentes ? [Poils, cheveux, ongles...]",
-        "answer": "Phanères",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le vrai nom du chanteur Sting ?",
-        "answer": "Gordon Sumner",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans quelle ville fuit Emile Zola, 1 an apres sa condamtion concernant son implication dans l'affaire Dreyfus ?",
-        "answer": "Londres",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Au golf, quel nom d'oiseau donne son nom au coup realise en 5 coup en moins par rapport au Par ? [à savoir que ce coup n'a jamais été réalisé en compétition]",
-        "answer": "Autruche",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle loi, promulguee en 1791, interdit tout groupement professionnel, coalitions de metier ainsi que les greves ?",
-        "answer": "Loi Le Chapelier",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le gentile des habitant.e.s de Brive-la-Gaillarde ?",
-        "answer": "Briviste",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la capitale du Qatar ?",
-        "answer": "Doha",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel homme politique, ne en 1846, est notemment nomme ministre de l'interieur en 1906, ce qui lui vaudra d'avoir comme surnoms 'Le Tigre' ou encore 'Le premier flic de France' ?",
-        "answer": "Georges Clemenceau",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle année s'est déroulée la bataille de Soisson ?",
-        "answer": "486",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel était le surnom de Phillipe IV ?",
-        "answer": "Le Bel",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En maquillage, comment se nomme un fard à joue applicables en poudre ou en crème ?",
-        "answer": "Blush",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans League of Legends, quel est le rôle de Faker dans l'équipe T1 ?",
-        "answer": "Midlaner",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Sur quelle île est situé la cathédrale Notre-Dame de Paris ?",
-        "answer": "Île de la Cité",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle hormone est sécrétée par le pancréas ?",
-        "answer": "Insuline",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En solfège, quel dispositif de 5 lignes horizontales et 4 interlignes permet de noter la musique ?",
-        "answer": "Une portée",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle science étudie la structure, la classification, la valeur et l'authenticité des documents officiels ?",
-        "answer": "Diplomatique",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la date des premiers pas de l'Homme sur la Lune [horaire GMT] ?",
-        "answer": "21 juillet 1969 à 2h56",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel os de la cuisse, est le plus long et le plus solide du corps humain ?",
-        "answer": "Fémur",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment appelle-t-on un artisan qui taille, polit ou grave les pierres précieuses, fines ou dures ?",
-        "answer": "Lapidaires",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel fête religieuse musulmane marque la fin du jeune du ramadan ? [1er jour du mois de Shawal, 10ème mois du calendrier musulman]",
-        "answer": "Aïd el-Fitr",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le nom de la maison de Maurice Ravel à Montfort-l'Amaury dans les Yvelines, transformée en musée ?",
-        "answer": "Le Belvédère",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qu'est-ce que collectionne un glacophile ?",
-        "answer": "Les pots de yaourt",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment traduit-on repos en latin ?",
-        "answer": "Requiem",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle fleuve traverse la ville de Washington ?",
-        "answer": "Potomac",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel est le gentilé des habitant.e.s de Charleroi ?",
-        "answer": "Carolorégien.ne",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Dans l'alphabet phonétique de l'OTAN, quel mot est associé à la lettre N ?",
-        "answer": "November",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel entrepreneur chinois est associé à l'entreprise Alibaba ?",
-        "answer": "Jack Ma",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle militante anarchiste, institutrice aux idées féministes, est l'une des figures majeures de la Commune de Paris ?",
-        "answer": "Louise Michel",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quelle est la capitale de Singapour ?",
-        "answer": "Singapour",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Qui est l'épouse du roi Henri IV, et reine de France et de Navarre de 1600 à 1610, ainsi que régente du royaume de France de 1610 à 1614 au nom de son fils Louis XIII?",
-        "answer": "Marie de Médicis",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle année a eu lieu la bataille de France ?",
-        "answer": "10 mai - 25 juin 1940",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle année le Front national accède la première fois au second tour de l'élection présidentielle ?",
-        "answer": "1er mai 2002",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Quel était le surnom de Louis IX ?",
-        "answer": "Saint Louis",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En quelle année Adolf Hitler accède-t-il au poste de chancelier ?",
-        "answer": "1933",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "A quelle pathologie est associée une coloration anormale bleutée de la peau, due à l'oxygénation insuffisante du sang ?",
-        "answer": "Cyanose",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme la tache blanche située à la base de l'ongle ?",
-        "answer": "Lunule",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "Comment se nomme la spécialité médicale concernant les pathologies et les soins aux vaisseaux sanguins ?",
-        "answer": "Angiologie",
-        "theme": " ",
-        "subtheme": " "
-    },
-    {
-        "question": "En alpinisme, comment appelle-t-on un reste de neige hivernale ?",
-        "answer": "Névé",
-        "theme": " ",
-        "subtheme": " "
-    }
+  {
+    "question": "Dans le mythologie grecque, comment se nomme le dieu associé au vin ?",
+    "answer": "Dionysos",
+    "theme": "Culture Classique",
+    "subtheme": "Mythologie"
+  },
+  {
+    "question": "Combien y'a-t-il de pays membre de l'Union Européenne ?",
+    "answer": "27",
+    "theme": "Geographie",
+    "subtheme": "Geopolotique"
+  },
+  {
+    "question": "Dans quel continent trouve t-on l'Australie, ou encore la Nouvelle-Zelande",
+    "answer": "Oceanie",
+    "theme": "Geographie",
+    "subtheme": "Pays"
+  },
+  {
+    "question": "Donner la signification de l'acronyme ISS.",
+    "answer": "International Space Station",
+    "theme": "Sciences",
+    "subtheme": "Espace"
+  },
+  {
+    "question": "Qui était le chanteur du groupe Queen ? [We Will Rock You, Don't Stop Me Now...]",
+    "answer": "Freddie Mercury",
+    "theme": "Musique",
+    "subtheme": "Rock"
+  },
+  {
+    "question": "Combien y'a-t-il de député à l'Assemblée nationale ?",
+    "answer": "577",
+    "theme": "Histoire",
+    "subtheme": "Politique Francaise"
+  },
+  {
+    "question": "Qui a peint la Joconde ?",
+    "answer": "Léonard de Vinci",
+    "theme": "Arts Classiques",
+    "subtheme": "Peinture"
+  },
+  {
+    "question": "Combien y'a-t-il de planètes dans le système solaire ?",
+    "answer": "8",
+    "theme": "Sciences",
+    "subtheme": "Espace"
+  },
+  {
+    "question": "Comment se nommait le supercontinent qui en se séparant a donné les continents ?",
+    "answer": "Pangée",
+    "theme": "Histoire",
+    "subtheme": " "
+  },
+  {
+    "question": "Quels sont les pays membres du Conseil de Sécurité de I'ONU ?",
+    "answer": "France, USA, Chine, Russie, Royaume-Uni",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle année est décédé Michael Jackson ?",
+    "answer": "2009",
+    "theme": "Musique",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment appelle-t-on un être qui a une vision nocturne ?",
+    "answer": "Nyctalope",
+    "theme": "Nature",
+    "subtheme": " "
+  },
+  {
+    "question": "Donner le mot signifiant avant-avant dernier ?",
+    "answer": "Antépénultième",
+    "theme": "Culture Generale",
+    "subtheme": "Vocabulaire"
+  },
+  {
+    "question": "Donner le titre d'un film de Hayao Miyazaki ?",
+    "answer": "Mon voisin Totoro, Le voyage de Chihiro, Princesse Mononoké, etc...",
+    "theme": "Cinema, Series et TV",
+    "subtheme": "Film Japonais"
+  },
+  {
+    "question": "Pour quel film la musique Eye Of The Tiger a-t-elle été composée ?",
+    "answer": "Rocky 3",
+    "theme": "Cinema, Series et TV",
+    "subtheme": "Musique de film"
+  },
+  {
+    "question": "En solfège, quelle est la quinte du Do ?",
+    "answer": "Sol",
+    "theme": "Musique",
+    "subtheme": " "
+  },
+  {
+    "question": "Donnez la signification de l'acronyme AFP ?",
+    "answer": "Agence France Presse",
+    "theme": "Culture Generale",
+    "subtheme": "Presse"
+  },
+  {
+    "question": "A quelle température l'eau entre en ébullition ? [À pression atmosphérique normale]",
+    "answer": "100°C",
+    "theme": "Sciences",
+    "subtheme": "Physique"
+  },
+  {
+    "question": "Quelle est la capitale des USA ?",
+    "answer": "Washington D.C.",
+    "theme": "Geographie",
+    "subtheme": "Capitale"
+  },
+  {
+    "question": "Quelle est le titre du film sorti en 2018, où Lady Gaga et Bradley Cooper jouent et interprètent la musique Shallow ?",
+    "answer": "A Star Is Born",
+    "theme": "Cinema et Series",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans la mythologie Grecque, où se situe le Tartare ?",
+    "answer": "Enfer",
+    "theme": "Culture Classique",
+    "subtheme": "Mythologie"
+  },
+  {
+    "question": "Durant la 5ème République, combien y'a-t-il eu de président élus ? [Si un président a fait plusieurs mandats on ne le compte qu'une fois]",
+    "answer": "8",
+    "theme": "Histoire",
+    "subtheme": "Politique Francaise"
+  },
+  {
+    "question": "Quel est le nom de la société qui détient Facebook, Instagram ou encore Oculus ?",
+    "answer": "Meta",
+    "theme": "",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la machine utilisée par les Allemands durant la 2nde Guerre Mondiale qui permettait de crypter leurs messages ?",
+    "answer": "Enigma",
+    "theme": "Histoire",
+    "subtheme": "2nde Guerre Mondiale"
+  },
+  {
+    "question": "Qui, en cas de décès ou de retrait de fonction du Président de la République, prend la relève de celui-ci le temps d'organiser de nouvelles élections ?",
+    "answer": "Président du Sénat",
+    "theme": "Histoire",
+    "subtheme": "Politique Francaise"
+  },
+  {
+    "question": "Environ combien de temps la lumière du soleil met-elle avant d'atteindre la Terre ?",
+    "answer": "8 minutes",
+    "theme": "Sciences",
+    "subtheme": " "
+  },
+  {
+    "question": "Que signifie l'acronyme LGBT ?",
+    "answer": "Lesbienne, Gay, Bisexuel, Transgenre",
+    "theme": "Culture Generale",
+    "subtheme": ""
+  },
+  {
+    "question": "Comment se nomme la ministre de la Santé, rescapée du camp d'Auschwitz, a notamment mis en place le droit à l'avortement en France ?",
+    "answer": "Simone Veil",
+    "theme": "Histoire",
+    "subtheme": "Figure Francaise"
+  },
+  {
+    "question": "Quel était l'ancien nom de Tik Tok ?",
+    "answer": "Musical.ly",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est l'auteur de la citation \"On ne naît pas femme on le devient\" ?",
+    "answer": "Simone de Beauvoir",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom de la société qui détient Google, Youtube, etc...?",
+    "answer": "Alphabet",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Donner le nom commun utilisé pour désigner le Chlorure de Sodium.",
+    "answer": "Sel",
+    "theme": "Sciences",
+    "subtheme": "Chimie"
+  },
+  {
+    "question": "Comment se nomme notre galaxie ?",
+    "answer": "Voie Lactée",
+    "theme": "Sciences",
+    "subtheme": "Espace"
+  },
+  {
+    "question": "Quel est le numéro d'appel d'urgences Européen ?",
+    "answer": "112",
+    "theme": "Culture Generale",
+    "subtheme": " "
+  },
+  {
+    "question": "En France, quel organisme s'occupe de l'attribution des canaux des chaînes de télévision ?",
+    "answer": "ARCOM",
+    "theme": "Culture Generale",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la licence/franchise la plus rentable de tous les temps ?",
+    "answer": "Pokémon",
+    "theme": "Culture Generale",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle année de déroule le début de l'anime Sword Art Online ?",
+    "answer": "2022",
+    "theme": "Cinema, Series et TV",
+    "subtheme": "Anime"
+  },
+  {
+    "question": "Quel est le nom de scène du compositeur de musique électro Tim Bergling décédé en 2018 ?",
+    "answer": "Avicii",
+    "theme": "Musique",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la fréquence de radio utilisée pour les informations sur l'autoroute ?",
+    "answer": "107.7",
+    "theme": "Culture Generale",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer 3 capitales de pays asiatiques ?",
+    "answer": "Séoul, Tokyo, Pékin, New Delhi, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme l'acteur de Dr Strange ?",
+    "answer": "Benedict Cumberbatch",
+    "theme": "Cinema, Series et TV",
+    "subtheme": "Acteur"
+  },
+  {
+    "question": "Quand a été signée l'armistice de la 2nde Guerre Mondiale ?",
+    "answer": "8 mai 1945",
+    "theme": "Histoire",
+    "subtheme": "2nde Guerre Mondiale"
+  },
+  {
+    "question": "Qui est l'interprète de la musique \"Comme Toi\" ?",
+    "answer": "Jean-Jacques Goldman",
+    "theme": "Musique",
+    "subtheme": "Pop Francaise"
+  },
+  {
+    "question": "A quelle société appartient actuellement le Groupe TF1 ?",
+    "answer": "Bouygues",
+    "theme": "Cinema, Series et TV",
+    "subtheme": "TV"
+  },
+  {
+    "question": "Citer 3 groupes de Kpop.",
+    "answer": "BTS, Blackpink, Twice, IVE, NewJeans, etc...",
+    "theme": "Musique",
+    "subtheme": "K-Pop"
+  },
+  {
+    "question": "Dans quel département se situe la ville de Toulouse ?",
+    "answer": "Haute-Garonne",
+    "theme": "Geographie",
+    "subtheme": "Departement Francais"
+  },
+  {
+    "question": "Comment se nomme le bâtiment où se déroule les séances de l'Assemblée nationale ?",
+    "answer": "Palais Bourbon",
+    "theme": "Histoire",
+    "subtheme": "Politique Francaise"
+  },
+  {
+    "question": "Qui est l'auteur du livre \"Le Petit Prince\" ?",
+    "answer": "Antoine de Saint-Exupéry",
+    "theme": "Culture Classique",
+    "subtheme": "Litterature"
+  },
+  {
+    "question": "Quel est le nom de l'actuel premier ministre ?",
+    "answer": "Dépendant de la situation",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est le fondateur d'Apple ?",
+    "answer": "Steve Jobs",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Que signifie l'acronyme GAFAM ?",
+    "answer": "Google, Apple, Facebook, Amazon, Microsoft",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle année la monnaie Euro est-elle mise en circulation ?",
+    "answer": "2002",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Donner 2 musiques interprétée par Britney Spears",
+    "answer": "Toxic, Baby One More Time, Womanizer, Circus, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui était Jean-Baptiste De Baudre ?",
+    "answer": "Un ingénieur hydraulique",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel était l'ancien nom de la ville de Paris ?",
+    "answer": "Lutèce",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer deux musiques de Michel Sardou.",
+    "answer": "Les lacs du Connemara, La maladie d'amour, En chantant, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En japonais que veut dire Konnichiwa ?",
+    "answer": "Bonjour",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quel château peut-on visiter la Galerie des Glaces ?",
+    "answer": "Château de Versailles",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom du Premier Ministre Canadien ?",
+    "answer": "Justin Trudeau",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quel jeu narratif peut-on incarner Max Caulfield, une lycéenne photographe ayant des pouvoirs lui permettant de remonter dans le temps ?",
+    "answer": "Life is Strange",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer un présentateur de Question Pour Un Champion.",
+    "answer": "Samuel Etienne, Julien Lepers",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer 3 musiques de France Gall.",
+    "answer": "Ella, elle l'a, Résiste, Poupée de cire, poupée de son, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la principauté située entre le Sud Est de la France et l'Italie ?",
+    "answer": "Monaco",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer deux catégories de produits dont il est interdit de faire la publicité en France. \\\\",
+    "answer": "Tabac, Alcool, Drogue, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quelle famille d'instruments fait partie le piano ?",
+    "answer": "Cordes",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le premier groupe d'opposition à l'Assemblée nationale ?",
+    "answer": "Groupe Rassemblement National",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom de l'indice bousier en France ?",
+    "answer": "CAC 40",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer 3 entreprises d'Elon Musk.",
+    "answer": "SpaceX, Tesla, Neuralink, Boring Company, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quels sont les différents groupes sanguins possibles ?",
+    "answer": "A, B, AB, O",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer le nom d'institut de sondage.",
+    "answer": "IPSOS, Ifop, BVA, Harris Interactive, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qu'est-ce que la théologie ?",
+    "answer": "Étude des religions",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quelle nationalité était le pianiste Chopin ?",
+    "answer": "Polonais",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel pays possède le plus de fuseau horaires différents ?",
+    "answer": "France",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le son sorti durant le XXème siècle le plus écouté sur Spotify ?",
+    "answer": "Bohemian Rhapsody de Queen",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Depuis 2022 en France, quelle est la durée minimum légale entre la sortie d'un film au cinéma et sa publication sur Netflix ?",
+    "answer": "15 mois",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "À quel groupe appartient la société de production 20th Century Fox, Lucas Film, ou encore Marvel ?",
+    "answer": "Disney",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est l'auteur de l'article \"J'accuse... !\" publié dans l'Aurore le 13 Janvier 1898 ?",
+    "answer": "Émile Zola",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom de la prise avec laquelle on peut recharger un Iphone ? ",
+    "answer": "Lightning avant 2023, USB-C après 2023",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quels sont les 3 pays qui composent le Benelux ?",
+    "answer": "Belgique, Pays-Bas, Luxembourg",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quels produits fabriquent la marque Steinways and Sons ?",
+    "answer": "Pianos",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer une chaine appartenant à la filiales TV de la CMA CGM Médias.",
+    "answer": "BFM TV, RMC Découverte, RMC Story, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quelle date correspond le 21 avril 1944 en France ?",
+    "answer": "Obtention du droit de vote des femmes",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel moment pourrait être considéré comme l'opposé du crépuscule ?",
+    "answer": "Aube",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Sur un échiquier, quelle pièce se situe en A6 en début de partie ?",
+    "answer": "Rien du tout",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme le ministre de l'Éducation nationale actuel ?",
+    "answer": "Dépendant de la situtation",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le son le plus écouté de tous les temps sur Spotify ?",
+    "answer": "",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la capitale de l'Égypte ?",
+    "answer": "Le Caire",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment s'appelait la femme du Roi Louis XVI ?",
+    "answer": "Marie-Antoinette",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quelle handicap le syndrome d'asperger est-il rattaché ?",
+    "answer": "Autisme",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Où a eu lieu l'explosion de l'usine AZF en 2001 ?",
+    "answer": "Toulouse",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Que signifie l'acronyme STMG ?",
+    "answer": "Sciences et Technologies du Management et de la Gestion",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel pays Céline Dion a-t-elle représentée durant sa participation à l'Eurovision ?",
+    "answer": "Suisse",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom du premier ministre sortant au Royaume-Uni ?",
+    "answer": "Dépendant de la situtation",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le site touristique le plus visité en France en 2021 ?",
+    "answer": "Le Louvre",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qu'est-ce qu'un fonctionnaire",
+    "answer": "Explication simple",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Sous quel nom est plus connue en France l'opération Overlord ayant eu lieu le 6 juin 1944 ?",
+    "answer": "Débarquement de Normandie",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Combien y'a-t-il d'arrondissement à Paris ?",
+    "answer": "20",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Sur quelle console puis-je jouer au premier jeu Professeur Layton ?",
+    "answer": "Nintendo DS",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans le cerveau, que permettent de relier les Synapses ?",
+    "answer": "Les neurones",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nommait l'émission scientifique présentée par Jamy et Fred ?",
+    "answer": "C'est pas sorcier",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Donner la signification de l'acronyme STI2D. \\\\",
+    "answer": "Sciences et Technologies de l'Industrie et du Développement Durable",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Vrai ou Faux, le golf a déjà été une discipline présente aux Jeux Olympiques ?",
+    "answer": "Vrai",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la console la plus vendue de tous les temps ?",
+    "answer": "Playstation 2",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Vrai ou faux, y'a-t-il autant d'étoiles sur le drapeau de l'union européenne que de pays membres ?",
+    "answer": "Faux",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la vidéo avec le plus de vues",
+    "answer": "11 milliards",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la capitale de la Suisse ?",
+    "answer": "Berne",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Sur la route est-on autorisé à dépasser par la droite un véhicule ?",
+    "answer": "Non",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer une filiale / marque appartenant au groupe Pepsi.",
+    "answer": "KFC, 7up, Tropicana, Lipton, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quel navigateur attribue-t-on la découverte de l'Amérique en 1492 ?",
+    "answer": "Christophe Colomb",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle multinationale détient le milliardaire Jeff Bezos ?",
+    "answer": "Amazon",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer 3 départements d'outre-mer français.\\\\",
+    "answer": "Guadeloupe, Martinique, Guyane, Réunion, Mayotte, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans la mythologie grecque, qui est Hermès ? \\\\",
+    "answer": "Messager des Dieux, dieu du commerce, des voleurs, des voyageurs, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En terme de classement, quelle est la première école d'ingénieur en France ?",
+    "answer": "Polytechnique",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel fleuve passe au sein de Paris ?",
+    "answer": "La Seine",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quelle ville se situe des vestiges d'arènes gallo romaines ou encore la maison carrée ?",
+    "answer": "Nîmes",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Combien y'a-t-il eu de président élu en Russie depuis la chute de I'URSS ?",
+    "answer": "3",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel avion utilisé pour les vols commerciaux entre 1980 et 2000, pouvait voler jusqu'à deux fois la vitesse du son ?",
+    "answer": "Concorde",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En chant, comment se nomme le plus haut registre vocal ?",
+    "answer": "Soprano",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quel film provient la citation : \"La vie c'est comme une boite de chocolat, on ne sait jamais sur quoi on va tomber\" ?",
+    "answer": "Forrest Gump",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "La série \"Ne montre jamais ça a personne\" retrace l'histoire de quel rappeur français ?",
+    "answer": "Orelsan",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est l'équivalent du prix Nobel en mathématiques ?",
+    "answer": "Médaille Fields",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Expliquer simplement comment on calcule le bénéfice d'une entreprise.",
+    "answer": "Recette - Dépense",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle année a été sacré Charlemagne ?",
+    "answer": "800",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle cité antique est historiquement considérée comme l'une des premières démocraties ?",
+    "answer": "Athènes",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui a peint le plafond de la chapelle Sixtine ?",
+    "answer": "Michel-Ange",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans le dictionnaire, qui oublie entre l'ami et l'amoureux ?",
+    "answer": "L'ennemi",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel groupe possède TF1 ?",
+    "answer": "Bouygues",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel homme d'affaire est propriétaire du journal Le Monde ?",
+    "answer": "Xavier Niel",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A qui doit on l'algorithme permettant de déterminer quels nombres sont premier ?",
+    "answer": "Ératosthène",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel scientifique Britannique, ayant aidé durant la seconde GM à décrypter la machine Enigma, est considéré comme l'inventeur de l'informatique ?",
+    "answer": "Alan Turing",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom de la première console de salon de Nintendo ?",
+    "answer": "Famicom au Japon, NES en Europe",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quel musée trouve-t-on la victoire de Samothrace ?",
+    "answer": "Louvre",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quel groupe appartiennent les boissons Fanta ?",
+    "answer": "Coca-Cola",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer deux livres de Hannah Arendt. \\\\",
+    "answer": "Du mensonge à la violence, La condition de l'homme moderne, La crise de la culture,  etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui était le premier président de la cinquième République ?",
+    "answer": "Charles de Gaulle",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Instagram appartient à quelle entreprise ?",
+    "answer": "Meta",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est la date de l'inscription de l'IVG dans la constitution française ?",
+    "answer": "1975",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Que signifie l'acronyme LGBTQ+ ?",
+    "answer": "Lesbienne, Gay, Bisexuel, Transgenre, Queer, plus...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quel film provient la citation : \"La vie c'est comme une boîte de chocolat, on ne sait jamais sur quoi on va tomber\" ?",
+    "answer": "Forrest Gump",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quel jeu vidéo incarne t on Madeline, une jeune femme tentant d'escalader une montagne dans un style pixel art, publié en 2018 ?",
+    "answer": "Celeste",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est l'actuelle ministre de l'Éducation ?",
+    "answer": "Dépendant de la situation ",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme un salarié qui a pour employeur l'état français ?",
+    "answer": "Fonctionnaire",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel langage de programmation est représenté par un chameau ?",
+    "answer": "OCaml",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nommait dans l'antiquité le regroupement des quatre sciences mathématiques [Arithmétiques, musique, Géométrie, Astronomie] ?",
+    "answer": "Quadrivium",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quel pays Rishi Sunak était-il premier ministre ?",
+    "answer": "Royaume-Uni",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Combien de pays dans l'UE ?",
+    "answer": "27",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qu'est ce qui est présent sur la publication Insta sans humain ayant le plus de like ?",
+    "answer": "Un œuf",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel mot ne commence pas par la même lettre selon s'il est au pluriel ou au singulier ?",
+    "answer": "oeil / yeux",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est la fonction réciproque de cos ?",
+    "answer": "Arcosinus",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Donner l'identité d'Euler.",
+    "answer": "$e^{i\\pi} + 1 = 0$",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le département 2B ?",
+    "answer": "Haute-Corse",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le pays possédant le plus de fuseau horaire ?",
+    "answer": "France",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Sur quelle chaîne de TV suis-je si je regarde question pour un champion ?",
+    "answer": "France 3",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel steamer organise le Zevent ?",
+    "answer": "ZeratoR",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le journal possédant le plus d'abonné en France ?",
+    "answer": "Le Monde",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Date de création du code civil ?",
+    "answer": "1804",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est l'auteur de one piece ?",
+    "answer": "Eiichiro Oda",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est l'artiste française la plus streamée sur Spotify en 2023 ?",
+    "answer": "Aya Nakamura",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le pourcentage de TVA appliqué aux produits non alimentaires ?",
+    "answer": "20\\%",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est le réalisateur du film Killer of the Flower Moon ?",
+    "answer": "Martin Scorsese",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel peintre français, inventeur du daguerréotype peut être considéré comme l'inventeur de la photographie ?",
+    "answer": "Louis Daguerre",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dernier chef de L'URSS tombée en 1991 ?",
+    "answer": "Gorbatchev",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le groupe de K-pop qui interprète les titres Fake love ou encore Butter ?",
+    "answer": "BTS",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Que vend l'entreprise Steinway and sons ?",
+    "answer": "Piano",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le surnom de la ville de Toulouse ?",
+    "answer": "Ville rose",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel surnom ont en commun la tour Eiffel et Margaret Thatcher ?",
+    "answer": "La dame de fer",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel nombre obtient-on si on ajoute tous les chiffres de la roulette [0 à 36] ?",
+    "answer": "666",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Nombre de parrainage nécessaire pour les présidentielles ?",
+    "answer": "500",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est considérée comme la première programmeuse de l'histoire, sur la machine analytique de Charles Babbage ?",
+    "answer": "Ada Lovelace",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le jeu vidéo le plus vendu de tous les temps ?",
+    "answer": "Minecraft",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel animal est présent sur le blason de la ville de Nîmes ?",
+    "answer": "Crocodile",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel ministre des Affaires étrangères est connu pour son discours au conseil de sécurité de l'ONU en 2003",
+    "answer": "opposition USA - IRAK",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est l'actrice qui joue Barbie dans le film éponyme ?",
+    "answer": "Margot Robbie",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quel jeu Mario fait il sa première apparition sous le nom de Jumpman ?",
+    "answer": "Donkey Kong",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel nom est donné à la crise économique de 1929 ?",
+    "answer": "Crise de 29",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel nom est donné aux plus grandes entreprises coréennes ?",
+    "answer": "Chaebol",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Combien de mois possèdent 28 jours ?",
+    "answer": "12 / Tous",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quelle couleur le vermillon est-il une variante ?",
+    "answer": "Rouge",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Combien de questions sont posées à l'examen du code de la route ?",
+    "answer": "40",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel journaliste, aujourd'hui sur BFMTV, a présenté aux côtés de Jacqueline Baudrier le premier débat présidentiel télévisé sur l'ORTF opposant VGE et Mitterrand en 1974 ?",
+    "answer": "Alain Duhamel",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quel syndicat Sophie Binet est-elle la secrétaire général, succédant à Phillipe Martinez ?",
+    "answer": "CGT",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le premier verbe du dictionnaire ?",
+    "answer": "Abaisser",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel artiste suis-je en train d'écouter si j'écoute la musique : Balance ton quoi ?",
+    "answer": "Angèle",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quel département est situé Bordeaux ?",
+    "answer": "Gironde",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel élément chimique à pour symbole chimique Cl ?",
+    "answer": "Chlore",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle pathologie désigne un trouble du rythme cardiaque ?",
+    "answer": "Arythmie",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel jeu, oppose deux équipes de 5, est édité par Riot Games, au format FPS, avec des personnages tels que Sage ou encore Raze ?",
+    "answer": "Valorant",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est le président de l'Ukraine ?",
+    "answer": "Volodymyr Zelensky",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom du fruit, qui est aussi le nom d'un petit oiseau présent en Nouvelle Zélande, de couleur verte ?",
+    "answer": "Kiwi",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel concours dois-je passer pour avoir une chance d'être admissible à Telecom sud paris ?",
+    "answer": "Concours Mines Télécom",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la signification pour une entreprise, de l'acronyme S.A.S ?",
+    "answer": "Société par Actions Simplifiée",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle unité est utilisée pour mesurer un niveau sonore ?",
+    "answer": "Décibel",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelles villes reliaient les premières lignes de chemins de fer, longue de 20,4 km, uniquement accessibles aux voyageurs dès le 24 aout 1837 ?",
+    "answer": "Paris - Saint germain en Laye",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Que signifie l'acronyme SNCF ?",
+    "answer": "Société Nationale des Chemins de Fer",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel acteur français est connu notamment pour avoir réalisé Kaamelott ou encore l'exoconference ?",
+    "answer": "Alexandre Astier",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel acteur incarne Hubert Bonisseur, personnage principal dans les films OSS 117 ?",
+    "answer": "Jean Dujardin",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle capitale européenne de trouve le plus au nord ?",
+    "answer": "Helsinki",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Combien de points peut-on perdre au maximum en une seule fois sur son permis de conduire ?",
+    "answer": "8",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle technologie est utilisée par les écouteurs sans fil afin de se connecter au téléphone/appareil hôte ?",
+    "answer": "Bluetooth",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quelle île grecque est originaire la Vénus de Milo ?",
+    "answer": "Milos",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quand est-ce qu'auront lieu les élections européennes ?",
+    "answer": "2029",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quels sont les ingrédients du quatre quarts ?",
+    "answer": "Beurre, sucre, farine, œuf",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quel philosophe de l'antiquité doit on l'allégorie de la caverne ?",
+    "answer": "Platon",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel acronyme désigne les services de renseignements russes, succédant au KGB de l'URSS ?",
+    "answer": "FSB",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la langue officielle de l'escrime ?",
+    "answer": "Français",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom de l'hymne européen ?",
+    "answer": "Ode à la joie",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel procédé artistique consiste à représenter une œuvre dans un type d'œuvre similaire ?",
+    "answer": "Mise en abyme",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Par métonymie, par quel quartier parisien désigne t on le ministère des finances et de l'économie ?",
+    "answer": "Bercy",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Que récompense le concours Lépine ?",
+    "answer": "Invention",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel artiste/pays a remporté l'eurovision 2024 ?",
+    "answer": "Suisse",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le gentilé des personnes vivant à St Etienne ?",
+    "answer": "Stéphanois.e",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le langage utilisé par les non-voyants à l'écrit, ayant pour nom celui de son inventeur ?",
+    "answer": "Braille",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Par quel terme désigne-t-on un rassemblement de hiboux ?",
+    "answer": "Un Parlement",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomment les guides qui accompagnent les alpinistes de l'Everest ?",
+    "answer": "Sherpa",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Que signifie Choukran en arabe ?",
+    "answer": "Merci",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle instance créée en 1806 a pour but de trancher les différents entre les patrons et les ouvriers ?",
+    "answer": "Prud'hommes",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel ange déchu envoyé aux enfers porte un nom signifiant porteur de lumière en latin ?",
+    "answer": "Lucifer",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Sans compter Monaco, avec quel pays la France possède-t-il sa plus petite frontière terrestre ?",
+    "answer": "Pays-Bas / 10 km, Antilles",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est l'auteur de l'odyssée ?",
+    "answer": "Homère",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme la première vidéo YouTube ?",
+    "answer": "Me at the zoo",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans le titre du poème, à quel moment Victor Hugo part il à l'heure où blanchi la campagne ?",
+    "answer": "Demain dès l'aube",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans le jeu Half-Life, quelle est l'arme iconique utilisée par le héros Gordon Freeman au début du jeu ?",
+    "answer": "Le pied de biche",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qu'est que la industrielleneingabe, adressée le 19 novembre 1932 ? \\\\",
+    "answer": "Une tribune de plusieurs industriels allemands qui demandent que Hitler soit nommé chancelier",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle année la chute du mur de Berlin ?",
+    "answer": "1989",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Que signifie la locution latine \"Errare humanum est\" ?",
+    "answer": "L'erreur est humaine",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quelle multinationale appartient Twitch ?",
+    "answer": "Amazon",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Pour quelle association le Zevent 2020 récoltait des fonds ?",
+    "answer": "Amnesty International",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quels sont les noms des neveux de Tom Nook ?",
+    "answer": "Meli et Mélo",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quel jeu de carte est associé la carte du lotus noir ?",
+    "answer": "Magic The Gathering",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la région de la 6G de Pokémon ?",
+    "answer": "Kalos",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est le chef des armées en France ?",
+    "answer": "Le président de la république",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle entreprise chinoise possède Riot Games, et en partie Supercell et Epic Games ?",
+    "answer": "Tencent",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer le nom d'une distribution Linux ?",
+    "answer": "Ubuntu, Debian, Fedora, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Combien de jours dure une saison dans Stardew Valley ?",
+    "answer": "28",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la signification de l'acronyme OBS ?",
+    "answer": "Open Broadcaster Software",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle entreprise possède les applications Premiere Pro ou encore Photoshop ?",
+    "answer": "Adobe",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle entreprise possède XBOX ?",
+    "answer": "Microsoft",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle entreprise possède Bereal ?",
+    "answer": "",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Vrai ou Faux, est ce qu'il y a autant d'états que d'étoiles sur le drapeau des USA ?",
+    "answer": "Faux",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quels ingrédients a-t-on besoin pour faire un gâteau dans Minecraft ?",
+    "answer": "Œuf, lait, sucre, blé",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel personnage de jeu vidéo est associé au streamer Etoiles ?",
+    "answer": "Pac-Man",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Donner une manière de calculer un produit scalaire ?",
+    "answer": "Somme des produits des composantes",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelles sont les éléments chimiques majoritaires qui composent le soleil ?",
+    "answer": "Hydrogène, Hélium",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qu'est-ce que la plateforme Netflix proposait à sa création avant d'être une plateforme de streaming ?",
+    "answer": "Location de DVD",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qu'est-ce que l'entreprise Nintendo proposait à sa création avant d'être une entreprise de jeu vidéo ?",
+    "answer": "Cartes à jouer",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme la secrétaire nationale du parti EELV",
+    "answer": "Les Verts",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Au tour de France, quelle est la signification du maillot jaune ?",
+    "answer": "Meilleur Coureur",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Au tour de France, quelle est la signification du maillot rouge / à pois ? \\\\",
+    "answer": "Meilleur Sprinteur / Grimpeur",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quelle équipe esport joue / jouait Faker à LOL ?",
+    "answer": "T1 / SKT",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle était la série de vidéo que publiait Antoine Daniel sur Youtube ?",
+    "answer": "What the cut",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel texte a été rédigé par Olympe de Gouges en 1791 ? \\\\",
+    "answer": "Déclaration des droits de la femme et de la citoyenne",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Sans compter les mii, combien y'a-t-il de personnages dans le jeu SSBU ?",
+    "answer": "89",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Que signifie Aniyo en Coréen ?",
+    "answer": "Non",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la filiale de livraison de colis de la poste en France ?",
+    "answer": "Colissimo",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Que signifie l'acronyme de la marque de PC HP ?",
+    "answer": "Hewlett Packard",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme la zone de libre circulation européenne ?",
+    "answer": "Espace Schengen",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le groupe majoritaire au parlement européen ?",
+    "answer": "PPE",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel tortionnaire Nazi jugé en 1985 était surnommé le boucher de Lyon ?",
+    "answer": "Klaus Barbie",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle maladie était surnommé auparavant le \"Cancer Gay\" jusqu'en 1982 ?",
+    "answer": "SIDA",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quoi sert le test de Turing ?",
+    "answer": "Déterminer si une machine est capable de penser",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quelle entreprise est associée l'invention du mot ordinateur en 1955 ?",
+    "answer": "IBM",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quel philosophe et mathématicien du 18ème siècle est associé la citation : \"La musique est un exercice caché d'arithmétique\" ?",
+    "answer": "Leibniz",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En musique, comment appelle-t-on l'ensemble des notes présentes sur une octave ?",
+    "answer": "Gamme",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quel pays est originaire l'entreprise Spotify ?",
+    "answer": "Suède",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle fondation possède l'application Firefox ?",
+    "answer": "Mozilla",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En France quelles personnes nomment les préfets ?",
+    "answer": "Le président de la république",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En politique que signifie une cohabitation ?",
+    "answer": "Président et premier ministre de bords opposés",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Sur quel fuseau horaire se situe la France / Belgique ?",
+    "answer": "UTC+1",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme le drapeau du Royaume-Uni ?",
+    "answer": "Union Jack",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui était l'oncle Sam dans le lore américain ?",
+    "answer": "Personnification des USA",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est l'auteur des Fleurs du mal ?",
+    "answer": "Charles Baudelaire",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est l'auteur de dernier jour d'un condamné ?",
+    "answer": "Victor Hugo",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui a peint La liberté guidant le peuple ?",
+    "answer": "Eugène Delacroix",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quelle mouvement artistique Vincent Van Gogh fait-il parti ?",
+    "answer": "Néo impressionnisme ou pointillisme, postimpressionniste",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Sous quel pseudonyme Eric Arthur Blair, écrivain d'entre autre La ferme des animaux, est-il connu ?",
+    "answer": "George Orwell",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Sous quel nom est aussi connu le Jardin d'Eden ?",
+    "answer": "Paradis",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel animal le petit prince rêve d'avoir en dessin ?",
+    "answer": "Mouton",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel réseau social paru en 2004, était initialement destiné aux étudiants d'Harvard ?",
+    "answer": "Facebook",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel végétale considéré comme une plante médicinale appréciée dans les boissons ou en dessert, et peut être à l'eau ou encore verte ?",
+    "answer": "Menthe",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quel philosophe/scientifique français est associé un mot désignant un comportement rationnel ?",
+    "answer": "René Descartes",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est l'artiste française ayant remporté l'eurovision en 1965 [avec la chanson poupée de cire poupée de son ?]",
+    "answer": "France Gall",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel département français a pour préfecture Fort-de-France ?",
+    "answer": "Martinique",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle marque de chaussure en plastique créée au Québec en 2002 possède une esthétique très critiquée ?",
+    "answer": "Crocs",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel festival international de cinéma, dont sa première édition a eu lieu en 1946 et dont la récompense est une palme d'or ?",
+    "answer": "Festival de Cannes",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle chanteuse britannique a notamment sorti des albums ayant pour nom son âge lors de la publication de ces derniers ?",
+    "answer": "Adele",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle ancienne colonie française ayant obtenu son indépendance en 1956, contrôle une majorité du Sahara occidental ?",
+    "answer": "Maroc",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel sculpteur français est notamment connu pour le Penseur ?",
+    "answer": "Auguste Rodin",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel sportif français né 1955 dans la Loire, surnommé le professeur, est l'un des plus grands pilotes de formule 1 ?",
+    "answer": "Alain Prost",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans le cerveau, quel est le rôle de l'hippocampe ?",
+    "answer": "Mémoire",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelles sont les trois couleurs primaires en informatique notamment utilisé dans les pixels ?",
+    "answer": "Rouge, Vert, Bleu",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quel sens doit-on tourner une vis pour la dévisser ?",
+    "answer": "Sens antihoraire",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom du groupe de Kpop créé par Riot Games pour les Worlds de League of Legends de 2018 ayant interprété le titre Pop/Star ?",
+    "answer": "K/DA",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom de l'actuel premier ministre français ?",
+    "answer": "Dépendant de la situation",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Hors projet de loi de finances, combien de fois l'article 49 alinéa 3 de la constitution peut-il être utilisé par session parlementaire ?",
+    "answer": "1",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer un artiste/groupe ayant joué au concert du Zevent 2024 ? \\\\",
+    "answer": "PV Nova, Little Big Whale, Caravan Palace, Deluxe, etc...",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quels sont les collectibles, représenté par un fruit, les plus courant à ramasser dans le jeu Céleste ?",
+    "answer": "Fraise",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel monument construit en 1889, porte aussi le surnom de dame de fer ?",
+    "answer": "Tour Eiffel",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme le fils de Nathalie Saint-Cricq et Patrick Duhamel, actuellement journaliste/présentateur sur BFM TV ?",
+    "answer": "Benjamin Duhamel",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme le groupe de rock britannique qui a notamment connu son premier succès grâce au titre Bohemian Rhapsody en 1975 ?",
+    "answer": "Queen",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle institution française créée à la fin du XVIIIème siècle, dont ses membres sont élus au suffrage universel direct, siège au palais bourbon et possède le pouvoir législatif ?",
+    "answer": "Assemblée Nationale",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel monument classé construit sur les ordres de Shah Jahan, situé en Inde, est l'un des plus représentatif de l'art mongol ?",
+    "answer": "Taj Mahal",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle actrice originaire d'Allemagne, elle a notamment connu le succès dans le cinéma français, est associée à jamais à l'impératrice Sissi d'Autriche ?",
+    "answer": "Romy Schneider",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle ville française, chef-lieu du Lot-Et-Garonne, est notamment connue pour ses pruneaux ?",
+    "answer": "Agen",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel journal français fondé en 1904 par Jean Jaurès, est rattaché historiquement au Parti communiste Français jusqu'en 1994, et organise aussi chaque année un festival ?",
+    "answer": "L'Humanité",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est l'un des seuls pays, notamment membre du Common Wealth, avec la couleur violette présente sur son drapeau ? [La couleur est située sur le perroquet au milieu du dernier]",
+    "answer": "Dominique",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle marque sportive tient notamment son nom de la déesse grecque de la victoire, et a comme logo une virgule ?",
+    "answer": "Nike",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel groupe européen fondé en 1972 formé par deux couples, a remporté l'Eurovision en 1974 pour la Suède, et a notamment interprété les titres voulez-vous ou encore Dancing Queen ?",
+    "answer": "ABBA",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle ville dont le logo est un crocodile, est notamment associée à la culture gallo-romaine, et est aussi le chef-lieu du Gard ?",
+    "answer": "Nîmes",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quel évènement correspond le 21 avril 753 av. JC, associé à deux jumeaux dont l'un a laissé son nom",
+    "answer": "à la ville",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle pâtisserie française créée par Louis Durant en 1909, elle est composée notamment de pâte à choux, de crème mousseline et d'amande, elle est de forme circulaire afin de rendre hommage à la course cycliste reliant les deux villes présentes dans le nom de cette pâtisserie ?",
+    "answer": "Paris-Brest",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel bâtiment classé français fondé en 1253 à Paris pour enseigner la théologie, j'ai été occupé durant mai 1968, et je suis l'une des universités parisiennes les plus célèbres ?",
+    "answer": "Sorbonne",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel acteur français, je suis notamment connu pour avoir fait parti de la bande des nuls sur Canal+, ou encore mon rôle de César dans Astérix et Obélix : Mission Cléopâtre, ou bien pour être le présentateur du Burger Quiz ?",
+    "answer": "Alain Chabat",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans la mythologie, quel était le point faible d'Achille ?",
+    "answer": "Talon",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le seul pays arborant sur son drapeau une arme automatique ?",
+    "answer": "Mozambique",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quel univers de jeu s'inspire la série Arcane ?",
+    "answer": "League of Legends",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel artiste autrichien a peint au début du XXème siècle Le Baiser ?",
+    "answer": "Gustav Klimt",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle était le nom officiel de la France durant le régime de Vichy ?",
+    "answer": "État Français",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel jeu narratif développé par Quantic Dream se déroule dans une ville des États-Unis dans les années 2038, incarne-t-on trois androïdes qui vont vivre la révolution de ces derniers ?",
+    "answer": "Detroit : Become Human",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la capitale de l'Angola ?",
+    "answer": "Luanda",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle ville du Vaucluse est notamment célèbre pour le palais des papes, son festival ou encore son pont ?",
+    "answer": "Avignon",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est la seule personne à avoir reçu les prix Nobel de physique et de chimie ?",
+    "answer": "Marie Curie",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme l'épreuve de cyclisme consistant à monter le mont Ventoux trois fois par les trois différents versants ?",
+    "answer": "Cinglés du Ventoux",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "À quel élément chimique est associé le symbole Au ?",
+    "answer": "Or",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle somme a récolté le Zevent 2024 ? [100 000€ près]",
+    "answer": "10 000 000€",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom de famille des deux meilleurs joueurs français de tennis de table ? \\\\",
+    "answer": "Lebrun : Alexis et Félix",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est le premier ministre ayant eu le mandat le plus court de la 5eme république ?",
+    "answer": "Depend de la situation : Barnier",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom de l'émission présentée par Étoiles sur Twitch où il présente avec un invité un musée ou un lieu important ?",
+    "answer": "La nuit au musée",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel type de grand piano se distingue par la qualité et la puissance du son qu'il produit ?",
+    "answer": "Piano à queue",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En chant quel est le registre vocal le plus bas ?",
+    "answer": "Baryton",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme la tournée musicale la plus lucrative de l'histoire lancée par Taylor Swift ?",
+    "answer": "The Era's Tour",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel musée comporte plus de 400 000 œuvres et est aussi le plus visité au monde en 2023 ?",
+    "answer": "Louvre",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel streamer présente le talk-show Popcorn tout les mardis soir sur Twitch ?",
+    "answer": "Domingo / Pierre-Alexis Bizot",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle stèle, actuellement exposée au British Museum, j'ai été découverte en Égypte et je comporte trois versions d’un même texte en trois langues différentes ce qui a permis le déchiffrement des hiéroglyphes au XIXème siècle ?",
+    "answer": "Pierre de Rosette",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Que signifie l'acronyme DJ ?",
+    "answer": "Disc Jockey",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle personne peut être considérée comme la première programmeuse de l’histoire de l’informatique grâce à l’utilisation de la machine analytique ?",
+    "answer": "Ada Lovelace",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel mot peut signifier un ensemble chic de vêtements ou encore une position assise ?",
+    "answer": "Tailleur",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quel département français, François Hollande est il le député, mais aussi Jacques Chirac est il originaire ?",
+    "answer": "Corrèze",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel roi de France, ayant vécu entre le treizième et le quatorzième siècle, était surnommé le Hutin ?",
+    "answer": "Louis X",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel événement, ayant eu lieu le 28 juin 1914 en Autriche-Hongrie, est considéré comme l’élément déclencheur de la première guerre mondiale ?",
+    "answer": "Assassinat de l'archiduc François-Ferdinand",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui était la colistière de Joe Biden durant son mandat, et est actuellement connue pour être la candidate du parti démocrate pour les élections de 2024 ?",
+    "answer": "Kamala Harris",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Citer l’une des deux disciplines exclusives au paralympiques ?",
+    "answer": "La Boccia / le Goalboal",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel mathématicien du XVIIème siècle est notamment connu pour la démonstration de l’un de ses théorèmes, restée un mystère durant plusieurs années « à cause d’une marge trop étroite pour la contenir » ?",
+    "answer": "Fermat",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est l’auteur du conte la reine des neiges ?",
+    "answer": "Hans Christian Andersen",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle année l’amphithéâtre Dumontet de l’université de Montpellier a-t-il été inauguré en l’honneur de ce dernier ?",
+    "answer": "17 mai 1985",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel studio d’animation français, en partenariat avec Riot games, a animé la série, basé sur l’univers de League of Legends, Arcane ?",
+    "answer": "Fortiche Production",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel chant, classé monument historique, composé en 1941 par Anne Marly, à laquelle des paroles ont été rajoutées deux ans plus tard par Joseph Kessel, était notamment utilisé par la BBC pour indiquer l’émission de la France Libre, il était aussi surnommé la Marseillaise de la Résistance, et était l’hymne de la résistance française ?",
+    "answer": "Le chant des partisans",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel artiste français est notamment connu pour ses chansons Mirza ou encore le Telefon ?",
+    "answer": "Nino Ferrer",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel produit de boulangerie de 200 à 300g, est notamment réglementé par certaines proportions d’ingrédients qui ne peuvent dépasser une certaine quantité, par un décret du 13 septembre 1993 ?",
+    "answer": "La baguette tradition",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Que signifie l’acronyme ARTE ?",
+    "answer": "Association Relative à la Télévision Européenne",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel ingénieur français, né le 2 avril 1841, peut être considéré comme l’inventeur de l’avion avec son invention l’Eole en 1890, qui le premier appareil plus lourd que l’air à décoller ?",
+    "answer": "Clément Ader",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Au bowling, quel est le nombre de point maximum qu’il est possible d’atteindre sur une partie ?",
+    "answer": "300",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle capitale européenne abrite le Palais de Hofburg ?",
+    "answer": "Vienne",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel pont, traverse la pointe ouest de l'Île de la Cité ; c'est le plus ancien des ponts de Paris, construit entre 1578 et 1607 ?",
+    "answer": "Pont Neuf",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quels nombres sont égaux à la somme de leurs diviseurs propres ?",
+    "answer": "Nombre Parfaits",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quelle profession associe-t-on le serment de Galien ?",
+    "answer": "Pharmacien",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle ville est la préfecture du département du Cher ?",
+    "answer": "Bourges",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En France, quelle est la durée du mandat de Maire ?",
+    "answer": "6 ans",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En France, qui élit le maire ?",
+    "answer": "Conseil Municipal",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Où est décédé Van Gogh ?",
+    "answer": "Auvers-sur-Oise",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel ingénieur né en 1827 est considéré comme l’inventeur du terme ascenseur, avec l’invention du premier élévateur hydraulique en 1864 ?",
+    "answer": "Félix Léon Edoux",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel terme correspond au fait d’ingérer des quantités croissantes de poison afin d’y développer supposément une forme de résistance ?",
+    "answer": "Mithridatisation",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans le Plan Comptable Général, quel est le numéro de compte associé à la Banque ?",
+    "answer": "512",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Discipline, faisant partie dans 4 grands domaines d’études durant l’antiquité, dont sa récompense est la médaille Fields, parmi les personnes qui y ont contribués on peut notamment citer Cédric Villani, Gauss, ou encore Fermat, on y manipule notamment des nombres et des connaissances au travers d’opérations et de raisonnements logiques, je suis ?",
+    "answer": "Mathématiques",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quel pays peut-on trouver une armée de terre cuite ?",
+    "answer": "Chine",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom de la première femme à avoir reçu un prix Nobel ?",
+    "answer": "Marie Curie",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la monnaie officielle d'Israël ?",
+    "answer": "Shekel",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel personnage de la mythologie grecque a capturé Pégase ?",
+    "answer": "Bellérophon",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le dieu grecque de la médecine ?",
+    "answer": "Asclépios",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel élément chimique de numéro atomique 101, ayant pour symbole Md, a été nommé en l'honneur du père du tableau périodique ?",
+    "answer": "Mendélévium",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment appelle-t-on un centième de Roubles ?",
+    "answer": "Kopeck",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme le symbole des pharmacies, qui comporte une un verre de vin, enlace par un serpent ?",
+    "answer": "Caducée d'Hygie / Coupe d'Hygie",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est l’outil, formé d'une masse fixée à un fil, servant à donner la verticale ?",
+    "answer": "Fil à Plomb",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quoi correspond chacun des petits os qui constituent le squelette des doigts ?",
+    "answer": "Phalanges",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel nom porte le flux de particules éjectés de la haute atmosphère du Soleil ?",
+    "answer": "Vents Solaires",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est l’homme politique et général membre du deuxième triumvirat avec Marc Antoine et Octave. Il devient maître de l'Afrique après la bataille de Philippes ?",
+    "answer": "Lépide",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la valeur de x dans l’équation : x² = 9 ?",
+    "answer": "3 ou -3",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le prénom du Douanier Rousseau ?",
+    "answer": "Henri",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui a peint le Radeau de la Méduse ?",
+    "answer": "Théodore Géricault",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui a peint la série de deux tableaux Les tournesols en 1887 et 1889 ?",
+    "answer": "Vincent Van Gogh",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel réalisateur a réalisé les films Empire of Light, Elephant Man, ou encore Mulholland Drive ?",
+    "answer": "David Lynch",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel film, se déroulant dans les États-Unis, durant les années 1930. C'est la Grande Dépression, suite au krach boursier de 1929. Un couple d'amants criminels sillonne le pays en braquant des banques. Bientôt, l'Amérique ne parle plus que de ces hors-la-loi inexpérimentés.",
+    "answer": "Bonnie and Clyde",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle planète naine, c'est le plus gros objet de la ceinture d'astéroïdes entre Mars et Jupiter. Lancée en 2007, la sonde spatiale Dawn de la NASA est entrée en orbite autour de cette planète.",
+    "answer": "Cérès",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quels aviateurs français disparus lors de leur tentative de traversée de l'Atlantique le 8 mai 1927, à bord de l'Oiseau blanc, deux semaines avant la réussite de Lindbergh ?",
+    "answer": "Charles Nungesser et François Coli",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme le conduit reliant le rein à la vessie ?",
+    "answer": "Uretère",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le tableau, commandé le 6 juin 1562 par le bénédictin Paul à Venise auprès du peintre Paul Véronèse, est terminé en 1563, actuellement exposé au musée du Louvre, représente notamment plus d'une centaine de personnages ?",
+    "answer": "Les Noces de Cana",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui a peint entre 1805 et 1807 Le Sacre de Napoléon ?",
+    "answer": "Jacques-Louis David",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel bâtiment, dont la construction a commencé en août 1861, et a été inauguré le 5 janvier 1875, situé dans le 9ème arrondissement de Paris, est un élément majeur du patrimoine artistique, dont celui qui a dirigé la construction a laissé son nom au bâtiment ? [Indice : Charles Garnier]",
+    "answer": "Le Palais Garnier",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quel film réalisé par Emile Ardolino, sorti en 1987, provient la citation suivante : \"On ne laisse pas bébé dans un coin\" ?",
+    "answer": "Dirty Dancing",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment appelle-t-on une découverte faite par hasard, qui peut s'avérer utile ?",
+    "answer": "Sérendipité",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel médecin et chirurgien français a réalisé en 1968 la première transplantation cardiaque en Europe ?",
+    "answer": "Christian Cabrol",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est l'échelle qui sert à classer les tornades par ordre de gravité, en fonction des dégâts qu'elles occasionnent ?",
+    "answer": "Échelle de Fujita",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme la couche transparente qui s'applique sur l'ongle après la pose de la couleur ?",
+    "answer": "Top Coat",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle monnaie romaine d'argent valait 10 as ?",
+    "answer": "Denier",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel maire correspond à cette description ? Premier maire socialiste de Paris et premier maire d'une grande ville dont l'homosexualité est connue des électeurs. Il lance les événements \"Paris Plages\" en été et la \"Nuit blanche\" à l'automne et instaure la gratuité des musées municipaux.",
+    "answer": "Bertrand Delanoë",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel Premier ministre français a combattu dans la Légion étrangère lors de la Seconde Guerre mondiale ?",
+    "answer": "Pierre Messmer",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel monument parisien construit de 1875 à 1923 est le deuxième monument le plus visité de France ?",
+    "answer": "Sacrée-Cœur",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nommait l'armée de l'air allemande durant la Seconde Guerre mondiale ?",
+    "answer": "Luftwaffe",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme le chanteur du groupe U2 ?",
+    "answer": "Bono",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "De quel groupe Dan Reynolds est-il le chanteur ?",
+    "answer": "Imagine Dragons",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel compositeur russe du XXème siècle, naturalisé français puis américain, est notamment connu pour l'oiseau de feu, Petrouchka, ou encore le sacre du printemps ?",
+    "answer": "Igor Stravinsky",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans les Sims, combien de Simflouz rapporte la commande \"Motherlode\" ?",
+    "answer": "50 000",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans League of Legends, à partir de quel niveau le R (son ulti) est dévérouillable ?",
+    "answer": "Niveau 6",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle pièce de théâtre, écrite par Eugène Ionesco, dépeint une épidémie imaginaire qui effraie tous les habitants d'une ville et les métamorphose bientôt en un animal à cornes ?",
+    "answer": "Rhinocéros",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel roi de France, avait pour surnom le Bien aimé / Le fol ?",
+    "answer": "Charles VI",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quel corps correspond la devise : Sauver ou périr ?",
+    "answer": "Sapeurs pompier de Paris",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quel terme associe-t-on un verbe qui ne se conjugue qu'à la troisième personne : \"il pleut\".",
+    "answer": "Verbe Impersonnel",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la capitale politique du Sri Lanka ?",
+    "answer": "Sri Jayawardenapura Kotte",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans la langue française, quel est le seul nom de pays qui contient toutes les voyelles ?",
+    "answer": "Le Royaume-Uni",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel musicien électronique français, a remporte un succès international en 1976 avec son album Oxygene ?",
+    "answer": "Jean-Michel Jarre",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel réalisateur japonais, a commence sa carrière en tant que dessinateur de manga, est notamment connu pour Mon voisin Totoro ou encore Le Voyage de Ghibli ?",
+    "answer": "Hayao Miyazaki",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel compositeur Italien ne a Venise a la fin du XVIIeme siècle, a notamment compose Les Quatre saison ?",
+    "answer": "Antonio Vivaldi",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle marque de voiture créée en 1810, célèbre avant d'en construire pour ses moulins a poivre et café, appartenant au groupe PSA, ayant pour identité visuelle un lion ?",
+    "answer": "Peugeot",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel epice originaire du Moyen-Orient, surnomme Or Rouge, extrite de la fleur de Crocus Sativus et a longtemps ete consideree comme l'epice la plus chere du monde ?",
+    "answer": "Safran",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Au Trivial Pursuit, quelle est la couleur du theme Sciences et Nature ?",
+    "answer": "Vert",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Au Scrabble, combien de points sont associes aux lettres J et Q ?",
+    "answer": "8",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A la maniere d'un centenaire, quel nom est donne a une personne qui a 110 ans ?",
+    "answer": "Supercentenaire",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel cycliste slovène, né le 21 septembre 1998, ayant notemment remporté le Tour de France en 2020, 2021 et 2024, est actuellement considéré comme le meilleur cycliste mondial ?",
+    "answer": "Tadej Pogacar",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quels artistes francais de musique electro doit on les titres One more time, Get Lucky ou encore Veridis Quo ?",
+    "answer": "Daft Punk",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans la mythologie romaine, qui est la deesse de la paix et de l'harmonie, fille de Jupiter et Themis ? [Equivalent grecque : Homonoia]",
+    "answer": "Concorde",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Entres quels pays du massif des Alpes se situe le Lac Majeur ?",
+    "answer": "Italie et Suisse",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle annee Les Traites de Westphalie ont ete signes ?",
+    "answer": "1648",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui Roi de France fut l'epoux d'Elisabeth d'Autriche au XVIeme Siecle ?",
+    "answer": "Charles IX",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel physicien et mathématicien italien du XVIIeme siecle est notamment connu pour avoir invente le barometre ?",
+    "answer": "Torricelli",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En France, quel est l'âge minimum pour exercer la fonction de sénateur ?",
+    "answer": "24 ans",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans le calendrier romain, quel était originairement le septieme mois ?",
+    "answer": "Septembre",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel saint patron est associe au metier de vignerons ?",
+    "answer": "Saint Vincent",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A la plage que signifie le drapeau noir et blanc ?",
+    "answer": "Zone de pratique aqutique et nautique",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle annee Charles de Gaulle est-il decede ?",
+    "answer": "1970",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme la coalition avec laquelle il devient chef du gouvernement français en juin 1936 ?",
+    "answer": "Front Populaire",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle monument a été construit sur ordre de Napoléon Ier suite à la victoire d'Austerlitz ? [ce monument donne sur l'avenue des Champs-Élysées]",
+    "answer": "Arc de Triomphe",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Selon les auteurs antiques, quelle est la cause de la mort de Cleopatre ? \\\\",
+    "answer": "Suicide par Morsure de serpent",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel jeu Nintendo a le plus de copies vendues ?",
+    "answer": "Wii Sport - 85 Millions de copies",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle année a eu lieu la bataille de Cressy ?",
+    "answer": "1346",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En musique, quel tempo est plus rapide que presto ?",
+    "answer": "Prestissimo",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Sous quel nom est plus connu le chanteur Peter Hernandez, ayant notamment interprété avec Rose de Blackpink le titre APT en 2024, ou encore 24K magic ?",
+    "answer": "Bruno Mars",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel fusee, ayant décollé le 4 juin 1996, est tristement connue pour avoir explosé seulement 36 secondes après son décollage ?",
+    "answer": "Ariane 5",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel mathématicien brittanique, né en 1937 et mort en 2020, est notamment connu pour le Jeu de la vie ?",
+    "answer": "John Conway",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est le premier president des Etats-Unis ?",
+    "answer": "George Washington",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quel pays se trouve la ville de Oulan-Bator ?",
+    "answer": "Mongolie",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel romancier, né en 1783 à Grenoble et mort en 1842 a Paris, de son vrai nom Henri Beyle, est notamment connu pour La Chartreuse de Parme ou encore Le Rouge et le Noir ?",
+    "answer": "Stendhal",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle année les accords de Munich ont-ils été signés ?",
+    "answer": "1938",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans Leaugue of Legends, combien de puissance donne l'item Tome d'Amplification ?",
+    "answer": "20",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans The Legends of Zelda, quel est le nom du cheval de Link ?",
+    "answer": "Epona",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le prenom de la fille que Francois Mitterrand a longtemps cachée ?",
+    "answer": "Mazarine",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel groupe de Kpop proviennent Soyeon et Miyeon qui, au cote de Madison Beer et Jaira Burns, ont interprete le titre Pop/Stars au sein du groupe K/DA pour les Worlds 2018 ?",
+    "answer": "(G)I-dle",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quel arrondissement de Paris se trouve la Tour Eiffel ?",
+    "answer": "7eme",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quel monument parisien est associé ses architectes Liberal Bruent et Jules Hardouin-Mansart ?",
+    "answer": "Hôtel des Invalides",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel oiseau fut l'objet d'une guerre visant à reduire sa population dans les années 1930 en Australie ?",
+    "answer": "Émeu",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le gentile des habitant.e.s de Garardmer ?",
+    "answer": "Gérômois",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel coureur automobile, est notamment connu pour avoir été 3 fois champion du monde de F1 en 1988, 1990 et 1991, ainsi que pour son passage chez McLaren aux côtés de Alain Prost, est décédé en 1994 lors du grand prix de Saint-Marin ?",
+    "answer": "Ayrton Senna",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment appelle-t-on un cheval de bataille, qui est notemment tenu par la main droite lorsqu'il est non-monte par son cavalier ?",
+    "answer": "Destrier",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le seul département francais, ou aucun train ne s'arrête pour prendre des passagers ?",
+    "answer": "Ardêche",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel terme scientifique designe l'étude des pollens ?",
+    "answer": "Palynologie",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme la famille de toute les productions epidermiques apparentes ? [Poils, cheveux, ongles...]",
+    "answer": "Phanères",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le vrai nom du chanteur Sting ?",
+    "answer": "Gordon Sumner",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans quelle ville fuit Emile Zola, 1 an apres sa condamtion concernant son implication dans l'affaire Dreyfus ?",
+    "answer": "Londres",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Au golf, quel nom d'oiseau donne son nom au coup realise en 5 coup en moins par rapport au Par ? [à savoir que ce coup n'a jamais été réalisé en compétition]",
+    "answer": "Autruche",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle loi, promulguee en 1791, interdit tout groupement professionnel, coalitions de metier ainsi que les greves ?",
+    "answer": "Loi Le Chapelier",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le gentile des habitant.e.s de Brive-la-Gaillarde ?",
+    "answer": "Briviste",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la capitale du Qatar ?",
+    "answer": "Doha",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel homme politique, ne en 1846, est notemment nomme ministre de l'interieur en 1906, ce qui lui vaudra d'avoir comme surnoms 'Le Tigre' ou encore 'Le premier flic de France' ?",
+    "answer": "Georges Clemenceau",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle année s'est déroulée la bataille de Soisson ?",
+    "answer": "486",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel était le surnom de Phillipe IV ?",
+    "answer": "Le Bel",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En maquillage, comment se nomme un fard à joue applicables en poudre ou en crème ?",
+    "answer": "Blush",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans League of Legends, quel est le rôle de Faker dans l'équipe T1 ?",
+    "answer": "Midlaner",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Sur quelle île est situé la cathédrale Notre-Dame de Paris ?",
+    "answer": "Île de la Cité",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle hormone est sécrétée par le pancréas ?",
+    "answer": "Insuline",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En solfège, quel dispositif de 5 lignes horizontales et 4 interlignes permet de noter la musique ?",
+    "answer": "Une portée",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle science étudie la structure, la classification, la valeur et l'authenticité des documents officiels ?",
+    "answer": "Diplomatique",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la date des premiers pas de l'Homme sur la Lune [horaire GMT] ?",
+    "answer": "21 juillet 1969 à 2h56",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel os de la cuisse, est le plus long et le plus solide du corps humain ?",
+    "answer": "Fémur",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment appelle-t-on un artisan qui taille, polit ou grave les pierres précieuses, fines ou dures ?",
+    "answer": "Lapidaires",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel fête religieuse musulmane marque la fin du jeune du ramadan ? [1er jour du mois de Shawal, 10ème mois du calendrier musulman]",
+    "answer": "Aïd el-Fitr",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le nom de la maison de Maurice Ravel à Montfort-l'Amaury dans les Yvelines, transformée en musée ?",
+    "answer": "Le Belvédère",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qu'est-ce que collectionne un glacophile ?",
+    "answer": "Les pots de yaourt",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment traduit-on repos en latin ?",
+    "answer": "Requiem",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle fleuve traverse la ville de Washington ?",
+    "answer": "Potomac",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel est le gentilé des habitant.e.s de Charleroi ?",
+    "answer": "Carolorégien.ne",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Dans l'alphabet phonétique de l'OTAN, quel mot est associé à la lettre N ?",
+    "answer": "November",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel entrepreneur chinois est associé à l'entreprise Alibaba ?",
+    "answer": "Jack Ma",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle militante anarchiste, institutrice aux idées féministes, est l'une des figures majeures de la Commune de Paris ?",
+    "answer": "Louise Michel",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quelle est la capitale de Singapour ?",
+    "answer": "Singapour",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Qui est l'épouse du roi Henri IV, et reine de France et de Navarre de 1600 à 1610, ainsi que régente du royaume de France de 1610 à 1614 au nom de son fils Louis XIII?",
+    "answer": "Marie de Médicis",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle année a eu lieu la bataille de France ?",
+    "answer": "10 mai - 25 juin 1940",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle année le Front national accède la première fois au second tour de l'élection présidentielle ?",
+    "answer": "1er mai 2002",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Quel était le surnom de Louis IX ?",
+    "answer": "Saint Louis",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En quelle année Adolf Hitler accède-t-il au poste de chancelier ?",
+    "answer": "1933",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "A quelle pathologie est associée une coloration anormale bleutée de la peau, due à l'oxygénation insuffisante du sang ?",
+    "answer": "Cyanose",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme la tache blanche située à la base de l'ongle ?",
+    "answer": "Lunule",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "Comment se nomme la spécialité médicale concernant les pathologies et les soins aux vaisseaux sanguins ?",
+    "answer": "Angiologie",
+    "theme": " ",
+    "subtheme": " "
+  },
+  {
+    "question": "En alpinisme, comment appelle-t-on un reste de neige hivernale ?",
+    "answer": "Névé",
+    "theme": " ",
+    "subtheme": " "
+  }
 ]
