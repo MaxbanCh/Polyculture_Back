@@ -1,9 +1,7 @@
-import client, { executeQuery } from "../database/client.ts";
+import { executeQuery } from "../database/client.ts";
 import router from "../utils/router.ts";
 import { create, verify } from "https://deno.land/x/djwt@v2.8/mod.ts";
 import * as bcrypt from "https://deno.land/x/bcrypt@v0.4.0/mod.ts";
-import { Application } from "https://deno.land/x/oak@v12.6.1/mod.ts";
-import { oakCors } from "https://deno.land/x/cors/mod.ts";
 
 router.options("/login", (ctx) => {
   ctx.response.status = 200;
@@ -221,9 +219,7 @@ router.post("/logout", async (ctx) => {
   }
 });
 
-router.get("/check-token", async (ctx) => {
-  // Le middleware d'authentification vérifie déjà le token
-  // Si nous arrivons ici, c'est que le token est valide
+router.get("/check-token", (ctx) => {
   ctx.response.status = 200;
   ctx.response.body = { valid: true };
 });

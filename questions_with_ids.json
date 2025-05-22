@@ -10,7 +10,7 @@
   {
     "question": "Combien y'a-t-il de pays membre de l'Union Européenne ?",
     "answer": "27",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": "Geopolotique",
     "id": "c221a95e-277b-4d79-86e1-f933018945ce",
     "type": "text"
@@ -18,7 +18,7 @@
   {
     "question": "Dans quel continent trouve t-on l'Australie, ou encore la Nouvelle-Zelande",
     "answer": "Oceanie",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": "Pays",
     "id": "b5de9c86-4636-495f-b024-41bdf52a45e0",
     "type": "text"
@@ -98,7 +98,7 @@
   {
     "question": "Donner le mot signifiant avant-avant dernier ?",
     "answer": "Antépénultième",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": "Vocabulaire",
     "id": "70c2059c-1d51-4590-9341-96e734b0afe5",
     "type": "text"
@@ -106,7 +106,7 @@
   {
     "question": "Donner le titre d'un film de Hayao Miyazaki ?",
     "answer": "Mon voisin Totoro, Le voyage de Chihiro, Princesse Mononoké, etc...",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": "Film Japonais",
     "id": "1831ea9e-c647-417e-a690-83f132ae74c0",
     "type": "text"
@@ -114,7 +114,7 @@
   {
     "question": "Pour quel film la musique Eye Of The Tiger a-t-elle été composée ?",
     "answer": "Rocky 3",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": "Musique de film",
     "id": "ec9db0d6-4b9a-4560-8a7f-20b029eb8d72",
     "type": "text"
@@ -130,7 +130,7 @@
   {
     "question": "Donnez la signification de l'acronyme AFP ?",
     "answer": "Agence France Presse",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": "Presse",
     "id": "d525d533-3fb6-4f80-81be-d09213367125",
     "type": "text"
@@ -146,7 +146,7 @@
   {
     "question": "Quelle est la capitale des USA ?",
     "answer": "Washington D.C.",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": "Capitale",
     "id": "d118d09a-ff71-407d-a618-75c1ab579283",
     "type": "text"
@@ -154,7 +154,7 @@
   {
     "question": "Quelle est le titre du film sorti en 2018, où Lady Gaga et Bradley Cooper jouent et interprètent la musique Shallow ?",
     "answer": "A Star Is Born",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": " ",
     "id": "a78b13ed-2489-431e-879c-fe93dded579b",
     "type": "text"
@@ -210,7 +210,7 @@
   {
     "question": "Que signifie l'acronyme LGBT ?",
     "answer": "Lesbienne, Gay, Bisexuel, Transgenre",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": "",
     "id": "2f7f4dda-f955-440a-a728-921d5bcd483f",
     "type": "text"
@@ -242,7 +242,7 @@
   {
     "question": "Quel est le nom de la société qui détient Google, Youtube, etc...?",
     "answer": "Alphabet",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "fdd0e177-e0fe-4a33-a662-2708a38319cd",
     "type": "text"
@@ -266,7 +266,7 @@
   {
     "question": "Quel est le numéro d'appel d'urgences Européen ?",
     "answer": "112",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "7eea44a7-9c76-48ae-a851-dacfa95e72f8",
     "type": "text"
@@ -274,7 +274,7 @@
   {
     "question": "En France, quel organisme s'occupe de l'attribution des canaux des chaînes de télévision ?",
     "answer": "ARCOM",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "62af7342-4e07-4e91-b378-9167e53c8157",
     "type": "text"
@@ -282,7 +282,7 @@
   {
     "question": "Quelle est la licence/franchise la plus rentable de tous les temps ?",
     "answer": "Pokémon",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "5e77db82-423c-4722-b05d-fcee4faac4a9",
     "type": "text"
@@ -290,7 +290,7 @@
   {
     "question": "En quelle année de déroule le début de l'anime Sword Art Online ?",
     "answer": "2022",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": "Anime",
     "id": "f703b341-e743-4c46-a54f-5332b1f85e72",
     "type": "text"
@@ -306,7 +306,7 @@
   {
     "question": "Quelle est la fréquence de radio utilisée pour les informations sur l'autoroute ?",
     "answer": "107.7",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "19c9a02b-d1d2-4dc1-9419-6a5c00a81301",
     "type": "text"
@@ -322,7 +322,7 @@
   {
     "question": "Comment se nomme l'acteur de Dr Strange ?",
     "answer": "Benedict Cumberbatch",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": "Acteur",
     "id": "8a6e94d1-0d83-4637-bd1f-d8aecaad677c",
     "type": "text"
@@ -346,7 +346,7 @@
   {
     "question": "A quelle société appartient actuellement le Groupe TF1 ?",
     "answer": "Bouygues",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": "TV",
     "id": "2600d3b3-c0cf-4830-a2d9-9ec9c132caed",
     "type": "text"
@@ -362,7 +362,7 @@
   {
     "question": "Dans quel département se situe la ville de Toulouse ?",
     "answer": "Haute-Garonne",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": "Departement Francais",
     "id": "a4dd21aa-8b4a-4659-a370-009d4541bed0",
     "type": "text"
@@ -450,7 +450,7 @@
   {
     "question": "En japonais que veut dire Konnichiwa ?",
     "answer": "Bonjour",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "63c9e59d-a4ee-4019-a041-344136f9664d",
     "type": "text"
@@ -466,7 +466,7 @@
   {
     "question": "Quel est le nom du Premier Ministre Canadien ?",
     "answer": "Justin Trudeau",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": "Geopolotique",
     "id": "5c467f85-4d58-462a-b4d4-ca9571d24229",
     "type": "text"
@@ -482,7 +482,7 @@
   {
     "question": "Citer un présentateur de Question Pour Un Champion.",
     "answer": "Samuel Etienne, Julien Lepers",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": "Emissions TV",
     "id": "46823203-d7f7-4c7f-b256-857bea9265c4",
     "type": "text"
@@ -498,7 +498,7 @@
   {
     "question": "Quelle est la principauté située entre le Sud Est de la France et l'Italie ?",
     "answer": "Monaco",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "8925bd4d-cb9f-4791-bccd-f1c65d04231c",
     "type": "text"
@@ -506,7 +506,7 @@
   {
     "question": "Citer deux catégories de produits dont il est interdit de faire la publicité en France. \\\\",
     "answer": "Tabac, Alcool, Drogue, etc...",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "54d55943-fa93-42e4-8163-d5e2c06d7398",
     "type": "text"
@@ -538,7 +538,7 @@
   {
     "question": "Citer 3 entreprises d'Elon Musk.",
     "answer": "SpaceX, Tesla, Neuralink, Boring Company, etc...",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "d6c6aec0-e5f9-49ce-bcd8-b8a14950cb8c",
     "type": "choice"
@@ -554,7 +554,7 @@
   {
     "question": "Citer le nom d'institut de sondage.",
     "answer": "IPSOS, Ifop, BVA, Harris Interactive, etc...",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "5ea45dcc-069b-4160-b097-b88931ee1dc9",
     "type": "choice"
@@ -578,7 +578,7 @@
   {
     "question": "Quel pays possède le plus de fuseau horaires différents ?",
     "answer": "France",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "17e136e7-1fae-4870-945b-84c2b1dce0aa",
     "type": "text"
@@ -594,7 +594,7 @@
   {
     "question": "Depuis 2022 en France, quelle est la durée minimum légale entre la sortie d'un film au cinéma et sa publication sur Netflix ?",
     "answer": "15 mois",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": " ",
     "id": "02b8f692-bd1a-471f-9cf8-2926e3002030",
     "type": "text"
@@ -602,7 +602,7 @@
   {
     "question": "À quel groupe appartient la société de production 20th Century Fox, Lucas Film, ou encore Marvel ?",
     "answer": "Disney",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": " ",
     "id": "291af2a2-19af-4ee1-8fdc-3a27083dbe88",
     "type": "text"
@@ -626,7 +626,7 @@
   {
     "question": "Quels sont les 3 pays qui composent le Benelux ?",
     "answer": "Belgique, Pays-Bas, Luxembourg",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "b1c4b208-91f6-4d0d-8478-a8b66d1c2eb5",
     "type": "text"
@@ -642,7 +642,7 @@
   {
     "question": "Citer une chaine appartenant à la filiales TV de la CMA CGM Médias.",
     "answer": "BFM TV, RMC Découverte, RMC Story, etc...",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": " ",
     "id": "29cf9ed0-0514-4677-864c-0348fb7b6a04",
     "type": "text"
@@ -658,7 +658,7 @@
   {
     "question": "Quel moment pourrait être considéré comme l'opposé du crépuscule ?",
     "answer": "Aube",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "a5d0709f-ed05-47ec-aca0-55fb536dbadb",
     "type": "text"
@@ -666,7 +666,7 @@
   {
     "question": "Sur un échiquier, quelle pièce se situe en A6 en début de partie ?",
     "answer": "Rien du tout",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "d6f65c21-2732-4561-8d1b-003c0ea9a352",
     "type": "text"
@@ -914,7 +914,7 @@
   {
     "question": "Dans quelle ville se situe des vestiges d'arènes gallo romaines ou encore la maison carrée ?",
     "answer": "Nîmes",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "a1e73eba-a9ac-49fd-9690-78435588289d",
     "type": "text"
@@ -946,7 +946,7 @@
   {
     "question": "De quel film provient la citation : \"La vie c'est comme une boite de chocolat, on ne sait jamais sur quoi on va tomber\" ?",
     "answer": "Forrest Gump",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": " ",
     "id": "5d2f8407-62e0-478d-9b38-ca3b21388ec2",
     "type": "text"
@@ -954,7 +954,7 @@
   {
     "question": "La série \"Ne montre jamais ça a personne\" retrace l'histoire de quel rappeur français ?",
     "answer": "Orelsan",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": " ",
     "id": "27c25979-22f1-433e-a74d-0366a94ba2f9",
     "type": "text"
@@ -962,7 +962,7 @@
   {
     "question": "Quel est l'équivalent du prix Nobel en mathématiques ?",
     "answer": "Médaille Fields",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "0fbc30e9-fc08-4aab-8cdd-e5b2d881e726",
     "type": "text"
@@ -970,7 +970,7 @@
   {
     "question": "Expliquer simplement comment on calcule le bénéfice d'une entreprise.",
     "answer": "Recette - Dépense",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "9f30bbb1-b8e2-4892-b082-4a3261ddaddf",
     "type": "text"
@@ -3034,7 +3034,7 @@
   {
     "question": "Quel réalisateur a réalisé les films Empire of Light, Elephant Man, ou encore Mulholland Drive ?",
     "answer": "David Lynch",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": " ",
     "id": "193293fa-f0a7-43ac-8131-18a1850c1ec8",
     "type": "text"
@@ -3042,7 +3042,7 @@
   {
     "question": "Quel film, se déroulant dans les États-Unis, durant les années 1930. C'est la Grande Dépression, suite au krach boursier de 1929. Un couple d'amants criminels sillonne le pays en braquant des banques. Bientôt, l'Amérique ne parle plus que de ces hors-la-loi inexpérimentés.",
     "answer": "Bonnie and Clyde",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": " ",
     "id": "f1b4dc82-38e3-4b83-9476-57fdc80d9379",
     "type": "text"
@@ -3058,7 +3058,7 @@
   {
     "question": "Quels aviateurs français disparus lors de leur tentative de traversée de l'Atlantique le 8 mai 1927, à bord de l'Oiseau blanc, deux semaines avant la réussite de Lindbergh ?",
     "answer": "Charles Nungesser et François Coli",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "99752d23-8f57-4a1f-8717-a70fabe40167",
     "type": "text"
@@ -3106,7 +3106,7 @@
   {
     "question": "Comment appelle-t-on une découverte faite par hasard, qui peut s'avérer utile ?",
     "answer": "Sérendipité",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "0a9fe906-31bf-4c2e-b561-1da3e7054603",
     "type": "text"
@@ -3130,7 +3130,7 @@
   {
     "question": "Comment se nomme la couche transparente qui s'applique sur l'ongle après la pose de la couleur ?",
     "answer": "Top Coat",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "bf482c7a-3217-42a3-a912-04aa3ed8c510",
     "type": "text"
@@ -3250,7 +3250,7 @@
   {
     "question": "Quelle est la capitale politique du Sri Lanka ?",
     "answer": "Sri Jayawardenapura Kotte",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "81292d39-4a6a-4f6d-b95f-7a9513e47839",
     "type": "text"
@@ -3258,7 +3258,7 @@
   {
     "question": "Dans la langue française, quel est le seul nom de pays qui contient toutes les voyelles ?",
     "answer": "Le Royaume-Uni",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "c5ab2d7f-dfc6-4cc9-9a37-47a797130817",
     "type": "text"
@@ -3274,7 +3274,7 @@
   {
     "question": "Quel réalisateur japonais, a commence sa carrière en tant que dessinateur de manga, est notamment connu pour Mon voisin Totoro ou encore Le Voyage de Ghibli ?",
     "answer": "Hayao Miyazaki",
-    "theme": "Cinema, Series et TV",
+    "theme": "Cinéma, Séries et TV",
     "subtheme": " ",
     "id": "8f4200eb-589d-4f87-934e-f6984dc64a43",
     "type": "text"
@@ -3290,7 +3290,7 @@
   {
     "question": "Quelle marque de voiture créée en 1810, célèbre avant d'en construire pour ses moulins a poivre et café, appartenant au groupe PSA, ayant pour identité visuelle un lion ?",
     "answer": "Peugeot",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "aff1f8be-c5e1-484e-a5c7-d59cc7afe40d",
     "type": "text"
@@ -3298,7 +3298,7 @@
   {
     "question": "Quel epice originaire du Moyen-Orient, surnomme Or Rouge, extrite de la fleur de Crocus Sativus et a longtemps ete consideree comme l'epice la plus chere du monde ?",
     "answer": "Safran",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "ceaa830e-1bd7-4376-b0e2-6df96ea3c4f0",
     "type": "text"
@@ -3306,7 +3306,7 @@
   {
     "question": "Au Trivial Pursuit, quelle est la couleur du theme Sciences et Nature ?",
     "answer": "Vert",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "c073b753-3426-4b61-a802-9e8530d9f85d",
     "type": "text"
@@ -3314,7 +3314,7 @@
   {
     "question": "Au Scrabble, combien de points sont associes aux lettres J et Q ?",
     "answer": "8",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "1ca81afc-e66a-4422-a80f-7981b50d15a0",
     "type": "text"
@@ -3322,7 +3322,7 @@
   {
     "question": "A la maniere d'un centenaire, quel nom est donne a une personne qui a 110 ans ?",
     "answer": "Supercentenaire",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "169b9035-01c3-407d-9800-0898af553684",
     "type": "text"
@@ -3354,7 +3354,7 @@
   {
     "question": "Entres quels pays du massif des Alpes se situe le Lac Majeur ?",
     "answer": "Italie et Suisse",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "ad9c9933-7477-4404-b6b6-d9a0a2d255f5",
     "type": "text"
@@ -3386,7 +3386,7 @@
   {
     "question": "En France, quel est l'âge minimum pour exercer la fonction de sénateur ?",
     "answer": "24 ans",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "0a7fab0c-3e35-4cdf-9724-3c4330f86500",
     "type": "text"
@@ -3410,7 +3410,7 @@
   {
     "question": "A la plage que signifie le drapeau noir et blanc ?",
     "answer": "Zone de pratique aqutique et nautique",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "44ec9809-62b3-4742-8a2e-e28e9e4d6b61",
     "type": "text"
@@ -3506,7 +3506,7 @@
   {
     "question": "Dans quel pays se trouve la ville de Oulan-Bator ?",
     "answer": "Mongolie",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "3b71d030-7875-4bc1-a169-76d3b8257313",
     "type": "text"
@@ -3546,7 +3546,7 @@
   {
     "question": "Quel est le prenom de la fille que Francois Mitterrand a longtemps cachée ?",
     "answer": "Mazarine",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "5b2b3ef5-af9f-4125-8eeb-7c18cc1dcf77",
     "type": "text"
@@ -3562,7 +3562,7 @@
   {
     "question": "Dans quel arrondissement de Paris se trouve la Tour Eiffel ?",
     "answer": "7eme",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "97c9ac7f-90f4-447e-bf45-492ecab32c2b",
     "type": "text"
@@ -3578,7 +3578,7 @@
   {
     "question": "Quel oiseau fut l'objet d'une guerre visant à reduire sa population dans les années 1930 en Australie ?",
     "answer": "Émeu",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "afca3066-10b2-4fac-8003-5b8ba22c5f24",
     "type": "text"
@@ -3586,7 +3586,7 @@
   {
     "question": "Quel est le gentile des habitant.e.s de Garardmer ?",
     "answer": "Gérômois",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "e9b89700-4a39-4477-af88-f5de2509d0c6",
     "type": "text"
@@ -3602,7 +3602,7 @@
   {
     "question": "Comment appelle-t-on un cheval de bataille, qui est notemment tenu par la main droite lorsqu'il est non-monte par son cavalier ?",
     "answer": "Destrier",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "d7e91cb6-c406-440b-9607-fe66f4297495",
     "type": "text"
@@ -3610,7 +3610,7 @@
   {
     "question": "Quel est le seul département francais, ou aucun train ne s'arrête pour prendre des passagers ?",
     "answer": "Ardêche",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "e077750c-7c8c-44c1-a538-11fab329c23d",
     "type": "text"
@@ -3666,7 +3666,7 @@
   {
     "question": "Quel est le gentile des habitant.e.s de Brive-la-Gaillarde ?",
     "answer": "Briviste",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "d95d421e-6847-4e39-b59d-b413b8718b0c",
     "type": "text"
@@ -3674,7 +3674,7 @@
   {
     "question": "Quelle est la capitale du Qatar ?",
     "answer": "Doha",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "821e20ba-305d-4a0b-9479-a26338aa64e1",
     "type": "text"
@@ -3706,7 +3706,7 @@
   {
     "question": "En maquillage, comment se nomme un fard à joue applicables en poudre ou en crème ?",
     "answer": "Blush",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "6cf53283-eb36-4f4e-b23e-dbe330f2eb0f",
     "type": "text"
@@ -3722,7 +3722,7 @@
   {
     "question": "Sur quelle île est situé la cathédrale Notre-Dame de Paris ?",
     "answer": "Île de la Cité",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "8d278f48-5b4c-4519-969f-74611bf7e7a2",
     "type": "text"
@@ -3786,7 +3786,7 @@
   {
     "question": "Quel est le nom de la maison de Maurice Ravel à Montfort-l'Amaury dans les Yvelines, transformée en musée ?",
     "answer": "Le Belvédère",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "fcd6cb4e-d226-42e2-970c-69da8aaeb2fc",
     "type": "text"
@@ -3794,7 +3794,7 @@
   {
     "question": "Qu'est-ce que collectionne un glacophile ?",
     "answer": "Les pots de yaourt",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "6f03f21f-1167-45c7-8707-f5aab445def9",
     "type": "text"
@@ -3810,7 +3810,7 @@
   {
     "question": "Quelle fleuve traverse la ville de Washington ?",
     "answer": "Potomac",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "a8376e42-316e-4f73-86e7-658fc1fbfa62",
     "type": "text"
@@ -3826,7 +3826,7 @@
   {
     "question": "Dans l'alphabet phonétique de l'OTAN, quel mot est associé à la lettre N ?",
     "answer": "November",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "8f9b029c-c596-4c5a-aeeb-fcd41cd3f726",
     "type": "text"
@@ -3834,7 +3834,7 @@
   {
     "question": "Quel entrepreneur chinois est associé à l'entreprise Alibaba ?",
     "answer": "Jack Ma",
-    "theme": "Culture Generale",
+    "theme": "Culture Générale",
     "subtheme": " ",
     "id": "46a635b6-9ea6-4c62-84c1-ac607a5ceebe",
     "type": "text"
@@ -3850,7 +3850,7 @@
   {
     "question": "Quelle est la capitale de Singapour ?",
     "answer": "Singapour",
-    "theme": "Geographie",
+    "theme": "Géographie",
     "subtheme": " ",
     "id": "0ebd1f12-4375-4d54-b7c7-eb43470f8bf7",
     "type": "text"

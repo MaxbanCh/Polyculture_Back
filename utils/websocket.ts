@@ -8,6 +8,15 @@ export interface WebSocketWithData extends WebSocket {
   };
 }
 
+interface Room {
+  code: string;
+  host: string;
+  players: { id: string; username: string; ready: boolean }[];
+  selectedThemes: string[];
+  status: "waiting" | "playing" | "finished";
+  scores: Record<string, number>;
+}
+
 export const connections: WebSocketWithData[] = [];
 export const rooms = new Map<string, Room>();
 

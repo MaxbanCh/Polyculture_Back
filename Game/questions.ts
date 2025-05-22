@@ -1,5 +1,5 @@
 import router from "../utils/router.ts";
-// import client, { executeQuery } from "../database/client.ts";
+import client, { executeQuery } from "../database/client.ts";
 
 // Load questions from JSON file
 let questions: any[] = [];
@@ -10,7 +10,7 @@ try {
   console.error("Error loading questions:", error);
 }
 
-let themes: string[] = [];
+const themes: string[] = [];
 questions.forEach((question) => {
   if (question.theme && !themes.includes(question.theme)) {
     themes.push(question.theme);
@@ -221,3 +221,120 @@ router.delete("/question/:id", async (ctx) => {
 });
 
 export default router;
+
+
+// Function to import question to the database via a JSON file
+async function importQuestionsToDatabase() {
+  try {
+    const data = await Deno.readTextFile("./questions_with_ids.json");
+    const questions = JSON.parse(data);
+
+    // Step 1: Collect all unique themes and subthemes
+    const uniqueThemes = new Set();
+    const uniqueSubthemes = new Map(); // Map of {theme: Set(subthemes)}
+    
+    for (const question of questions) {
+      const theme = question.theme?.trim() || "Général";
+      const subtheme = question.subtheme?.trim() || null;
+      
+      uniqueThemes.add(theme);
+      
+      if (subtheme) {
+        if (!uniqueSubthemes.has(theme)) {
+          uniqueSubthemes.set(theme, new Set());
+        }
+        uniqueSubthemes.get(theme).add(subtheme);
+      }
+    }
+
+    // Step 2: Insert themes and track their IDs
+    const themeIds = new Map(); // Map of {themeName: themeId}
+    for (const theme of uniqueThemes) {
+      // Check if theme already exists
+      const existingTheme = await client.query(
+        "SELECT id FROM Themes WHERE name = $1",
+        [theme]
+      );
+      
+      if (existingTheme.rows.length > 0) {
+        themeIds.set(theme, existingTheme.rows[0].id);
+      } else {
+        // Insert new theme
+        const result = await client.query(
+          "INSERT INTO Themes (name) VALUES ($1) RETURNING id",
+          [theme]
+        );
+        themeIds.set(theme, result.rows[0].id);
+        console.log(`Theme inserted: ${theme} (ID: ${result.rows[0].id})`);
+      }
+    }
+
+    // Step 3: Insert subthemes and track their IDs
+    const subthemeIds = new Map(); // Map of {theme_subtheme: subthemeId}
+    
+    for (const [theme, subthemes] of uniqueSubthemes.entries()) {
+      const themeId = themeIds.get(theme);
+      
+      for (const subtheme of subthemes) {
+        // Check if subtheme already exists
+        const existingSubtheme = await client.query(
+          "SELECT id FROM Subthemes WHERE name = $1 AND theme_id = $2",
+          [subtheme, themeId]
+        );
+        
+        if (existingSubtheme.rows.length > 0) {
+          subthemeIds.set(`${theme}_${subtheme}`, existingSubtheme.rows[0].id);
+        } else {
+          // Insert new subtheme
+          const result = await client.query(
+            "INSERT INTO Subthemes (name, theme_id) VALUES ($1, $2) RETURNING id",
+            [subtheme, themeId]
+          );
+          subthemeIds.set(`${theme}_${subtheme}`, result.rows[0].id);
+          console.log(`Subtheme inserted: ${subtheme} (Theme: ${theme}, ID: ${result.rows[0].id})`);
+        }
+      }
+    }
+
+    // Step 4: Insert questions with proper references
+    let questionsInserted = 0;
+    
+    for (const question of questions) {
+      const theme = question.theme?.trim() || "Général";
+      const subtheme = question.subtheme?.trim() || null;
+      const subthemeId = subtheme ? subthemeIds.get(`${theme}_${subtheme}`) : null;
+      
+      await client.query(
+        "INSERT INTO Questions (subtheme_id, question, question_type, answer) VALUES ($1, $2, $3, $4)",
+        [
+          subthemeId,
+          question.question,
+          question.question_type || "text",
+          question.answer
+        ]
+      );
+      
+      questionsInserted++;
+      if (questionsInserted % 10 === 0) {
+        console.log(`${questionsInserted} questions inserted...`);
+      }
+    }
+    
+    console.log(`Import completed. ${questionsInserted} questions inserted in total.`);
+  } catch (error) {
+    console.error("Error importing questions:", error);
+    throw error; // Re-throw to handle in the route handler
+  }
+}
+
+router.get("/import-questions", async (ctx) => {
+  try {
+    await importQuestionsToDatabase();
+    ctx.response.status = 200;
+    ctx.response.body = { message: "Questions imported successfully" };
+  } catch (error) {
+    ctx.response.status = 500;
+    ctx.response.body = { error: "Failed to import questions" };
+  }
+}
+);

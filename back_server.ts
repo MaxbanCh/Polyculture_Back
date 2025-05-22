@@ -1,17 +1,10 @@
-import { Application, Router } from "https://deno.land/x/oak@v12.6.1/mod.ts";
+import { Application } from "https://deno.land/x/oak@v12.6.1/mod.ts";
 import { oakCors } from "https://deno.land/x/cors/mod.ts";
-import { create, verify } from "https://deno.land/x/djwt/mod.ts";
-import * as bcrypt from "https://deno.land/x/bcrypt/mod.ts";
-// import { Client } from "https://deno.land/x/postgres/mod.ts";
 import router from "./utils/router.ts";
-import questionsRouter from "./Game/questions.ts";
+import questionsRouter from "./Game/questionsdb.ts";
 import profilRouter from "./Users/profil.ts";
-import wsRouter, { connections, rooms } from "./utils/websocket.ts";
-
-import client, {
-  connectToDatabase,
-  disconnectFromDatabase,
-} from "./database/client.ts";
+import wsRouter from "./utils/websocket.ts";
+import gameRouter from "./Game/gameManager.ts";
 
 const app = new Application();
 
@@ -41,47 +34,26 @@ app.use(async (ctx, next) => {
   await next();
 });
 
-// WebSockets -----
-const is_authorized = async (auth_token: string) => {
-  if (!auth_token) {
-    return false;
-  }
-  console.log("auth_token", auth_token);
-  if (auth_token in tokens) {
-    try {
-      const payload = await verify(auth_token, secretKey);
-      if (payload.userName === tokens[auth_token]) {
-        return true;
-      }
-    } catch {
-      console.log("verify token failed");
-      return false;
-    }
-  }
-  console.log("Unknown token");
-  return false;
-};
-
-// const connections: WebSocket[] = [];
-
-// Connection related variables
-const tokens: { [key: string]: string } = {};
-
-// Function to remove a token based on the user
-function removeTokenByUser(user: string) {
-  for (const token in tokens) {
-    if (tokens[token] === user) {
-      delete tokens[token];
-      break;
-    }
-  }
-}
-
-const secretKey = await crypto.subtle.generateKey(
-  { name: "HMAC", hash: "SHA-512" },
-  true,
-  ["sign", "verify"],
-);
+// // WebSockets -----
+// const is_authorized = async (auth_token: string) => {
+//   if (!auth_token) {
+//     return false;
+//   }
+//   console.log("auth_token", auth_token);
+//   if (auth_token in tokens) {
+//     try {
+//       const payload = await verify(auth_token, secretKey);
+//       if (payload.userName === tokens[auth_token]) {
+//         return true;
+//       }
+//     } catch {
+//       console.log("verify token failed");
+//       return false;
+//     }
+//   }
+//   console.log("Unknown token");
+//   return false;
+// };
 
 router.get("/get_cookies", (ctx) => {
   ctx.response.status = 200;
@@ -108,13 +80,6 @@ console.log(`Oak back server running on port ${options.port}`);
 
 /////////////////////////////////////////////////////////////////////
 
-async function get_hash(password: string): Promise<string> {
-  const saltRounds = 10;
-  const salt = await bcrypt.genSalt(saltRounds); // Generate the salt manually
-  return await bcrypt.hash(password, salt); // Pass the salt to the hash function
-}
-///////////////////////////////////////////////////////
-
 app.use(async (ctx, next) => {
   await next();
   console.log(ctx.request.url.pathname);
@@ -131,5 +96,8 @@ app.use(profilRouter.allowedMethods());
 
 app.use(wsRouter.routes());
 app.use(wsRouter.allowedMethods());
+
+app.use(gameRouter.routes());
+app.use(gameRouter.allowedMethods());
 
 await app.listen(options);
