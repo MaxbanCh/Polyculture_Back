@@ -5,6 +5,7 @@ import questionsRouter from "./Game/questionsdb.ts";
 import profilRouter from "./Users/profil.ts";
 import wsRouter from "./utils/websocket.ts";
 import gameRouter from "./Game/gameManager.ts";
+import questionPoolRouter from "./Game/questionpool.ts";
 
 const app = new Application();
 
@@ -33,27 +34,6 @@ app.use(async (ctx, next) => {
   ctx.response.headers.set("Access-Control-Allow-Credentials", "true");
   await next();
 });
-
-// // WebSockets -----
-// const is_authorized = async (auth_token: string) => {
-//   if (!auth_token) {
-//     return false;
-//   }
-//   console.log("auth_token", auth_token);
-//   if (auth_token in tokens) {
-//     try {
-//       const payload = await verify(auth_token, secretKey);
-//       if (payload.userName === tokens[auth_token]) {
-//         return true;
-//       }
-//     } catch {
-//       console.log("verify token failed");
-//       return false;
-//     }
-//   }
-//   console.log("Unknown token");
-//   return false;
-// };
 
 router.get("/get_cookies", (ctx) => {
   ctx.response.status = 200;
@@ -99,5 +79,8 @@ app.use(wsRouter.allowedMethods());
 
 app.use(gameRouter.routes());
 app.use(gameRouter.allowedMethods());
+
+app.use(questionPoolRouter.routes());
+app.use(questionPoolRouter.allowedMethods());
 
 await app.listen(options);

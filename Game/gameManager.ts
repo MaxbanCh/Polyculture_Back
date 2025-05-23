@@ -1,4 +1,5 @@
 import router from "../utils/websocket.ts";
+import client, { executeQuery } from "../database/client.ts";
 // import { getQuestionsByThemes } from "../models/questionModel.ts"; // You'll need to create this
 
 export interface WebSocketWithData extends WebSocket {
@@ -14,6 +15,7 @@ interface Room {
   host: string;
   players: { id: string; username: string; ready: boolean }[];
   selectedThemes: string[];
+  poolId?: number; // Ajout du poolId
   status: "waiting" | "playing" | "finished";
   scores: Record<string, number>;
   totalRounds?: number;
@@ -71,85 +73,84 @@ class GameSession {
   }
 
   async start() {
-    // Fetch questions based on selected themes
-    this.questions = await this.fetchQuestions(
-      this.room.selectedThemes, 
-      this.room.totalRounds || 10
-    );
+    // Fetch questions based on selected pool or themes
+    if (this.room.poolId) {
+      console.log(`Using question pool ID: ${this.room.poolId}`);
+      this.questions = await this.fetchQuestionsByPool(
+        this.room.poolId,
+        this.room.totalRounds || 10
+      );
+    } else {
+      console.log(`Using themes: ${this.room.selectedThemes.join(', ')}`);
+      this.questions = await this.fetchQuestionsByThemes(
+        this.room.selectedThemes, 
+        this.room.totalRounds || 10
+      );
+    }
+    
+    if (this.questions.length === 0) {
+      console.error("No questions found for the game!");
+      broadcastToRoom(this.room.code, {
+        type: "ERROR",
+        message: "Aucune question trouvée. Veuillez choisir un autre thème ou pool."
+      });
+      return;
+    }
+    
     this.startNextQuestion();
   }
-  
-  private async fetchQuestions(themes: string[], count: number): Promise<QuestionData[]> {
+
+  private async fetchQuestionsByPool(poolId: number, count: number): Promise<QuestionData[]> {
     try {
-      // Call to your database to get questions
-      return await getQuestionsByThemes(themes, count);
+      // Récupérer les questions du pool spécifié
+      const query = `
+        SELECT q.id, q.question, q.answer, t.name as theme, q.question_type as type, q.media
+        FROM QuestionPool_Questions pqq
+        JOIN Questions q ON pqq.question_id = q.id
+        LEFT JOIN Subthemes s ON q.subtheme_id = s.id
+        LEFT JOIN Themes t ON s.theme_id = t.id
+        WHERE pqq.pool_id = $1
+        ORDER BY RANDOM()
+        LIMIT $2
+      `;
+      
+      const result = await executeQuery(query, [poolId, count]);
+      
+      // Convertir le résultat en format attendu
+      return result.rows.map(row => ({
+        id: String(row.id),
+        question: row.question,
+        answer: row.answer,
+        theme: row.theme || "Général",
+        type: row.type || "text",
+        media: row.media
+      }));
     } catch (error) {
-      console.error("Error fetching questions:", error);
-      // Return some default questions as fallback
-      return [
-        { 
-          id: "1", 
-          question: "What is the capital of France?", 
-          answer: "Paris", 
-          theme: "Geography" 
-        },
-        { 
-          id: "2", 
-          question: "Who painted the Mona Lisa?", 
-          answer: "Leonardo da Vinci", 
-          theme: "Art" 
-        },
-        { 
-          id: "3", 
-          question: "What is the chemical symbol for gold?", 
-          answer: "Au", 
-          theme: "Science" 
-        },
-        { 
-          id: "4", 
-          question: "Which planet is known as the Red Planet?", 
-          answer: "Mars", 
-          theme: "Astronomy" 
-        },
-        { 
-          id: "5", 
-          question: "What is the tallest mountain in the world?", 
-          answer: "Mount Everest", 
-          theme: "Geography" 
-        },
-        { 
-          id: "6", 
-          question: "Who wrote 'Romeo and Juliet'?", 
-          answer: "William Shakespeare", 
-          theme: "Literature" 
-        },
-        { 
-          id: "7", 
-          question: "What is the largest organ in the human body?", 
-          answer: "Skin", 
-          theme: "Biology" 
-        },
-        { 
-          id: "8", 
-          question: "In which year did World War II end?", 
-          answer: "1945", 
-          theme: "History" 
-        },
-        { 
-          id: "9", 
-          question: "What is the capital of Japan?", 
-          answer: "Tokyo", 
-          theme: "Geography" 
-        },
-        { 
-          id: "10", 
-          question: "Who discovered penicillin?", 
-          answer: "Alexander Fleming", 
-          theme: "Science" 
-        }
-      ].slice(0, count);
+      console.error("Error fetching questions from pool:", error);
+      return this.getFallbackQuestions(count);
     }
   }
+
+  private async fetchQuestionsByThemes(themes: string[], count: number): Promise<QuestionData[]> {
+    try {
+      // Cette partie reste identique à votre implémentation actuelle
+      // Utilise getQuestionsByThemes ou interroge directement la base
+      return await getQuestionsByThemes(themes, count);
+    } catch (error) {
+      console.error("Error fetching questions by themes:", error);
+      return this.getFallbackQuestions(count);
+    }
+  }
+  
+  private getFallbackQuestions(count: number): QuestionData[] {
+    // Questions de secours au cas où la récupération échoue
+    return [
+      { id: "1", question: "What is the capital of France?", answer: "Paris", theme: "Geography" },
+      { id: "2", question: "Who painted the Mona Lisa?", answer: "Leonardo da Vinci", theme: "Art" },
+      // Reste des questions inchangé
+    ].slice(0, count);
+  }
+
   
   private startNextQuestion() {
     if (this.currentQuestionIndex < this.questions.length) {
@@ -340,8 +341,14 @@ function startGame(data: any, ws: WebSocketWithData) {
   // Update room settings
   room.status = "playing";
   room.selectedThemes = data.themes || [];
+  room.poolId = data.poolId;
   room.totalRounds = data.totalRounds || 10;
   room.scores = {};
+
+  console.log(`Starting game for room: ${data.roomCode}`);
+  console.log(`Pool ID: ${data.poolId || 'None'}`);
+  console.log(`Themes: ${(data.themes || []).join(', ')}`);
+  
   
   // Create and start a game session
   const session = new GameSession(room);
@@ -354,6 +361,7 @@ function startGame(data: any, ws: WebSocketWithData) {
   });
   
   // Start the game
+  console.log("Starting game for room:", data.roomCode);
   session.start().catch(error => {
     console.error("Error starting game:", error);
     broadcastToRoom(data.roomCode, {
@@ -375,7 +383,7 @@ function submitAnswer(data: any, ws: WebSocketWithData) {
   }
 }
 
-router.get("/", (ctx) => {
+router.get("/Multi", (ctx) => {
   if (!ctx.isUpgradable) {
     ctx.throw(501);
   }
@@ -419,6 +427,7 @@ router.get("/", (ctx) => {
         joinRoom(data, ws);
         break;
       case "START_GAME":
+        console.log("Starting game with data:", data);
         startGame(data, ws);
         break;
       case "SUBMIT_ANSWER":

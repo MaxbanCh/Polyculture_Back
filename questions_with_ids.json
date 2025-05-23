@@ -123,7 +123,7 @@
     "question": "En solfège, quelle est la quinte du Do ?",
     "answer": "Sol",
     "theme": "Musique",
-    "subtheme": " ",
+    "subtheme": "Solfège",
     "id": "dcd3a13d-48a4-49f7-8ef8-2427d4ef64e0",
     "type": "text"
   },
@@ -155,7 +155,7 @@
     "question": "Quelle est le titre du film sorti en 2018, où Lady Gaga et Bradley Cooper jouent et interprètent la musique Shallow ?",
     "answer": "A Star Is Born",
     "theme": "Cinéma, Séries et TV",
-    "subtheme": " ",
+    "subtheme": "Film",
     "id": "a78b13ed-2489-431e-879c-fe93dded579b",
     "type": "text"
   },
@@ -178,8 +178,8 @@
   {
     "question": "Quel est le nom de la société qui détient Facebook, Instagram ou encore Oculus ?",
     "answer": "Meta",
-    "theme": "",
-    "subtheme": " ",
+    "theme": "Web et Jeux Videos",
+    "subtheme": "",
     "id": "d781153c-9a9c-4e1e-a245-a46cae799c6a",
     "type": "text"
   },
@@ -203,7 +203,7 @@
     "question": "Environ combien de temps la lumière du soleil met-elle avant d'atteindre la Terre ?",
     "answer": "8 minutes",
     "theme": "Sciences",
-    "subtheme": " ",
+    "subtheme": "Espace",
     "id": "86bcb608-8cee-4198-91c0-bea77afa8242",
     "type": "text"
   },
@@ -211,7 +211,7 @@
     "question": "Que signifie l'acronyme LGBT ?",
     "answer": "Lesbienne, Gay, Bisexuel, Transgenre",
     "theme": "Culture Générale",
-    "subtheme": "",
+    "subtheme": "Société",
     "id": "2f7f4dda-f955-440a-a728-921d5bcd483f",
     "type": "text"
   },
@@ -227,7 +227,7 @@
     "question": "Quel était l'ancien nom de Tik Tok ?",
     "answer": "Musical.ly",
     "theme": "Web et Jeux Videos",
-    "subtheme": " ",
+    "subtheme": "Réseaux Sociaux",
     "id": "0834f97d-f8d2-49e5-a2e0-1a1260d4bb69",
     "type": "text"
   },
@@ -235,15 +235,15 @@
     "question": "Qui est l'auteur de la citation \"On ne naît pas femme on le devient\" ?",
     "answer": "Simone de Beauvoir",
     "theme": "Culture Classique",
-    "subtheme": " ",
+    "subtheme": "Litterature",
     "id": "cf8a0102-2e64-45f3-876c-b5c3e237e059",
     "type": "text"
   },
   {
     "question": "Quel est le nom de la société qui détient Google, Youtube, etc...?",
     "answer": "Alphabet",
-    "theme": "Culture Générale",
-    "subtheme": " ",
+    "theme": "Web et Jeux Videos",
+    "subtheme": "Réseaux Sociaux",
     "id": "fdd0e177-e0fe-4a33-a662-2708a38319cd",
     "type": "text"
   },
@@ -267,15 +267,15 @@
     "question": "Quel est le numéro d'appel d'urgences Européen ?",
     "answer": "112",
     "theme": "Culture Générale",
-    "subtheme": " ",
+    "subtheme": "",
     "id": "7eea44a7-9c76-48ae-a851-dacfa95e72f8",
     "type": "text"
   },
   {
     "question": "En France, quel organisme s'occupe de l'attribution des canaux des chaînes de télévision ?",
     "answer": "ARCOM",
-    "theme": "Culture Générale",
-    "subtheme": " ",
+    "theme": "Cinéma, Séries et TV",
+    "subtheme": "TV Française",
     "id": "62af7342-4e07-4e91-b378-9167e53c8157",
     "type": "text"
   },
@@ -283,7 +283,7 @@
     "question": "Quelle est la licence/franchise la plus rentable de tous les temps ?",
     "answer": "Pokémon",
     "theme": "Culture Générale",
-    "subtheme": " ",
+    "subtheme": "Funfact",
     "id": "5e77db82-423c-4722-b05d-fcee4faac4a9",
     "type": "text"
   },
@@ -299,7 +299,7 @@
     "question": "Quel est le nom de scène du compositeur de musique électro Tim Bergling décédé en 2018 ?",
     "answer": "Avicii",
     "theme": "Musique",
-    "subtheme": " ",
+    "subtheme": "Electro",
     "id": "fc1beff1-21f1-4866-a700-86a02e89a45f",
     "type": "text"
   },
@@ -307,7 +307,7 @@
     "question": "Quelle est la fréquence de radio utilisée pour les informations sur l'autoroute ?",
     "answer": "107.7",
     "theme": "Culture Générale",
-    "subtheme": " ",
+    "subtheme": "",
     "id": "19c9a02b-d1d2-4dc1-9419-6a5c00a81301",
     "type": "text"
   },
@@ -387,7 +387,7 @@
     "question": "Quel est le nom de l'actuel premier ministre ?",
     "answer": "Dépendant de la situation",
     "theme": "Histoire",
-    "subtheme": " ",
+    "subtheme": "Politique Francaise",
     "id": "212640bd-b914-497a-823f-80e4f01c02f2",
     "type": "text"
   },
@@ -395,7 +395,7 @@
     "question": "Qui est le fondateur d'Apple ?",
     "answer": "Steve Jobs",
     "theme": "Sciences",
-    "subtheme": " ",
+    "subtheme": "Informatique",
     "id": "ebc90273-f6c5-4e11-9073-dfde16252f56",
     "type": "text"
   },
@@ -403,7 +403,7 @@
     "question": "Que signifie l'acronyme GAFAM ?",
     "answer": "Google, Apple, Facebook, Amazon, Microsoft",
     "theme": "Sciences",
-    "subtheme": " ",
+    "subtheme": "Informatique",
     "id": "85a88599-e0cf-4b4f-851f-b850f4b34432",
     "type": "text"
   },
@@ -411,7 +411,7 @@
     "question": "En quelle année la monnaie Euro est-elle mise en circulation ?",
     "answer": "2002",
     "theme": "Histoire",
-    "subtheme": " ",
+    "subtheme": "Politique Européenne",
     "id": "8b62a15c-d296-44e3-b862-385157f2bade",
     "type": "text"
   },
@@ -443,7 +443,7 @@
     "question": "Citer deux musiques de Michel Sardou.",
     "answer": "Les lacs du Connemara, La maladie d'amour, En chantant, etc...",
     "theme": "Musique",
-    "subtheme": " ",
+    "subtheme": "Pop Francaise",
     "id": "fb599c32-1439-465b-b550-71a3bdf55994",
     "type": "text"
   },
@@ -451,7 +451,7 @@
     "question": "En japonais que veut dire Konnichiwa ?",
     "answer": "Bonjour",
     "theme": "Culture Générale",
-    "subtheme": " ",
+    "subtheme": "Langues",
     "id": "63c9e59d-a4ee-4019-a041-344136f9664d",
     "type": "text"
   },
@@ -459,7 +459,7 @@
     "question": "Dans quel château peut-on visiter la Galerie des Glaces ?",
     "answer": "Château de Versailles",
     "theme": "Histoire",
-    "subtheme": " ",
+    "subtheme": "Histoire Francaise",
     "id": "ea9f9dc4-f262-42f6-a3f9-82cb210f2381",
     "type": "text"
   },
@@ -499,7 +499,7 @@
     "question": "Quelle est la principauté située entre le Sud Est de la France et l'Italie ?",
     "answer": "Monaco",
     "theme": "Géographie",
-    "subtheme": " ",
+    "subtheme": "Principauté",
     "id": "8925bd4d-cb9f-4791-bccd-f1c65d04231c",
     "type": "text"
   },
@@ -515,7 +515,7 @@
     "question": "De quelle famille d'instruments fait partie le piano ?",
     "answer": "Cordes",
     "theme": "Musique",
-    "subtheme": " ",
+    "subtheme": "Instruments",
     "id": "63592efd-807a-4e7c-8e79-97cf8914a18c",
     "type": "text"
   },
@@ -523,7 +523,7 @@
     "question": "Quel est le premier groupe d'opposition à l'Assemblée nationale ?",
     "answer": "Groupe Rassemblement National",
     "theme": "Histoire",
-    "subtheme": " ",
+    "subtheme": "Politique Francaise",
     "id": "a1710ac5-8189-4b08-8319-3c58169ef9f2",
     "type": "text"
   },
@@ -547,7 +547,7 @@
     "question": "Quels sont les différents groupes sanguins possibles ?",
     "answer": "A, B, AB, O",
     "theme": "Sciences",
-    "subtheme": " ",
+    "subtheme": "Corps Humain",
     "id": "4288c676-d456-444f-ad23-7198eb7ecfd7",
     "type": "choice"
   },
