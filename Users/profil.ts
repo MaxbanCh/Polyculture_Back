@@ -7,7 +7,7 @@ router.options("/login", (ctx) => {
   ctx.response.status = 200;
   ctx.response.headers.set(
     "Access-Control-Allow-Origin",
-    "http://83.195.188.17",
+    "https://83.195.188.17",
   );
   ctx.response.headers.set(
     "Access-Control-Allow-Methods",
@@ -24,7 +24,7 @@ router.options("/register", (ctx) => {
   ctx.response.status = 200;
   ctx.response.headers.set(
     "Access-Control-Allow-Origin",
-    "http://83.195.188.17",
+    "https://83.195.188.17",
   );
   ctx.response.headers.set(
     "Access-Control-Allow-Methods",

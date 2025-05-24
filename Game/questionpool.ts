@@ -5,7 +5,6 @@ import { executeQuery } from "../database/client.ts";
 router.post("/questionpool", async (ctx) => {
   try {
     const body = await ctx.request.body().value;
-    const userId = ctx.state.user?.id;
 
     // Validation des données
     if (!body.name) {
