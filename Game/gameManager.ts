@@ -119,14 +119,18 @@ class GameSession {
       const result = await executeQuery(query, [poolId, count]);
       
       // Convertir le résultat en format attendu
-      return result.rows.map(row => ({
-        id: String(row.id),
-        question: row.question,
-        answer: row.answer,
-        theme: row.theme || "Général",
-        type: row.type || "text",
-        media: row.media
-      }));
+      if (result && Array.isArray(result.rows)) {
+        return result.rows.map((row: any) => ({
+          id: String(row.id),
+          question: row.question,
+          answer: row.answer,
+          theme: row.theme || "Général",
+          type: row.type || "text",
+          media: row.media
+        }));
+      } else {
+        return this.getFallbackQuestions(count);
+      }
     } catch (error) {
       console.error("Error fetching questions from pool:", error);
       return this.getFallbackQuestions(count);

@@ -45,7 +45,7 @@ router.get("/randomquestion", async (ctx) => {
     }
     
     ctx.response.status = 200;
-    ctx.response.body = result.rows[0];
+    ctx.response.body = result.rows[0] as Record<string, unknown>;
   } catch (error) {
     console.error("Error fetching random question:", error);
     ctx.response.status = 500;
@@ -104,7 +104,7 @@ router.get("/question", async (ctx) => {
       }
 
       ctx.response.status = 200;
-      ctx.response.body = result.rows[0];
+      ctx.response.body = result.rows[0] as Record<string, unknown>;
       return;
     }
 
@@ -179,7 +179,7 @@ router.post("/question", async (ctx) => {
     );
     
     if (themeResult && themeResult.rows && themeResult.rows.length > 0) {
-      themeId = themeResult.rows[0].id;
+      themeId = (themeResult.rows as { id: number }[])[0].id;
     } else {
       const newThemeResult = await executeQuery(
         "INSERT INTO Themes (name) VALUES ($1) RETURNING id",
@@ -206,14 +206,24 @@ router.post("/question", async (ctx) => {
         [subtheme, themeId]
       );
       
-      if (subthemeResult.rows.length > 0) {
-        subthemeId = subthemeResult.rows[0].id;
+      if (subthemeResult && subthemeResult.rows && subthemeResult.rows.length > 0) {
+        subthemeId = (subthemeResult.rows as { id: number }[])[0].id;
       } else {
         const newSubthemeResult = await executeQuery(
           "INSERT INTO Subthemes (name, theme_id) VALUES ($1, $2) RETURNING id",
           [subtheme, themeId]
         );
-        subthemeId = newSubthemeResult.rows[0].id;
+        if (
+          newSubthemeResult &&
+          typeof newSubthemeResult === "object" &&
+          "rows" in newSubthemeResult &&
+          Array.isArray((newSubthemeResult as any).rows) &&
+          (newSubthemeResult as any).rows.length > 0
+        ) {
+          subthemeId = (newSubthemeResult as { rows: { id: number }[] }).rows[0].id;
+        } else {
+          throw new Error("Failed to insert new subtheme");
+        }
       }
     }
     
@@ -227,9 +237,18 @@ router.post("/question", async (ctx) => {
         body.answer
       ]
     );
-    
-    // Fetch the complete question data to return
-    const newQuestionId = result.rows[0].id;
+
+    // Type guard for result
+    if (
+      !result ||
+      typeof result !== "object" ||
+      !("rows" in result) ||
+      !Array.isArray((result as any).rows) ||
+      (result as any).rows.length === 0
+    ) {
+      throw new Error("Failed to insert new question");
+    }
+    const newQuestionId = (result as { rows: { id: number }[] }).rows[0].id;
     const newQuestionResult = await executeQuery(
       `SELECT q.id, q.question, q.answer, q.question_type, t.name as theme, s.name as subtheme
       FROM Questions q
@@ -240,7 +259,18 @@ router.post("/question", async (ctx) => {
     );
 
     ctx.response.status = 201;
-    ctx.response.body = newQuestionResult.rows[0];
+    if (
+      newQuestionResult &&
+      typeof newQuestionResult === "object" &&
+      "rows" in newQuestionResult &&
+      Array.isArray((newQuestionResult as any).rows) &&
+      (newQuestionResult as any).rows.length > 0
+    ) {
+      ctx.response.body = (newQuestionResult as { rows: any[] }).rows[0];
+    } else {
+      ctx.response.status = 500;
+      ctx.response.body = { error: "Failed to fetch the newly created question" };
+    }
   } catch (error) {
     console.error("Error creating question:", error);
     ctx.response.status = 500;
@@ -259,7 +289,7 @@ router.put("/question/:id", async (ctx) => {
       [id]
     );
     
-    if (checkResult.rows.length === 0) {
+    if (!checkResult || !('rows' in checkResult) || !Array.isArray(checkResult.rows) || checkResult.rows.length === 0) {
       ctx.response.status = 404;
       ctx.response.body = { error: "Question not found" };
       return;
@@ -279,14 +309,24 @@ router.put("/question/:id", async (ctx) => {
         [theme]
       );
       
-      if (themeResult.rows.length > 0) {
-        themeId = themeResult.rows[0].id;
+      if (themeResult && themeResult.rows && themeResult.rows.length > 0) {
+        themeId = (themeResult.rows as { id: number }[])[0].id;
       } else {
         const newThemeResult = await executeQuery(
           "INSERT INTO Themes (name) VALUES ($1) RETURNING id",
           [theme]
         );
-        themeId = newThemeResult.rows[0].id;
+        if (
+          newThemeResult &&
+          typeof newThemeResult === "object" &&
+          "rows" in newThemeResult &&
+          Array.isArray((newThemeResult as any).rows) &&
+          (newThemeResult as any).rows.length > 0
+        ) {
+          themeId = (newThemeResult as { rows: { id: number }[] }).rows[0].id;
+        } else {
+          throw new Error("Failed to insert new theme");
+        }
       }
       
       // Get or create subtheme if provided
@@ -296,14 +336,24 @@ router.put("/question/:id", async (ctx) => {
           [subtheme, themeId]
         );
         
-        if (subthemeResult.rows.length > 0) {
-          subthemeId = subthemeResult.rows[0].id;
+        if (subthemeResult && Array.isArray(subthemeResult.rows) && subthemeResult.rows.length > 0) {
+          subthemeId = (subthemeResult.rows as { id: number }[])[0].id;
         } else {
           const newSubthemeResult = await executeQuery(
             "INSERT INTO Subthemes (name, theme_id) VALUES ($1, $2) RETURNING id",
             [subtheme, themeId]
           );
-          subthemeId = newSubthemeResult.rows[0].id;
+          if (
+            newSubthemeResult &&
+            typeof newSubthemeResult === "object" &&
+            "rows" in newSubthemeResult &&
+            Array.isArray((newSubthemeResult as any).rows) &&
+            (newSubthemeResult as any).rows.length > 0
+          ) {
+            subthemeId = (newSubthemeResult as { rows: { id: number }[] }).rows[0].id;
+          } else {
+            throw new Error("Failed to insert new subtheme");
+          }
         }
       }
     }
@@ -331,7 +381,7 @@ router.put("/question/:id", async (ctx) => {
     // Only update subtheme_id if theme/subtheme was processed
     if (body.theme !== undefined) {
       updates.push(`subtheme_id = $${paramIndex++}`);
-      params.push(subthemeId);
+      params.push(subthemeId !== null ? String(subthemeId) : "");
     }
     
     if (updates.length === 0) {
@@ -354,7 +404,7 @@ router.put("/question/:id", async (ctx) => {
     );
 
     ctx.response.status = 200;
-    ctx.response.body = result.rows[0];
+    ctx.response.body = (result && result.rows && result.rows.length > 0) ? result.rows[0] : {};
   } catch (error) {
     console.error("Error updating question:", error);
     ctx.response.status = 500;
@@ -376,7 +426,7 @@ router.delete("/question/:id", async (ctx) => {
       [id]
     );
     
-    if (questionResult.rows.length === 0) {
+    if (!questionResult || !questionResult.rows || questionResult.rows.length === 0) {
       ctx.response.status = 404;
       ctx.response.body = { error: "Question not found" };
       return;
@@ -432,16 +482,26 @@ async function importQuestionsToDatabase() {
         [theme]
       );
       
-      if (existingTheme.rows.length > 0) {
-        themeIds.set(theme, existingTheme.rows[0].id);
+      if (existingTheme && Array.isArray(existingTheme.rows) && existingTheme.rows.length > 0) {
+        themeIds.set(theme, (existingTheme.rows as { id: number }[])[0].id);
       } else {
         // Insert new theme
         const result = await executeQuery(
           "INSERT INTO Themes (name) VALUES ($1) RETURNING id",
           [theme]
         );
-        themeIds.set(theme, result.rows[0].id);
-        console.log(`Theme inserted: ${theme} (ID: ${result.rows[0].id})`);
+        if (
+          result &&
+          typeof result === "object" &&
+          "rows" in result &&
+          Array.isArray((result as any).rows) &&
+          (result as any).rows.length > 0
+        ) {
+          themeIds.set(theme, (result as { rows: { id: number }[] }).rows[0].id);
+          console.log(`Theme inserted: ${theme} (ID: ${(result as { rows: { id: number }[] }).rows[0].id})`);
+        } else {
+          throw new Error(`Failed to insert theme: ${theme}`);
+        }
       }
     }
 
@@ -458,7 +518,7 @@ async function importQuestionsToDatabase() {
           [subtheme, themeId]
         );
         
-        if (existingSubtheme.rows.length > 0) {
+        if (existingSubtheme && Array.isArray(existingSubtheme.rows) && existingSubtheme.rows.length > 0) {
           subthemeIds.set(`${theme}_${subtheme}`, existingSubtheme.rows[0].id);
         } else {
           // Insert new subtheme

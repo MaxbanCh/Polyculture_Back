@@ -251,21 +251,27 @@ async function importQuestionsToDatabase() {
     const themeIds = new Map(); // Map of {themeName: themeId}
     for (const theme of uniqueThemes) {
       // Check if theme already exists
-      const existingTheme = await client.query(
+      const existingTheme = await executeQuery(
         "SELECT id FROM Themes WHERE name = $1",
         [theme]
       );
       
-      if (existingTheme.rows.length > 0) {
-        themeIds.set(theme, existingTheme.rows[0].id);
+      if (existingTheme && Array.isArray((existingTheme as { rows: any[] }).rows) && (existingTheme as { rows: any[] }).rows.length > 0) {
+        const rows = (existingTheme as { rows: any[] }).rows;
+        themeIds.set(theme, rows[0].id);
       } else {
         // Insert new theme
-        const result = await client.query(
+        const result = await executeQuery(
           "INSERT INTO Themes (name) VALUES ($1) RETURNING id",
           [theme]
         );
-        themeIds.set(theme, result.rows[0].id);
-        console.log(`Theme inserted: ${theme} (ID: ${result.rows[0].id})`);
+        if (result && typeof result === "object" && "rows" in result && Array.isArray((result as { rows: any[] }).rows) && (result as { rows: any[] }).rows.length > 0) {
+          const rows = (result as { rows: any[] }).rows;
+          themeIds.set(theme, rows[0].id);
+          console.log(`Theme inserted: ${theme} (ID: ${rows[0].id})`);
+        } else {
+          throw new Error(`Failed to insert theme: ${theme}`);
+        }
       }
     }
 
@@ -277,21 +283,37 @@ async function importQuestionsToDatabase() {
       
       for (const subtheme of subthemes) {
         // Check if subtheme already exists
-        const existingSubtheme = await client.query(
+        const existingSubtheme = await executeQuery(
           "SELECT id FROM Subthemes WHERE name = $1 AND theme_id = $2",
           [subtheme, themeId]
         );
         
-        if (existingSubtheme.rows.length > 0) {
-          subthemeIds.set(`${theme}_${subtheme}`, existingSubtheme.rows[0].id);
+        if (
+          existingSubtheme &&
+          Array.isArray((existingSubtheme as { rows: any[] }).rows) &&
+          (existingSubtheme as { rows: any[] }).rows.length > 0
+        ) {
+          const rows = (existingSubtheme as { rows: any[] }).rows;
+          subthemeIds.set(`${theme}_${subtheme}`, rows[0].id);
         } else {
           // Insert new subtheme
-          const result = await client.query(
+          const result = await executeQuery(
             "INSERT INTO Subthemes (name, theme_id) VALUES ($1, $2) RETURNING id",
             [subtheme, themeId]
           );
-          subthemeIds.set(`${theme}_${subtheme}`, result.rows[0].id);
-          console.log(`Subtheme inserted: ${subtheme} (Theme: ${theme}, ID: ${result.rows[0].id})`);
+          if (
+            result &&
+            typeof result === "object" &&
+            "rows" in result &&
+            Array.isArray((result as { rows: any[] }).rows) &&
+            (result as { rows: any[] }).rows.length > 0
+          ) {
+            const rows = (result as { rows: any[] }).rows;
+            subthemeIds.set(`${theme}_${subtheme}`, rows[0].id);
+            console.log(`Subtheme inserted: ${subtheme} (Theme: ${theme}, ID: ${rows[0].id})`);
+          } else {
+            throw new Error(`Failed to insert subtheme: ${subtheme} for theme: ${theme}`);
+          }
         }
       }
     }
@@ -304,7 +326,7 @@ async function importQuestionsToDatabase() {
       const subtheme = question.subtheme?.trim() || null;
       const subthemeId = subtheme ? subthemeIds.get(`${theme}_${subtheme}`) : null;
       
-      await client.query(
+      await executeQuery(
         "INSERT INTO Questions (subtheme_id, question, question_type, answer) VALUES ($1, $2, $3, $4)",
         [
           subthemeId,

@@ -16,11 +16,16 @@ router.post("/questionpool", async (ctx) => {
     // Insérer le nouveau pool
     const poolResult = await executeQuery(
       "INSERT INTO QuestionPool (name, description, user_id, is_public) VALUES ($1, $2, $3, $4) RETURNING id, name, description, is_public, created_at",
-      [body.name, body.description || null, userId, body.is_public || false]
+      [body.name, body.description || null, body.userId, body.is_public || false]
     );
 
-    ctx.response.status = 201;
-    ctx.response.body = poolResult.rows[0];
+    if (poolResult && poolResult.rows && poolResult.rows.length > 0) {
+      ctx.response.status = 201;
+      ctx.response.body = poolResult.rows[0] as Record<string, unknown>;
+    } else {
+      ctx.response.status = 500;
+      ctx.response.body = { error: "Erreur lors de la création du pool de questions" };
+    }
   } catch (error) {
     console.error("Erreur lors de la création du pool de questions:", error);
     ctx.response.status = 500;
@@ -44,13 +49,15 @@ router.get("/questionpool", async (ctx) => {
       
       const result = await executeQuery(query, [userId || 0]);
 
-      const serializedRows = result.rows.map(row => {
-        const serializedRow = {};
-        for (const [key, value] of Object.entries(row)) {
-          serializedRow[key] = typeof value === 'bigint' ? Number(value) : value;
-        }
-        return serializedRow;
-      });
+      const serializedRows = (result && result.rows)
+        ? result.rows.map(row => {
+            const serializedRow: Record<string, any> = {};
+            for (const [key, value] of Object.entries(row as Record<string, unknown>)) {
+              serializedRow[key] = typeof value === 'bigint' ? Number(value) : value;
+            }
+            return serializedRow;
+          })
+        : [];
 
   
       console.log("Résultat de la requête:", serializedRows);
@@ -82,18 +89,22 @@ router.post("/questionpool/:id/questions", async (ctx) => {
       [id, ctx.state.user?.id || 0]
     );
     
-    if (poolResult.rows.length === 0) {
+    if (!poolResult || !poolResult.rows || poolResult.rows.length === 0) {
       ctx.response.status = 404;
       ctx.response.body = { error: "Pool de questions non trouvé ou accès non autorisé" };
       return;
     }
 
     // Ajouter les questions au pool
-    let position = await executeQuery(
+    const positionResult = await executeQuery(
       "SELECT COALESCE(MAX(position), 0) as max_pos FROM QuestionPool_Questions WHERE pool_id = $1",
       [id]
     );
-    let currentPosition = position.rows[0].max_pos + 1;
+    const rows = (positionResult && typeof positionResult === 'object' && 'rows' in positionResult)
+      ? (positionResult as { rows: any[] }).rows
+      : [];
+    const maxPos = rows.length > 0 && rows[0].max_pos !== undefined ? Number(rows[0].max_pos) : 0;
+    let currentPosition = maxPos + 1;
     
     for (const questionId of questionIds) {
       try {
@@ -127,7 +138,7 @@ router.get("/questionpool/:id/questions", async (ctx) => {
         [id, userId || 0]
       );
       
-      if (poolResult.rows.length === 0) {
+      if (!poolResult || !poolResult.rows || poolResult.rows.length === 0) {
         ctx.response.status = 404;
         ctx.response.body = { error: "Pool de questions non trouvé ou accès non autorisé" };
         return;
@@ -149,18 +160,20 @@ router.get("/questionpool/:id/questions", async (ctx) => {
       const result = await executeQuery(query, [id]);
       
       // Conversion des BigInt en Number pour la sérialisation
-      const serializedRows = result.rows.map(row => {
-        const serializedRow = {};
-        for (const [key, value] of Object.entries(row)) {
-          serializedRow[key] = typeof value === 'bigint' ? Number(value) : value;
-        }
-        return serializedRow;
-      });
+      const serializedRows = (result && result.rows)
+        ? result.rows.map(row => {
+            const serializedRow: Record<string, any> = {};
+            for (const [key, value] of Object.entries(row as Record<string, unknown>)) {
+              serializedRow[key] = typeof value === 'bigint' ? Number(value) : value;
+            }
+            return serializedRow;
+          })
+        : [];
       
       ctx.response.status = 200;
       ctx.response.body = {
         pool_id: Number(id),
-        pool_name: poolResult.rows[0].name,
+        pool_name: (poolResult.rows[0] as { name: string }).name,
         questions: serializedRows
       };
     } catch (error) {

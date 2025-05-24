@@ -11,7 +11,7 @@ const app = new Application();
 
 app.use(
   oakCors({
-    origin: "https://83.195.188.17", // Allow requests from this origin
+    origin: "https://polyculture.cluster-ig3.igpolytech.fr", // Allow requests from this origin
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Specify allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
     credentials: true, // Allow credentials like cookies
@@ -21,7 +21,7 @@ app.use(
 app.use(async (ctx, next) => {
   ctx.response.headers.set(
     "Access-Control-Allow-Origin",
-    "https://83.195.188.17",
+    "https://polyculture.cluster-ig3.igpolytech.fr",
   );
   ctx.response.headers.set(
     "Access-Control-Allow-Methods",
@@ -47,14 +47,15 @@ if (Deno.args.length < 1) {
   Deno.exit();
 }
 
-const options = { port: Deno.args[0] };
+const PORT = parseInt(Deno.env.get("PORT") || "80");
+const options: any = { port: PORT };
 
-if (Deno.args.length >= 3) {
-  options.secure = true;
-  options.cert = await Deno.readTextFile(Deno.args[1]);
-  options.key = await Deno.readTextFile(Deno.args[2]);
-  console.log(`SSL conf ready (use https)`);
-}
+// if (Deno.args.length >= 3) {
+//   options.secure = true;
+//   options.cert = await Deno.readTextFile(Deno.args[1]);
+//   options.key = await Deno.readTextFile(Deno.args[2]);
+//   console.log(`SSL conf ready (use https)`);
+// }
 
 console.log(`Oak back server running on port ${options.port}`);
 
