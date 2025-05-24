@@ -1,6 +1,5 @@
 import router from "../utils/websocket.ts";
 import client, { executeQuery } from "../database/client.ts";
-// import { getQuestionsByThemes } from "../models/questionModel.ts"; // You'll need to create this
 
 export interface WebSocketWithData extends WebSocket {
   data?: {
@@ -47,15 +46,17 @@ function broadcastToRoom(roomCode: string, data: any) {
   if (!room) return;
 
   connections.forEach((client) => {
-    if (client.data?.roomCode === roomCode) {
+    if (client.data?.roomCode === roomCode && client.readyState === 1) {
+      // Only send if connection is OPEN (readyState === 1)
       client.send(JSON.stringify(data));
     }
   });
 }
-
 function notifyAllUsers(json: any) {
   connections.forEach((client) => {
-    client.send(JSON.stringify(json));
+    if (client.readyState === 1) {
+      client.send(JSON.stringify(json));
+    }
   });
 }
 
@@ -66,7 +67,8 @@ class GameSession {
   private currentQuestionIndex = 0;
   private playerAnswers = new Map<string, PlayerAnswer>();
   private questionStartTime: number = 0;
-  private timePerQuestion = 30; // seconds
+  private timePerQuestion = 20; // seconds
+  private questionTimer?: number; // Ajouter cette propriété pour gérer le timer
 
   constructor(room: Room) {
     this.room = room;
@@ -131,6 +133,7 @@ class GameSession {
     }
   }
 
+
   private async fetchQuestionsByThemes(themes: string[], count: number): Promise<QuestionData[]> {
     try {
       // Cette partie reste identique à votre implémentation actuelle
@@ -141,6 +144,7 @@ class GameSession {
       return this.getFallbackQuestions(count);
     }
   }
+  
   
   private getFallbackQuestions(count: number): QuestionData[] {
     // Questions de secours au cas où la récupération échoue
@@ -156,8 +160,11 @@ class GameSession {
     if (this.currentQuestionIndex < this.questions.length) {
       const question = this.questions[this.currentQuestionIndex];
       
-      // Clear previous answers
+      // Clear previous answers and timer
       this.playerAnswers.clear();
+      if (this.questionTimer) {
+        clearTimeout(this.questionTimer);
+      }
       this.questionStartTime = Date.now();
       
       // Send new question to all players
@@ -169,16 +176,19 @@ class GameSession {
           theme: question.theme
         },
         round: this.currentQuestionIndex + 1,
-        timeLimit: this.timePerQuestion
+        timeLimit: this.timePerQuestion,
+        totalRounds: this.questions.length
       });
       
-      // Set timer for question end
-      setTimeout(() => this.endQuestion(), this.timePerQuestion * 1000);
+      // Set timer for question end - CORRECTION: utiliser this.timePerQuestion au lieu d'une valeur fixe
+      this.questionTimer = setTimeout(() => {
+        this.endQuestion();
+      }, this.timePerQuestion * 1000);
     } else {
       this.endGame();
     }
   }
-  
+
   submitAnswer(playerId: string, username: string, answer: string, timestamp: number) {
     if (!this.playerAnswers.has(playerId)) {
       this.playerAnswers.set(playerId, {
@@ -189,12 +199,22 @@ class GameSession {
       
       // If all players answered, end the question early
       if (this.playerAnswers.size === this.room.players.length) {
+        // Clear the timer since all players have answered
+        if (this.questionTimer) {
+          clearTimeout(this.questionTimer);
+        }
         this.endQuestion();
       }
     }
   }
-  
+
   private endQuestion() {
+    // Clear the timer
+    if (this.questionTimer) {
+      clearTimeout(this.questionTimer);
+      this.questionTimer = undefined;
+    }
+
     const currentQuestion = this.questions[this.currentQuestionIndex];
     const correctAnswer = currentQuestion.answer;
     
@@ -279,6 +299,12 @@ class GameSession {
   }
   
   private endGame() {
+    // Clear any remaining timer
+    if (this.questionTimer) {
+      clearTimeout(this.questionTimer);
+      this.questionTimer = undefined;
+    }
+
     broadcastToRoom(this.room.code, {
       type: 'GAME_ENDED',
       finalScores: this.room.scores

@@ -219,10 +219,38 @@ router.post("/logout", async (ctx) => {
   }
 });
 
-router.get("/check-token", (ctx) => {
+router.get("/check-back", (ctx) => {
   ctx.response.status = 200;
   ctx.response.body = { valid: true };
 });
+
+router.get("/check-token", async (ctx) => {
+  const token = ctx.request.headers.get("Authorization")?.split(" ")[1];
+  if (!token) {
+    ctx.response.status = 401;
+    ctx.response.body = { error: "No token provided" };
+    return;
+  }
+  
+  const user = tokens[token];
+  if (!user) {
+    ctx.response.status = 401;
+    ctx.response.body = { error: "Invalid token" };
+    return;
+  }
+
+  const decodedToken = await verify(token, secretKey);
+  if (!decodedToken) {
+    ctx.response.status = 401;
+    ctx.response.body = { error: "Invalid token" };
+    return;
+  }
+
+  ctx.response.status = 200;
+  ctx.response.body = { valid: true };
+});
+
+
 
 router.get("/profil", async (ctx) => {
   const token = ctx.request.headers.get("Authorization")?.split(" ")[1];

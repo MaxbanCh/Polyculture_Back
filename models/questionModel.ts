@@ -7,6 +7,7 @@ interface QuestionData {
   theme: string;
 }
 
+
 export async function getQuestionsByThemes(themes: string[], count: number): Promise<QuestionData[]> {
   try {
     // Example using a database pool
