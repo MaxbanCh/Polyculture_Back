@@ -82,8 +82,8 @@ router.post("/answer", async (ctx) => {
       ctx.response.status = 200;
       ctx.response.body = { correct: isCorrect };
     } else {
-      // Pour les questions de type texte, comparer directement les réponses
-      const isCorrect = question.answer.toLowerCase() === answer.toLowerCase();
+      // Pour les questions de type texte, utiliser la nouvelle fonction de comparaison
+      const isCorrect = compareAnswers(answer, question.answer);
       ctx.response.status = 200;
       ctx.response.body = { correct: isCorrect };
     }
@@ -490,3 +490,60 @@ router.get("/import-questions", async (ctx) => {
   }
 }
 );
+
+
+function normalizeString(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function levenshteinDistance(str1: string, str2: string): number {
+  const len1 = str1.length;
+  const len2 = str2.length;
+  
+  // Matrice pour la programmation dynamique
+  const dp: number[][] = Array(len1 + 1)
+    .fill(null)
+    .map(() => Array(len2 + 1).fill(0));
+  
+  // Initialisation de la matrice
+  for (let i = 0; i <= len1; i++) dp[i][0] = i;
+  for (let j = 0; j <= len2; j++) dp[0][j] = j;
+  
+  // Remplissage de la matrice
+  for (let i = 1; i <= len1; i++) {
+    for (let j = 1; j <= len2; j++) {
+      const cost = str1[i - 1] === str2[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,         // suppression
+        dp[i][j - 1] + 1,         // insertion
+        dp[i - 1][j - 1] + cost   // substitution
+      );
+    }
+  }
+  
+  return dp[len1][len2];
+}
+
+function compareAnswers(
+  userAnswer: string, 
+  correctAnswer: string, 
+  tolerance: number = 2
+): boolean {
+  // Normalisation des réponses (suppression des accents et mise en minuscules)
+  const normalizedUserAnswer = normalizeString(userAnswer);
+  const normalizedCorrectAnswer = normalizeString(correctAnswer);
+  
+  // Si les chaînes normalisées sont identiques, la réponse est correcte
+  if (normalizedUserAnswer === normalizedCorrectAnswer) {
+    return true;
+  }
+  
+  // Calcul de la distance d'édition
+  const distance = levenshteinDistance(normalizedUserAnswer, normalizedCorrectAnswer);
+  
+  // La réponse est considérée comme correcte si la distance est inférieure ou égale à la tolérance
+  return distance <= tolerance;
+}
