@@ -7,6 +7,8 @@ import wsRouter from "./utils/websocket.ts";
 import gameRouter from "./Game/gameManager.ts";
 import questionPoolRouter from "./Game/questionpool.ts";
 import { initializeDatabase } from "./database/client.ts";
+import buzzerManager from "./Game/buzzerManager.ts";
+
 
 const app = new Application();
 
@@ -79,5 +81,8 @@ app.use(gameRouter.allowedMethods());
 
 app.use(questionPoolRouter.routes());
 app.use(questionPoolRouter.allowedMethods());
+
+app.use(buzzerManager.routes());
+app.use(buzzerManager.allowedMethods());
 
 await app.listen(options);
