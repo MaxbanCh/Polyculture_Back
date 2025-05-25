@@ -1,5 +1,6 @@
 import router from "../utils/router.ts";
 import { executeQuery } from "../database/client.ts";
+import { tokens } from "../Users/profil.ts";
 
 // Define routes
 router.get("/themes", async (ctx) => {
@@ -563,7 +564,47 @@ async function importQuestionsToDatabase() {
   }
 }
 
-router.get("/import-questions", async (ctx) => {
+async function isAdmin(ctx: any, next: any) {
+  try {
+    // Récupérer le token d'autorisation
+    const token = ctx.request.headers.get("Authorization")?.split(" ")[1];
+    if (!token) {
+      ctx.response.status = 401;
+      ctx.response.body = { error: "Authentication required" };
+      return;
+    }
+    
+    // Vérifier si le token est valide et récupérer l'utilisateur associé
+    const user = tokens[token];
+    if (!user) {
+      ctx.response.status = 401;
+      ctx.response.body = { error: "Invalid token" };
+      return;
+    }
+    
+    // Vérifier en base de données si l'utilisateur est admin
+    const userResult = await executeQuery(
+      "SELECT id, username, admin FROM users WHERE username = $1",
+      [user],
+    ) as { rows?: { admin?: boolean }[] } | undefined;
+    
+    if (!userResult || !userResult.rows || userResult.rows.length === 0 || !userResult.rows[0].admin) {
+      ctx.response.status = 403;
+      ctx.response.body = { error: "Admin privileges required" };
+      return;
+    }
+    
+    // Si l'utilisateur est admin, continuer vers la prochaine étape
+    await next();
+  } catch (error) {
+    console.error("Error in admin authorization:", error);
+    ctx.response.status = 500;
+    ctx.response.body = { error: "Server error during authorization" };
+  }
+}
+
+
+router.get("/import-questions", isAdmin, async (ctx) => {
   try {
     await importQuestionsToDatabase();
     ctx.response.status = 200;
@@ -574,7 +615,7 @@ router.get("/import-questions", async (ctx) => {
   }
 });
 
-router.get("/delete-all-questions", async (ctx) => {
+router.get("/delete-all-questions", isAdmin, async (ctx) => {
     try {
         await executeQuery("DELETE FROM Questions", []);
         ctx.response.status = 200;
@@ -587,7 +628,7 @@ router.get("/delete-all-questions", async (ctx) => {
     }
 );
 
-router.get("/delete-all-subthemes", async (ctx) => {
+router.get("/delete-all-subthemes", isAdmin, async (ctx) => {
     try {
         await executeQuery("DELETE FROM Subthemes", []);
         ctx.response.status = 200;
@@ -599,7 +640,7 @@ router.get("/delete-all-subthemes", async (ctx) => {
     }
 });
 
-router.get("/delete-all-themes", async (ctx) => {
+router.get("/delete-all-themes", isAdmin, async (ctx) => {
     try {
         await executeQuery("DELETE FROM Themes", []);
         ctx.response.status = 200;

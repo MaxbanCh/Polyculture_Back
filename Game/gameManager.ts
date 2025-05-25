@@ -238,7 +238,7 @@ class GameSession {
       playerResults: []
     };
     
-    const correctResponses = [];
+    const correctResponses: { playerId: string; timestamp: number }[] = [];
     
     // First pass: identify correct answers
     for (const [playerId, data] of this.playerAnswers.entries()) {
@@ -499,27 +499,45 @@ router.get("/Multi", (ctx) => {
   };
 });
 
-// Create a question model file that you'll need to implement
-// filepath: /polyculture/Polyculture_Back/models/questionModel.ts
-export async function getQuestionsByThemes(themes: string[], count: number): Promise<QuestionData[]> {
+
+async function getQuestionsByThemes(themes: string[], count: number): Promise<QuestionData[]> {
   try {
-    // This is a placeholder - implement database query
-    // Example using your database connection
-    /*
-    const themeList = themes.map(theme => `'${theme}'`).join(',');
-    const query = `
-      SELECT id, question, answer, theme 
-      FROM questions 
-      WHERE theme IN (${themeList || "'General'"})
-      ORDER BY RANDOM() 
-      LIMIT $1
+    let query = `
+      SELECT q.id, q.question, q.answer, q.question_type as type, q.media,
+             t.name as theme, s.name as subtheme
+      FROM Questions q
+      LEFT JOIN Subthemes s ON q.subtheme_id = s.id
+      LEFT JOIN Themes t ON s.theme_id = t.id
     `;
     
-    const result = await db.query(query, [count]);
-    return result.rows;
-    */
+    const params: any[] = [];
     
-    // For now, return mock data
+    // If themes are specified, add WHERE clause
+    if (themes && themes.length > 0) {
+      query += " WHERE t.name = ANY($1)";
+      params.push(themes);
+    }
+    
+    // Add ORDER BY RANDOM() and LIMIT
+    query += " ORDER BY RANDOM() LIMIT $" + (params.length + 1);
+    params.push(count);
+    
+    const result = await executeQuery(query, params);
+    
+    // Process the results
+    if (result && Array.isArray(result.rows)) {
+      return result.rows.map((row: any) => ({
+        id: String(row.id),
+        question: row.question,
+        answer: row.answer,
+        theme: row.theme || "Général",
+        type: row.type || "text",
+        media: row.media
+      }));
+    }
+    
+    // IIf there is an error or no results, return fallback questions
+    console.warn("No questions found for themes:", themes);
     return [
       { id: "1", question: "What is the capital of France?", answer: "Paris", theme: "Geography" },
       { id: "2", question: "Who painted the Mona Lisa?", answer: "Leonardo da Vinci", theme: "Art" },

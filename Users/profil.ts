@@ -44,7 +44,7 @@ const secretKey = await crypto.subtle.generateKey(
 );
 
 // Connection related variables
-const tokens: { [key: string]: string } = {};
+export const tokens: { [key: string]: string } = {};
 
 // Function to remove a token based on the user
 function removeTokenByUser(user: string) {

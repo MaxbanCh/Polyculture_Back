@@ -44,6 +44,17 @@ CREATE TABLE Questions (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE Reponses (
+    id SERIAL PRIMARY KEY,
+    question_id INT REFERENCES Questions(id) ON DELETE CASCADE,
+    texte TEXT NOT NULL,
+    est_correcte BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Index pour optimiser les recherches par question
+CREATE INDEX idx_reponses_question_id ON Reponses(question_id);
+
 -- Tables for DefiSolo
 
 CREATE TABLE DefiSolo (

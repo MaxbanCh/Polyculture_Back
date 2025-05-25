@@ -48,39 +48,83 @@ router.get("/randomquestion", (ctx) => {
 router.post("/answer", async (ctx) => {
   const body = await ctx.request.body().value;
   const { questionId, answer } = body;
-  const question = questions.find((q) => q.id === questionId);
-  if (!question) {
-    ctx.response.status = 404;
-    ctx.response.body = { error: "Question not found" };
-    return;
-  }
-  if (question.answer.toLowerCase() === answer.toLowerCase()) {
-    ctx.response.status = 200;
-    ctx.response.body = { correct: true };
-  } else {
-    ctx.response.status = 200;
-    ctx.response.body = { correct: false };
+
+  try {
+    // Récupérer la question et son type
+    const questionResult = await executeQuery(
+      "SELECT id, question, answer, question_type FROM Questions WHERE id = $1",
+      [questionId]
+    );
+
+    if ((questionResult as any).rows.length === 0) {
+      ctx.response.status = 404;
+      ctx.response.body = { error: "Question not found" };
+      return;
+    }
+
+    const question = (questionResult as any).rows[0];
+
+    // Vérifier la réponse selon le type de question
+    if (question.question_type === 'choice') {
+      // Pour les questions à choix multiple, vérifier si la réponse est correcte
+      const reponseResult = await executeQuery(
+        "SELECT est_correcte FROM Reponses WHERE question_id = $1 AND id = $2",
+        [questionId, answer]
+      );
+
+      if ((reponseResult as any).rows.length === 0) {
+        ctx.response.status = 404;
+        ctx.response.body = { error: "Answer option not found" };
+        return;
+      }
+
+      const isCorrect = (reponseResult as any).rows[0].est_correcte;
+      ctx.response.status = 200;
+      ctx.response.body = { correct: isCorrect };
+    } else {
+      // Pour les questions de type texte, comparer directement les réponses
+      const isCorrect = question.answer.toLowerCase() === answer.toLowerCase();
+      ctx.response.status = 200;
+      ctx.response.body = { correct: isCorrect };
+    }
+  } catch (error) {
+    console.error("Error checking answer:", error);
+    ctx.response.status = 500;
+    ctx.response.body = { error: "Failed to check answer" };
   }
 });
 
-router.get("/question", (ctx) => {
+router.get("/question", async (ctx) => {
   const questionId = ctx.request.url.searchParams.get("id");
 
   // Si un ID est fourni, renvoyer la question spécifique
   if (questionId) {
-    const question = questions.find((q) =>
-      q.id === parseInt(questionId) || q.id === questionId
+    // Récupérer la question depuis la base de données avec ses réponses si c'est une question de type choice
+    const questionResult = await executeQuery(
+      `SELECT q.id, q.question, q.answer, q.question_type, t.name as theme, s.name as subtheme 
+       FROM Questions q
+       LEFT JOIN Subthemes s ON q.subtheme_id = s.id
+       LEFT JOIN Themes t ON s.theme_id = t.id
+       WHERE q.id = $1`,
+      [questionId]
     );
-    // const question = await executeQuery(
-    //     "SELECT questions.id, question, answer, theme, subtheme from
-    //     (SELECT * FROM questions WHERE id = $1)",
-    //   [user]
-    //   );
 
-    if (!question) {
+    if (!questionResult || (questionResult as any).rows.length === 0) {
       ctx.response.status = 404;
       ctx.response.body = { error: "Question not found" };
       return;
+    }
+
+    const question = (questionResult as any).rows[0];
+
+    // Si c'est une question de type choice, récupérer les réponses possibles
+    if (question.question_type === 'choice') {
+      const reponsesResult = await executeQuery(
+        `SELECT id, texte, est_correcte FROM Reponses WHERE question_id = $1 ORDER BY id`,
+        [question.id]
+      );
+
+      question.options = (reponsesResult as any).rows;
     }
 
     ctx.response.status = 200;
@@ -127,29 +171,56 @@ router.post("/question", async (ctx) => {
       return;
     }
 
-    // Générer un nouvel ID (en supposant que vous utilisez des ID numériques séquentiels)
-    const newId = Math.max(
-      ...questions.map((q) => parseInt(q.id.toString())),
-      0,
-    ) + 1;
+    // 1. Insérer la question
+    const result = await executeQuery(
+      `INSERT INTO Questions (subtheme_id, question, question_type, answer) 
+       VALUES ($1, $2, $3, $4) RETURNING id`,
+      [
+        body.subtheme_id || null,
+        body.question,
+        body.question_type || "text",
+        body.answer,
+      ]
+    );
 
-    const newQuestion = {
-      id: newId,
-      question: body.question,
-      answer: body.answer,
-      theme: body.theme || "Général",
-      // Ajoutez d'autres champs selon votre modèle de données
-    };
+    const newQuestionId = (result as any).rows[0].id;
 
-    // Ajouter à la liste en mémoire
-    questions.push(newQuestion);
+    // 2. Si c'est une question à choix multiples, insérer les réponses
+    if (body.question_type === "choice" && Array.isArray(body.options)) {
+      for (const option of body.options) {
+        await executeQuery(
+          `INSERT INTO Reponses (question_id, texte, est_correcte) 
+           VALUES ($1, $2, $3)`,
+          [newQuestionId, option.texte, option.est_correcte || false]
+        );
+      }
+    }
 
-    // Potentiellement sauvegarder dans un fichier JSON ou une base de données
-    // await Deno.writeTextFile("./questions_with_ids.json", JSON.stringify(questions));
+    // 3. Récupérer la question complète avec ses réponses
+    const newQuestion = await executeQuery(
+      `SELECT q.id, q.question, q.answer, q.question_type, t.name as theme, s.name as subtheme 
+       FROM Questions q
+       LEFT JOIN Subthemes s ON q.subtheme_id = s.id
+       LEFT JOIN Themes t ON s.theme_id = t.id
+       WHERE q.id = $1`,
+      [newQuestionId]
+    );
+
+    let questionData = (newQuestion as any).rows[0];
+
+    // Si c'est une question à choix multiples, récupérer les réponses
+    if (body.question_type === "choice") {
+      const options = await executeQuery(
+        `SELECT id, texte, est_correcte FROM Reponses WHERE question_id = $1`,
+        [newQuestionId]
+      );
+      questionData.options = (options as any).rows;
+    }
 
     ctx.response.status = 201;
-    ctx.response.body = newQuestion;
-  } catch (_error) {
+    ctx.response.body = questionData;
+  } catch (error) {
+    console.error("Error creating question:", error);
     ctx.response.status = 500;
     ctx.response.body = { error: "Failed to create question" };
   }
@@ -161,29 +232,74 @@ router.put("/question/:id", async (ctx) => {
     const { id } = ctx.params;
     const body = await ctx.request.body().value;
 
-    const index = questions.findIndex((q) =>
-      q.id === parseInt(id) || q.id === id
+    // 1. Vérifier si la question existe
+    const questionExists = await executeQuery(
+      "SELECT id, question_type FROM Questions WHERE id = $1",
+      [id]
     );
 
-    if (index === -1) {
+    if ((questionExists as any).rows.length === 0) {
       ctx.response.status = 404;
       ctx.response.body = { error: "Question not found" };
       return;
     }
 
-    // Mettre à jour la question
-    questions[index] = {
-      ...questions[index],
-      ...body,
-      id: questions[index].id, // Préserver l'ID original
-    };
+    const oldQuestionType = (questionExists as any).rows[0].question_type;
 
-    // Potentiellement sauvegarder dans un fichier JSON ou une base de données
-    // await Deno.writeTextFile("./questions_with_ids.json", JSON.stringify(questions));
+    // 2. Mettre à jour la question
+    await executeQuery(
+      `UPDATE Questions SET 
+       subtheme_id = $1, question = $2, question_type = $3, answer = $4
+       WHERE id = $5`,
+      [
+        body.subtheme_id || null,
+        body.question,
+        body.question_type || oldQuestionType,
+        body.answer,
+        id,
+      ]
+    );
+
+    // 3. Gérer les réponses pour les questions de type choix
+    if (body.question_type === "choice" && Array.isArray(body.options)) {
+      // Supprimer les anciennes réponses
+      await executeQuery("DELETE FROM Reponses WHERE question_id = $1", [id]);
+      
+      // Insérer les nouvelles réponses
+      for (const option of body.options) {
+        await executeQuery(
+          `INSERT INTO Reponses (question_id, texte, est_correcte) 
+           VALUES ($1, $2, $3)`,
+          [id, option.texte, option.est_correcte || false]
+        );
+      }
+    }
+
+    // 4. Récupérer la question mise à jour avec ses réponses
+    const updatedQuestion = await executeQuery(
+      `SELECT q.id, q.question, q.answer, q.question_type, t.name as theme, s.name as subtheme 
+       FROM Questions q
+       LEFT JOIN Subthemes s ON q.subtheme_id = s.id
+       LEFT JOIN Themes t ON s.theme_id = t.id
+       WHERE q.id = $1`,
+      [id]
+    );
+
+    let questionData = (updatedQuestion as any).rows[0];
+
+    // Si c'est une question à choix multiples, récupérer les réponses
+    if (questionData.question_type === "choice") {
+      const options = await executeQuery(
+        `SELECT id, texte, est_correcte FROM Reponses WHERE question_id = $1`,
+        [id]
+      );
+      questionData.options = (options as any).rows;
+    }
 
     ctx.response.status = 200;
-    ctx.response.body = questions[index];
-  } catch (_error) {
+    ctx.response.body = questionData;
+  } catch (error) {
+    console.error("Error updating question:", error);
     ctx.response.status = 500;
     ctx.response.body = { error: "Failed to update question" };
   }
@@ -325,16 +441,30 @@ async function importQuestionsToDatabase() {
       const theme = question.theme?.trim() || "Général";
       const subtheme = question.subtheme?.trim() || null;
       const subthemeId = subtheme ? subthemeIds.get(`${theme}_${subtheme}`) : null;
+      const questionType = question.type || "text";
       
-      await executeQuery(
-        "INSERT INTO Questions (subtheme_id, question, question_type, answer) VALUES ($1, $2, $3, $4)",
+      // Insérer la question
+      const result = await executeQuery(
+        "INSERT INTO Questions (subtheme_id, question, question_type, answer) VALUES ($1, $2, $3, $4) RETURNING id",
         [
           subthemeId,
           question.question,
-          question.question_type || "text",
+          questionType,
           question.answer
         ]
       );
+      
+      const questionId = (result as any).rows[0].id;
+      
+      // Si c'est une question à choix multiples, insérer les options de réponse
+      if (questionType === "choice" && Array.isArray(question.options)) {
+        for (const option of question.options) {
+          await executeQuery(
+            "INSERT INTO Reponses (question_id, texte, est_correcte) VALUES ($1, $2, $3)",
+            [questionId, option.texte, option.est_correcte || false]
+          );
+        }
+      }
       
       questionsInserted++;
       if (questionsInserted % 10 === 0) {
