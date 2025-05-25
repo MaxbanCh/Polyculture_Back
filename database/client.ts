@@ -1,12 +1,25 @@
 import { Client } from "https://deno.land/x/postgres@v0.17.0/mod.ts";
 
-const client = new Client({
-  hostname: "database", // Matches the service name in docker-compose.yml
-  port: 5432,
-  user: "postgres",
-  password: "admin",
-  database: "polyculture",
-});
+// Get the connection string from the environment variable
+const databaseUrl = Deno.env.get("DATABASE_URL");
+
+let client;
+
+if (databaseUrl) {
+  // Parse the connection URL and use it for the client
+  client = new Client(databaseUrl);
+  console.log("Using DATABASE_URL from environment for database connection");
+} else {
+  // Fallback for local development
+  client = new Client({
+    hostname: "database", // Matches the service name in docker-compose.yml
+    port: 5432,
+    user: "postgres",
+    password: "admin",
+    database: "polyculture",
+  });
+  console.log("Using hardcoded database configuration (development mode)");
+}
 
 let isConnected = false;
 
