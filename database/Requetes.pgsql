@@ -1,23 +1,23 @@
-DROP TABLE IF EXISTS QuestionsDefi;
-DROP TABLE IF EXISTS DefiSolo;
+-- DROP TABLE IF EXISTS QuestionsDefi;
+-- DROP TABLE IF EXISTS DefiSolo;
 
-DROP TABLE IF EXISTS Questions;
-DROP TABLE IF EXISTS Subthemes;
+-- DROP TABLE IF EXISTS Questions;
+-- DROP TABLE IF EXISTS Subthemes;
 
--- DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS Themes;
+-- -- DROP TABLE IF EXISTS users;
+-- DROP TABLE IF EXISTS Themes;
 
 
 -- Basic tables for the app :
 
--- CREATE TABLE users (
---     id SERIAL PRIMARY KEY,
---     username VARCHAR(100) NOT NULL UNIQUE,
---     password_hash VARCHAR(100) NOT NULL,
---     Description TEXT,
---     admin BOOLEAN DEFAULT FALSE,
---     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
--- );
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password_hash VARCHAR(100) NOT NULL,
+    Description TEXT,
+    admin BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
 CREATE TABLE Themes (
     id SERIAL PRIMARY KEY,

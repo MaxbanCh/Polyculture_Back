@@ -6,6 +6,7 @@ import profilRouter from "./Users/profil.ts";
 import wsRouter from "./utils/websocket.ts";
 import gameRouter from "./Game/gameManager.ts";
 import questionPoolRouter from "./Game/questionpool.ts";
+import { initializeDatabase } from "./database/client.ts";
 
 const app = new Application();
 
@@ -47,7 +48,7 @@ if (Deno.args.length < 1) {
   Deno.exit();
 }
 
-const PORT = parseInt(Deno.env.get("PORT") || "80");
+const PORT = parseInt(Deno.env.get("PORT") || "443");
 const options: any = { port: PORT };
 
 // if (Deno.args.length >= 3) {
@@ -65,6 +66,8 @@ app.use(async (ctx, next) => {
   await next();
   console.log(ctx.request.url.pathname);
 });
+
+await initializeDatabase(); // Initialize the database connection and tables
 
 app.use(router.routes());
 app.use(router.allowedMethods());
