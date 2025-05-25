@@ -12,4 +12,6 @@ EXPOSE 443
 
 # Commande pour exécuter le serveur
 # CMD ["run", "--allow-net", "--allow-read", "--watch", "back_server.ts", "3000"]
-CMD ["run", "--allow-net", "--allow-read", "--watch", "back_server.ts", "443", "ssl/cert.pem", "ssl/key.pem"]
+CMD ["run", "--allow-net", "--allow-read", "--allow-env", "--watch", "back_server.ts", "443"]
+
+

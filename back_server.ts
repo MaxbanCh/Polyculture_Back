@@ -41,13 +41,6 @@ router.get("/get_cookies", (ctx) => {
   ctx.response.body = "Miam les cookies !";
 });
 
-if (Deno.args.length < 1) {
-  console.log(
-    `Usage: $ deno run --allow-net server.ts PORT [CERT_PATH KEY_PATH]`,
-  );
-  Deno.exit();
-}
-
 const PORT = parseInt(Deno.env.get("PORT") || "443");
 const options: any = { port: PORT };
 
