@@ -1,23 +1,23 @@
-DROP TABLE IF EXISTS QuestionsDefi;
-DROP TABLE IF EXISTS DefiSolo;
+-- DROP TABLE IF EXISTS QuestionsDefi;
+-- DROP TABLE IF EXISTS DefiSolo;
 
-DROP TABLE IF EXISTS Questions;
-DROP TABLE IF EXISTS Subthemes;
+-- DROP TABLE IF EXISTS Questions;
+-- DROP TABLE IF EXISTS Subthemes;
 
--- DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS Themes;
+-- -- DROP TABLE IF EXISTS users;
+-- DROP TABLE IF EXISTS Themes;
 
 
 -- Basic tables for the app :
 
--- CREATE TABLE users (
---     id SERIAL PRIMARY KEY,
---     username VARCHAR(100) NOT NULL UNIQUE,
---     password_hash VARCHAR(100) NOT NULL,
---     Description TEXT,
---     admin BOOLEAN DEFAULT FALSE,
---     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
--- );
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password_hash VARCHAR(100) NOT NULL,
+    Description TEXT,
+    admin BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
 CREATE TABLE Themes (
     id SERIAL PRIMARY KEY,
@@ -43,6 +43,17 @@ CREATE TABLE Questions (
     media TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE Reponses (
+    id SERIAL PRIMARY KEY,
+    question_id INT REFERENCES Questions(id) ON DELETE CASCADE,
+    texte TEXT NOT NULL,
+    est_correcte BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Index pour optimiser les recherches par question
+CREATE INDEX idx_reponses_question_id ON Reponses(question_id);
 
 -- Tables for DefiSolo
 

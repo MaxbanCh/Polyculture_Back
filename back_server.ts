@@ -6,12 +6,15 @@ import profilRouter from "./Users/profil.ts";
 import wsRouter from "./utils/websocket.ts";
 import gameRouter from "./Game/gameManager.ts";
 import questionPoolRouter from "./Game/questionpool.ts";
+import { initializeDatabase } from "./database/client.ts";
+import buzzerManager from "./Game/buzzerManager.ts";
+
 
 const app = new Application();
 
 app.use(
   oakCors({
-    origin: "http://83.195.188.17", // Allow requests from this origin
+    origin: "https://polyculture.cluster-ig3.igpolytech.fr", // Allow requests from this origin
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Specify allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
     credentials: true, // Allow credentials like cookies
@@ -21,7 +24,7 @@ app.use(
 app.use(async (ctx, next) => {
   ctx.response.headers.set(
     "Access-Control-Allow-Origin",
-    "http://83.195.188.17",
+    "https://polyculture.cluster-ig3.igpolytech.fr",
   );
   ctx.response.headers.set(
     "Access-Control-Allow-Methods",
@@ -40,21 +43,15 @@ router.get("/get_cookies", (ctx) => {
   ctx.response.body = "Miam les cookies !";
 });
 
-if (Deno.args.length < 1) {
-  console.log(
-    `Usage: $ deno run --allow-net server.ts PORT [CERT_PATH KEY_PATH]`,
-  );
-  Deno.exit();
-}
+const PORT = parseInt(Deno.env.get("PORT") || "443");
+const options: any = { port: PORT };
 
-const options = { port: Deno.args[0] };
-
-if (Deno.args.length >= 3) {
-  options.secure = true;
-  options.cert = await Deno.readTextFile(Deno.args[1]);
-  options.key = await Deno.readTextFile(Deno.args[2]);
-  console.log(`SSL conf ready (use https)`);
-}
+// if (Deno.args.length >= 3) {
+//   options.secure = true;
+//   options.cert = await Deno.readTextFile(Deno.args[1]);
+//   options.key = await Deno.readTextFile(Deno.args[2]);
+//   console.log(`SSL conf ready (use https)`);
+// }
 
 console.log(`Oak back server running on port ${options.port}`);
 
@@ -64,6 +61,8 @@ app.use(async (ctx, next) => {
   await next();
   console.log(ctx.request.url.pathname);
 });
+
+await initializeDatabase(); // Initialize the database connection and tables
 
 app.use(router.routes());
 app.use(router.allowedMethods());
@@ -82,5 +81,8 @@ app.use(gameRouter.allowedMethods());
 
 app.use(questionPoolRouter.routes());
 app.use(questionPoolRouter.allowedMethods());
+
+app.use(buzzerManager.routes());
+app.use(buzzerManager.allowedMethods());
 
 await app.listen(options);

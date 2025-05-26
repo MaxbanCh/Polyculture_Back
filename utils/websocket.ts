@@ -20,10 +20,6 @@ interface Room {
 export const connections: WebSocketWithData[] = [];
 export const rooms = new Map<string, Room>();
 
-function generateRoomCode(): string {
-  return Math.random().toString(36).substring(2, 8).toUpperCase();
-}
-
 function broadcastToRoom(roomCode: string, data: any) {
   const room = rooms.get(roomCode);
   if (!room) return;
@@ -42,65 +38,11 @@ function notifyAllUsers(json: any) {
   });
 }
 
-// function createRoom(data: any, ws: WebSocket) {
-//   const roomCode = generateRoomCode();
-//   const newRoom: Room = {
-//     code: roomCode,
-//     host: data.userId,
-//     players: [{ id: data.userId, username: data.username, ready: false }],
-//     selectedThemes: [],
-//     status: "waiting",
-//     scores: {},
-//   };
-//   rooms.set(roomCode, newRoom);
-//   ws.data = { userId: data.userId, roomCode };
-//   ws.send(JSON.stringify({ type: "ROOM_CREATED", room: newRoom }));
-// }
-
-// function joinRoom(data: any, ws: WebSocket) {
-//   const room = rooms.get(data.roomCode);
-//   if (room) {
-//     room.players.push({
-//       id: data.userId,
-//       username: data.username,
-//       ready: false,
-//     });
-//     ws.data = { userId: data.userId, roomCode: data.roomCode };
-//     ws.send(JSON.stringify({ type: "ROOM_JOINED", room: room }));
-
-//     broadcastToRoom(data.roomCode, {
-//       type: "PLAYER_JOINED",
-//       players: room.players,
-//     });
-//   } else {
-//     ws.send(JSON.stringify({ type: "ROOM_NOT_FOUND" }));
-//   }
-// }
-
-// function startGame(data: any, ws: WebSocket) {
-//   const room = rooms.get(data.roomCode);
-//   if (room) {
-//     room.status = "playing";
-//     ws.send(JSON.stringify({ type: "GAME_STARTED", room }));
-//     broadcastToRoom(data.roomCode, { type: "GAME_STARTED", room });
-//   } else {
-//     ws.send(JSON.stringify({ type: "ROOM_NOT_FOUND" }));
-//   }
-// }
-
-// function submitAnswer(data: any, ws: WebSocket) {
-//   const gameInProgress = rooms.get(data.roomCode);
-//   if (gameInProgress && gameInProgress.status === "playing") {
-//     // Gérer la réponse et mettre à jour les scores
-//     // Envoyer les résultats à tous les joueurs
-//   }
-// }
-
 router.get("/", (ctx) => {
   if (!ctx.isUpgradable) {
     ctx.throw(501);
   }
-  const ws = ctx.upgrade();
+  const ws = ctx.upgrade() as WebSocketWithData;
   connections.push(ws);
   // console.log(ws);
 
@@ -139,27 +81,15 @@ router.get("/", (ctx) => {
       });
       return;
     }
-
-    // if (data.type === "CREATE_ROOM") {
-    //   createRoom(data, ws);
-    // } else if (data.type === "JOIN_ROOM") {
-    //   joinRoom(data, ws);
-    // } else if (data.type === "START_GAME") {
-    //   startGame(data, ws);
-    // } else if (data.type === "SUBMIT_ANSWER") {
-    //   submitAnswer(data, ws);
-    // } else {
-    //   console.log("Unknown message type:", data.type);
-    // }
   };
 
   ws.onclose = () => {
     const index = connections.indexOf(ws);
     if (index !== -1) {
-      if (ws.data?.roomCode) {
+      if (ws.data && ws.data.roomCode) {
         const room = rooms.get(ws.data.roomCode);
         if (room) {
-          room.players = room.players.filter((p) => p.id !== ws.data.userId);
+          room.players = room.players.filter((p) => p.id !== ws.data!.userId);
           if (room.players.length === 0) {
             rooms.delete(ws.data.roomCode);
           } else {

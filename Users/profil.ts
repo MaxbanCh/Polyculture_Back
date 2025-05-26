@@ -7,7 +7,7 @@ router.options("/login", (ctx) => {
   ctx.response.status = 200;
   ctx.response.headers.set(
     "Access-Control-Allow-Origin",
-    "http://83.195.188.17",
+    "https://polyculture.cluster-ig3.igpolytech.fr",
   );
   ctx.response.headers.set(
     "Access-Control-Allow-Methods",
@@ -24,7 +24,7 @@ router.options("/register", (ctx) => {
   ctx.response.status = 200;
   ctx.response.headers.set(
     "Access-Control-Allow-Origin",
-    "http://83.195.188.17",
+    "https://polyculture.cluster-ig3.igpolytech.fr",
   );
   ctx.response.headers.set(
     "Access-Control-Allow-Methods",
@@ -44,7 +44,7 @@ const secretKey = await crypto.subtle.generateKey(
 );
 
 // Connection related variables
-const tokens: { [key: string]: string } = {};
+export const tokens: { [key: string]: string } = {};
 
 // Function to remove a token based on the user
 function removeTokenByUser(user: string) {
@@ -58,8 +58,8 @@ function removeTokenByUser(user: string) {
 
 async function get_hash(password: string): Promise<string> {
   const saltRounds = 10;
-  const salt = await bcrypt.genSalt(saltRounds); // Generate the salt manually
-  return await bcrypt.hash(password, salt); // Pass the salt to the hash function
+  const salt = await bcrypt.genSalt(saltRounds);
+  return await bcrypt.hash(password, salt);
 }
 
 router.post("/login", async (ctx) => {
@@ -84,7 +84,7 @@ router.post("/login", async (ctx) => {
     [sanitizedUsername],
   );
 
-  if (userResult.rows.length === 0) {
+  if (!userResult || !userResult.rows || userResult.rows.length === 0) {
     ctx.response.status = 401;
     ctx.response.body = { error: "Invalid username or password" };
     return;
@@ -110,7 +110,7 @@ router.post("/login", async (ctx) => {
   }, secretKey);
   ctx.response.headers.set(
     "Set-Cookie",
-    `auth_token=${token}; HttpOnly; Max-Age=3600; SameSite=Strict; `,
+    `auth_token=${token}; HttpOnly; Max-Age=3600; SameSite=Strict; Secure`,
   );
 
   removeTokenByUser(username);
@@ -159,7 +159,7 @@ router.post("/register", async (ctx) => {
     [sanitizedUsername],
   );
 
-  if (existingUserResult.rows.length > 0) {
+  if (existingUserResult && existingUserResult.rows && existingUserResult.rows.length > 0) {
     ctx.response.status = 409;
     ctx.response.body = { error: "Username already exists" };
     return;
@@ -180,7 +180,7 @@ router.post("/register", async (ctx) => {
     }, secretKey);
     ctx.response.headers.set(
       "Set-Cookie",
-      `auth_token=${token}; HttpOnly; Max-Age=3600; SameSite=Strict; `,
+      `auth_token=${token}; HttpOnly; Max-Age=3600; SameSite=Strict; Secure`,
     );
 
     tokens[token] = sanitizedUsername;
@@ -295,10 +295,10 @@ router.get("/admin", async (ctx) => {
     const userResult = await executeQuery(
       "SELECT id, username, admin FROM users WHERE username = $1",
       [user],
-    );
-    console.log(userResult.rows);
+    ) as { rows?: { admin?: boolean }[] } | undefined;
+    console.log(userResult?.rows);
 
-    if (!userResult.rows[0].admin) {
+    if (!userResult || !userResult.rows || userResult.rows.length === 0 || !userResult.rows[0].admin) {
       ctx.response.status = 403;
       ctx.response.body = { error: "Forbidden" };
       return;

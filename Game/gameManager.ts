@@ -47,7 +47,6 @@ function broadcastToRoom(roomCode: string, data: any) {
 
   connections.forEach((client) => {
     if (client.data?.roomCode === roomCode && client.readyState === 1) {
-      // Only send if connection is OPEN (readyState === 1)
       client.send(JSON.stringify(data));
     }
   });
@@ -60,6 +59,63 @@ function notifyAllUsers(json: any) {
   });
 }
 
+
+function normalizeString(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function levenshteinDistance(str1: string, str2: string): number {
+  const len1 = str1.length;
+  const len2 = str2.length;
+  
+  // Matrice pour la programmation dynamique
+  const dp: number[][] = Array(len1 + 1)
+    .fill(null)
+    .map(() => Array(len2 + 1).fill(0));
+  
+  // Initialisation de la matrice
+  for (let i = 0; i <= len1; i++) dp[i][0] = i;
+  for (let j = 0; j <= len2; j++) dp[0][j] = j;
+  
+  // Remplissage de la matrice
+  for (let i = 1; i <= len1; i++) {
+    for (let j = 1; j <= len2; j++) {
+      const cost = str1[i - 1] === str2[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,         // suppression
+        dp[i][j - 1] + 1,         // insertion
+        dp[i - 1][j - 1] + cost   // substitution
+      );
+    }
+  }
+  
+  return dp[len1][len2];
+}
+
+function compareAnswers(
+  userAnswer: string, 
+  correctAnswer: string, 
+  tolerance: number = 2
+): boolean {
+  // Normalisation des réponses (suppression des accents et mise en minuscules)
+  const normalizedUserAnswer = normalizeString(userAnswer);
+  const normalizedCorrectAnswer = normalizeString(correctAnswer);
+  
+  // Si les chaînes normalisées sont identiques, la réponse est correcte
+  if (normalizedUserAnswer === normalizedCorrectAnswer) {
+    return true;
+  }
+  
+  // Calcul de la distance d'édition
+  const distance = levenshteinDistance(normalizedUserAnswer, normalizedCorrectAnswer);
+  
+  // La réponse est considérée comme correcte si la distance est inférieure ou égale à la tolérance
+  return distance <= tolerance;
+}
+
 // Game Logic
 class GameSession {
   private room: Room;
@@ -67,8 +123,8 @@ class GameSession {
   private currentQuestionIndex = 0;
   private playerAnswers = new Map<string, PlayerAnswer>();
   private questionStartTime: number = 0;
-  private timePerQuestion = 20; // seconds
-  private questionTimer?: number; // Ajouter cette propriété pour gérer le timer
+  private timePerQuestion = 20; // secondes
+  private questionTimer?: number;
 
   constructor(room: Room) {
     this.room = room;
@@ -119,14 +175,18 @@ class GameSession {
       const result = await executeQuery(query, [poolId, count]);
       
       // Convertir le résultat en format attendu
-      return result.rows.map(row => ({
-        id: String(row.id),
-        question: row.question,
-        answer: row.answer,
-        theme: row.theme || "Général",
-        type: row.type || "text",
-        media: row.media
-      }));
+      if (result && Array.isArray(result.rows)) {
+        return result.rows.map((row: any) => ({
+          id: String(row.id),
+          question: row.question,
+          answer: row.answer,
+          theme: row.theme || "Général",
+          type: row.type || "text",
+          media: row.media
+        }));
+      } else {
+        return this.getFallbackQuestions(count);
+      }
     } catch (error) {
       console.error("Error fetching questions from pool:", error);
       return this.getFallbackQuestions(count);
@@ -149,9 +209,8 @@ class GameSession {
   private getFallbackQuestions(count: number): QuestionData[] {
     // Questions de secours au cas où la récupération échoue
     return [
-      { id: "1", question: "What is the capital of France?", answer: "Paris", theme: "Geography" },
-      { id: "2", question: "Who painted the Mona Lisa?", answer: "Leonardo da Vinci", theme: "Art" },
-      // Reste des questions inchangé
+      { id: "1", question: "Quelle est la capitale de la France ?", answer: "Paris", theme: "Geographie" },
+      { id: "2", question: "Qui a peint la Joconde?", answer: "Leonard de Vinci", theme: "Art" },
     ].slice(0, count);
   }
 
@@ -160,7 +219,6 @@ class GameSession {
     if (this.currentQuestionIndex < this.questions.length) {
       const question = this.questions[this.currentQuestionIndex];
       
-      // Clear previous answers and timer
       this.playerAnswers.clear();
       if (this.questionTimer) {
         clearTimeout(this.questionTimer);
@@ -234,7 +292,7 @@ class GameSession {
       playerResults: []
     };
     
-    const correctResponses = [];
+    const correctResponses: { playerId: string; timestamp: number }[] = [];
     
     // First pass: identify correct answers
     for (const [playerId, data] of this.playerAnswers.entries()) {
@@ -294,8 +352,7 @@ class GameSession {
   }
   
   private isAnswerCorrect(userAnswer: string, correctAnswer: string): boolean {
-    // Simple exact match - you could implement more sophisticated matching
-    return userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase().trim();
+    return compareAnswers(userAnswer, correctAnswer, 2);
   }
   
   private endGame() {
@@ -495,27 +552,43 @@ router.get("/Multi", (ctx) => {
   };
 });
 
-// Create a question model file that you'll need to implement
-// filepath: /polyculture/Polyculture_Back/models/questionModel.ts
-export async function getQuestionsByThemes(themes: string[], count: number): Promise<QuestionData[]> {
+
+async function getQuestionsByThemes(themes: string[], count: number): Promise<QuestionData[]> {
   try {
-    // This is a placeholder - implement database query
-    // Example using your database connection
-    /*
-    const themeList = themes.map(theme => `'${theme}'`).join(',');
-    const query = `
-      SELECT id, question, answer, theme 
-      FROM questions 
-      WHERE theme IN (${themeList || "'General'"})
-      ORDER BY RANDOM() 
-      LIMIT $1
+    let query = `
+      SELECT q.id, q.question, q.answer, q.question_type as type, q.media,
+             t.name as theme, s.name as subtheme
+      FROM Questions q
+      LEFT JOIN Subthemes s ON q.subtheme_id = s.id
+      LEFT JOIN Themes t ON s.theme_id = t.id
     `;
     
-    const result = await db.query(query, [count]);
-    return result.rows;
-    */
+    const params: any[] = [];
     
-    // For now, return mock data
+    // If themes are specified, add WHERE clause
+    if (themes && themes.length > 0) {
+      query += " WHERE t.name = ANY($1)";
+      params.push(themes);
+    }
+    
+    query += " ORDER BY RANDOM() LIMIT $" + (params.length + 1);
+    params.push(count);
+    
+    const result = await executeQuery(query, params);
+    
+    if (result && Array.isArray(result.rows)) {
+      return result.rows.map((row: any) => ({
+        id: String(row.id),
+        question: row.question,
+        answer: row.answer,
+        theme: row.theme || "Général",
+        type: row.type || "text",
+        media: row.media
+      }));
+    }
+    
+    // Question de secours
+    console.warn("No questions found for themes:", themes);
     return [
       { id: "1", question: "What is the capital of France?", answer: "Paris", theme: "Geography" },
       { id: "2", question: "Who painted the Mona Lisa?", answer: "Leonardo da Vinci", theme: "Art" },
