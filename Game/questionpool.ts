@@ -36,7 +36,7 @@ router.post("/questionpool", async (ctx) => {
 // Récupérer la liste des pools
 router.get("/questionpool", async (ctx) => {
     try {
-      const userId = ctx.state.user?.id;
+      let userId = 0
       let query = `
         SELECT qp.id, qp.name, qp.description, qp.is_public, qp.created_at, 
         u.username as created_by,

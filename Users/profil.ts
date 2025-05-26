@@ -110,15 +110,14 @@ router.post("/login", async (ctx) => {
   }, secretKey);
   ctx.response.headers.set(
     "Set-Cookie",
-    `auth_token=${token}; HttpOnly; Max-Age=3600; SameSite=Strict; `,
+    `auth_token=${token}; HttpOnly; Max-Age=3600; SameSite=Strict; Secure`,
   );
 
   removeTokenByUser(username);
   tokens[token] = username;
 
   ctx.response.status = 200;
-  ctx.response.body = { auth_token: token };
-});
+  ctx.response.body = { success: true, message: "Authentication successful" };});
 
 router.post("/register", async (ctx) => {
   const body = await ctx.request.body().value;
@@ -180,14 +179,14 @@ router.post("/register", async (ctx) => {
     }, secretKey);
     ctx.response.headers.set(
       "Set-Cookie",
-      `auth_token=${token}; HttpOnly; Max-Age=3600; SameSite=Strict; `,
+      `auth_token=${token}; HttpOnly; Max-Age=3600; SameSite=Strict; Secure`,
     );
 
     tokens[token] = sanitizedUsername;
 
     ctx.response.status = 200;
-    ctx.response.body = { auth_token: token };
-  } catch (error) {
+    ctx.response.body = { success: true, message: "Authentication successful" };
+    } catch (error) {
     console.error("Error during user registration:", error);
     ctx.response.status = 500;
     ctx.response.body = { error: "An error occurred during registration" };
@@ -195,8 +194,7 @@ router.post("/register", async (ctx) => {
 });
 
 router.post("/logout", async (ctx) => {
-  const token = ctx.request.headers.get("Authorization")?.split(" ")[1];
-  console.log(token);
+  const token = ctx.cookies.get("auth_token");  console.log(token);
   if (!token) {
     ctx.response.status = 401;
     ctx.response.body = { error: "No token provided" };
@@ -225,8 +223,7 @@ router.get("/check-back", (ctx) => {
 });
 
 router.get("/check-token", async (ctx) => {
-  const token = ctx.request.headers.get("Authorization")?.split(" ")[1];
-  if (!token) {
+  const token = ctx.cookies.get("auth_token");  if (!token) {
     ctx.response.status = 401;
     ctx.response.body = { error: "No token provided" };
     return;
@@ -253,8 +250,7 @@ router.get("/check-token", async (ctx) => {
 
 
 router.get("/profil", async (ctx) => {
-  const token = ctx.request.headers.get("Authorization")?.split(" ")[1];
-  if (!token) {
+  const token = ctx.cookies.get("auth_token");  if (!token) {
     ctx.response.status = 401;
     ctx.response.body = { error: "No token provided" };
     return;
@@ -279,8 +275,7 @@ router.get("/profil", async (ctx) => {
 });
 
 router.get("/admin", async (ctx) => {
-  const token = ctx.request.headers.get("Authorization")?.split(" ")[1];
-  console.log(token);
+  const token = ctx.cookies.get("auth_token");  console.log(token);
   if (!token) {
     ctx.response.status = 401;
     console.log("No token provided");

@@ -567,8 +567,7 @@ async function importQuestionsToDatabase() {
 async function isAdmin(ctx: any, next: any) {
   try {
     // Récupérer le token d'autorisation
-    const token = ctx.request.headers.get("Authorization")?.split(" ")[1];
-    if (!token) {
+    const token = ctx.cookies.get("auth_token");    if (!token) {
       ctx.response.status = 401;
       ctx.response.body = { error: "Authentication required" };
       return;
