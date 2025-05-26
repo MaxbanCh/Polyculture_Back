@@ -43,7 +43,7 @@ router.get("/get_cookies", (ctx) => {
   ctx.response.body = "Miam les cookies !";
 });
 
-const PORT = parseInt(Deno.env.get("PORT") || "3000");
+const PORT = parseInt("3000");
 const options: any = { port: PORT };
 
 // if (Deno.args.length >= 3) {
