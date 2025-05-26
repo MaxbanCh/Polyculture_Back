@@ -92,7 +92,7 @@ router.get("/randomquestionwithanswer", async (ctx) => {
 router.post("/answer", async (ctx) => {
   try {
     const body = await ctx.request.body().value;
-    const { questionId, answer } = body;
+    const { questionId, answer, finaltry } = body;
     
     const result = await executeQuery(
       "SELECT answer FROM Questions WHERE id = $1",
@@ -109,8 +109,15 @@ router.post("/answer", async (ctx) => {
     const correctAnswer = row.answer;
     const isCorrect = compareAnswers(answer, correctAnswer, 2); // Using a tolerance of 2 for Levenshtein distance
     
-    ctx.response.status = 200;
-    ctx.response.body = { correct: isCorrect };
+    if (isCorrect || finaltry){
+      ctx.response.status = 200;
+      ctx.response.body = { correct: isCorrect, answer: correctAnswer };
+    }
+    else{
+      ctx.response.status = 200;
+      ctx.response.body = { correct: isCorrect };
+    }
+
   } catch (error) {
     console.error("Error checking answer:", error);
     ctx.response.status = 500;
