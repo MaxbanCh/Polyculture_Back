@@ -23,13 +23,48 @@ router.get("/randomquestion", async (ctx) => {
   try {
     const theme = ctx.request.url.searchParams.get("theme");
     let query = `
+      SELECT q.id, q.question, q.question_type, t.name as theme, s.name as subtheme
+      FROM Questions q
+      LEFT JOIN Subthemes s ON q.subtheme_id = s.id
+      LEFT JOIN Themes t ON s.theme_id = t.id
+    `;
+    
+    const params: string[] = [];
+    if (theme) {
+      query += " WHERE t.name ILIKE $1";
+      params.push(`%${theme}%`);
+    }
+    
+    query += " ORDER BY RANDOM() LIMIT 1";
+    
+    const result = await executeQuery(query, params);
+    
+    if (!result || !result.rows || result.rows.length === 0) {
+      ctx.response.status = 404;
+      ctx.response.body = { error: "No questions found for the given theme." };
+      return;
+    }
+    
+    ctx.response.status = 200;
+    ctx.response.body = result.rows[0] as Record<string, unknown>;
+  } catch (error) {
+    console.error("Error fetching random question:", error);
+    ctx.response.status = 500;
+    ctx.response.body = { error: "Failed to fetch random question" };
+  }
+});
+
+router.get("/randomquestionwithanswer", async (ctx) => {
+  try {
+    const theme = ctx.request.url.searchParams.get("theme");
+    let query = `
       SELECT q.id, q.question, q.answer, q.question_type, t.name as theme, s.name as subtheme
       FROM Questions q
       LEFT JOIN Subthemes s ON q.subtheme_id = s.id
       LEFT JOIN Themes t ON s.theme_id = t.id
     `;
     
-    const params = [];
+    const params: string[] = [];
     if (theme) {
       query += " WHERE t.name ILIKE $1";
       params.push(`%${theme}%`);
@@ -121,7 +156,7 @@ router.get("/question", async (ctx) => {
       LEFT JOIN Themes t ON s.theme_id = t.id
     `;
     
-    const params = [];
+    const params: (string | number)[] = [];
     if (theme) {
       query += " WHERE t.name ILIKE $1";
       params.push(`%${theme}%`);
@@ -200,7 +235,7 @@ router.post("/question", async (ctx) => {
     }
     
     // Get or create subtheme if provided
-    let subthemeId = null;
+    let subthemeId: number | null = null;
     if (subtheme) {
       const subthemeResult = await executeQuery(
         "SELECT id FROM Subthemes WHERE name = $1 AND theme_id = $2",
@@ -297,7 +332,7 @@ router.put("/question/:id", async (ctx) => {
     }
     
     // Handle theme and subtheme if provided
-    let subthemeId = null;
+    let subthemeId: number | null = null;
     
     if (body.theme) {
       const theme = body.theme.trim();
@@ -360,7 +395,7 @@ router.put("/question/:id", async (ctx) => {
     }
     
     // Build the UPDATE query dynamically
-    const updates = [];
+    const updates: string[] = [];
     const params = [id];
     let paramIndex = 2;
     

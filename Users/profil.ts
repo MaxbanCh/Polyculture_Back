@@ -58,8 +58,8 @@ function removeTokenByUser(user: string) {
 
 async function get_hash(password: string): Promise<string> {
   const saltRounds = 10;
-  const salt = await bcrypt.genSalt(saltRounds); // Generate the salt manually
-  return await bcrypt.hash(password, salt); // Pass the salt to the hash function
+  const salt = await bcrypt.genSalt(saltRounds);
+  return await bcrypt.hash(password, salt);
 }
 
 router.post("/login", async (ctx) => {
@@ -110,7 +110,7 @@ router.post("/login", async (ctx) => {
   }, secretKey);
   ctx.response.headers.set(
     "Set-Cookie",
-    `auth_token=${token}; HttpOnly; Max-Age=3600; SameSite=Strict; `,
+    `auth_token=${token}; HttpOnly; Max-Age=3600; SameSite=Strict; Secure`,
   );
 
   removeTokenByUser(username);
@@ -180,7 +180,7 @@ router.post("/register", async (ctx) => {
     }, secretKey);
     ctx.response.headers.set(
       "Set-Cookie",
-      `auth_token=${token}; HttpOnly; Max-Age=3600; SameSite=Strict; `,
+      `auth_token=${token}; HttpOnly; Max-Age=3600; SameSite=Strict; Secure`,
     );
 
     tokens[token] = sanitizedUsername;

@@ -47,7 +47,6 @@ function broadcastToRoom(roomCode: string, data: any) {
 
   connections.forEach((client) => {
     if (client.data?.roomCode === roomCode && client.readyState === 1) {
-      // Only send if connection is OPEN (readyState === 1)
       client.send(JSON.stringify(data));
     }
   });
@@ -124,8 +123,8 @@ class GameSession {
   private currentQuestionIndex = 0;
   private playerAnswers = new Map<string, PlayerAnswer>();
   private questionStartTime: number = 0;
-  private timePerQuestion = 20; // seconds
-  private questionTimer?: number; // Ajouter cette propriété pour gérer le timer
+  private timePerQuestion = 20; // secondes
+  private questionTimer?: number;
 
   constructor(room: Room) {
     this.room = room;
@@ -210,9 +209,8 @@ class GameSession {
   private getFallbackQuestions(count: number): QuestionData[] {
     // Questions de secours au cas où la récupération échoue
     return [
-      { id: "1", question: "What is the capital of France?", answer: "Paris", theme: "Geography" },
-      { id: "2", question: "Who painted the Mona Lisa?", answer: "Leonardo da Vinci", theme: "Art" },
-      // Reste des questions inchangé
+      { id: "1", question: "Quelle est la capitale de la France ?", answer: "Paris", theme: "Geographie" },
+      { id: "2", question: "Qui a peint la Joconde?", answer: "Leonard de Vinci", theme: "Art" },
     ].slice(0, count);
   }
 
@@ -221,7 +219,6 @@ class GameSession {
     if (this.currentQuestionIndex < this.questions.length) {
       const question = this.questions[this.currentQuestionIndex];
       
-      // Clear previous answers and timer
       this.playerAnswers.clear();
       if (this.questionTimer) {
         clearTimeout(this.questionTimer);
@@ -574,13 +571,11 @@ async function getQuestionsByThemes(themes: string[], count: number): Promise<Qu
       params.push(themes);
     }
     
-    // Add ORDER BY RANDOM() and LIMIT
     query += " ORDER BY RANDOM() LIMIT $" + (params.length + 1);
     params.push(count);
     
     const result = await executeQuery(query, params);
     
-    // Process the results
     if (result && Array.isArray(result.rows)) {
       return result.rows.map((row: any) => ({
         id: String(row.id),
@@ -592,7 +587,7 @@ async function getQuestionsByThemes(themes: string[], count: number): Promise<Qu
       }));
     }
     
-    // IIf there is an error or no results, return fallback questions
+    // Question de secours
     console.warn("No questions found for themes:", themes);
     return [
       { id: "1", question: "What is the capital of France?", answer: "Paris", theme: "Geography" },
