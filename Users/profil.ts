@@ -223,75 +223,66 @@ router.get("/check-back", (ctx) => {
 });
 
 router.get("/check-token", async (ctx) => {
-  const token = ctx.cookies.get("auth_token");  if (!token) {
+  const token = ctx.cookies.get("auth_token");
+  if (!token) {
     ctx.response.status = 401;
     ctx.response.body = { error: "No token provided" };
     return;
   }
   
-  const user = tokens[token];
-  if (!user) {
+  try {
+    // Vérifier uniquement la signature du token JWT
+    const decodedToken = await verify(token, secretKey);
+    
+    // Si le token est valide, continuer
+    ctx.response.status = 200;
+    ctx.response.body = { 
+      valid: true,
+      userName: decodedToken.userName 
+    };
+  } catch (error) {
+    console.error("Token verification error:", error);
     ctx.response.status = 401;
     ctx.response.body = { error: "Invalid token" };
-    return;
   }
-
-  const decodedToken = await verify(token, secretKey);
-  if (!decodedToken) {
-    ctx.response.status = 401;
-    ctx.response.body = { error: "Invalid token" };
-    return;
-  }
-
-  ctx.response.status = 200;
-  ctx.response.body = { valid: true };
 });
 
 
 
 router.get("/profil", async (ctx) => {
-  const token = ctx.cookies.get("auth_token");  if (!token) {
+  const token = ctx.cookies.get("auth_token");
+  if (!token) {
     ctx.response.status = 401;
     ctx.response.body = { error: "No token provided" };
     return;
   }
 
-  const user = tokens[token];
-  if (!user) {
+  try {
+    const decodedToken = await verify(token, secretKey);
+    ctx.response.status = 200;
+    ctx.response.body = { userName: decodedToken.userName };
+  } catch (error) {
     ctx.response.status = 401;
     ctx.response.body = { error: "Invalid token" };
-    return;
   }
-
-  const decodedToken = await verify(token, secretKey);
-  if (!decodedToken) {
-    ctx.response.status = 401;
-    ctx.response.body = { error: "Invalid token" };
-    return;
-  }
-
-  ctx.response.status = 200;
-  ctx.response.body = { userName: decodedToken.userName };
 });
 
 router.get("/admin", async (ctx) => {
-  const token = ctx.cookies.get("auth_token");  console.log(token);
+  const token = ctx.cookies.get("auth_token");
   if (!token) {
     ctx.response.status = 401;
-    console.log("No token provided");
     ctx.response.body = { error: "No token provided" };
     return;
   }
-  console.log(tokens);
-  const user = tokens[token];
-  console.log(user);
-
+  
   try {
+    const decodedToken = await verify(token, secretKey);
+    const username = decodedToken.userName;
+    
     const userResult = await executeQuery(
       "SELECT id, username, admin FROM users WHERE username = $1",
-      [user],
+      [username],
     ) as { rows?: { admin?: boolean }[] } | undefined;
-    console.log(userResult?.rows);
 
     if (!userResult || !userResult.rows || userResult.rows.length === 0 || !userResult.rows[0].admin) {
       ctx.response.status = 403;
@@ -301,9 +292,8 @@ router.get("/admin", async (ctx) => {
 
     ctx.response.status = 200;
     ctx.response.body = { isAdmin: true };
-  } catch {
+  } catch (error) {
     ctx.response.status = 401;
-    console.log("Invalid token");
     ctx.response.body = { error: "Invalid token" };
   }
 });
