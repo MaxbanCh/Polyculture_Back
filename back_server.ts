@@ -14,7 +14,7 @@ const app = new Application();
 
 app.use(
   oakCors({
-    origin: "https://polyculture.cluster-ig3.igpolytech.fr", // Allow requests from this origin
+    origin: "https://polyculture.axithem.fr", // Allow requests from this origin
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Specify allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
     credentials: true, // Allow credentials like cookies
@@ -24,7 +24,7 @@ app.use(
 app.use(async (ctx, next) => {
   ctx.response.headers.set(
     "Access-Control-Allow-Origin",
-    "https://polyculture.cluster-ig3.igpolytech.fr",
+    "https://polyculture.axithem.fr",
   );
   ctx.response.headers.set(
     "Access-Control-Allow-Methods",
@@ -43,9 +43,10 @@ router.get("/get_cookies", (ctx) => {
   ctx.response.body = "Miam les cookies !";
 });
 
-const PORT = parseInt(Deno.env.get("PORT") || "443");
+const PORT = parseInt(Deno.env.get("PORT") || "3000");  // Changez le port par défaut
 const options: any = { port: PORT };
 
+// Supprimez cette section SSL
 // if (Deno.args.length >= 3) {
 //   options.secure = true;
 //   options.cert = await Deno.readTextFile(Deno.args[1]);

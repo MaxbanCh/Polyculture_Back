@@ -78,7 +78,7 @@ docker compose up --build
 
 
 ### Le cloud de Polytech
-J'ai ainsi pu déployer sur le cloud de polytech assez facilement étant donné que les DockerFile étaient déjà réalisés, en implémantant ainsi le HTTPS. L'application est accessible via https://polyculture.cluster-ig3.igpolytech.fr
+J'ai ainsi pu déployer sur le cloud de polytech assez facilement étant donné que les DockerFile étaient déjà réalisés, en implémantant ainsi le HTTPS. L'application est accessible via https://polyculture.axithem.fr
 
 ## La base de données
 L'application est basé actuellement sur 5 tables concrètes :
