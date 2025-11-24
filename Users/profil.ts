@@ -7,7 +7,7 @@ router.options("/login", (ctx) => {
   ctx.response.status = 200;
   ctx.response.headers.set(
     "Access-Control-Allow-Origin",
-    "https://polyculture.cluster-ig3.igpolytech.fr",
+    "https://127.0.0.1",
   );
   ctx.response.headers.set(
     "Access-Control-Allow-Methods",
@@ -24,7 +24,7 @@ router.options("/register", (ctx) => {
   ctx.response.status = 200;
   ctx.response.headers.set(
     "Access-Control-Allow-Origin",
-    "https://polyculture.cluster-ig3.igpolytech.fr",
+    "http://127.0.0.1",
   );
   ctx.response.headers.set(
     "Access-Control-Allow-Methods",

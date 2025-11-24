@@ -646,7 +646,7 @@ async function isAdmin(ctx: any, next: any) {
 }
 
 
-router.get("/import-questions", isAdmin, async (ctx) => {
+router.get("/import-questions", async (ctx) => {
   try {
     await importQuestionsToDatabase();
     ctx.response.status = 200;
